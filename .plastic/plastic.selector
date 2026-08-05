@@ -1,0 +1,4 @@
+repository "Polarity Shifting Bullet Hell test/Polarity Shifting Bullet Hell test@33263342928916@cloud"
+  path "/"
+    br "/main"
+    co "/main"
