@@ -1,0 +1,19 @@
+{
+    "name": "STG.Gameplay.Editor",
+    "rootNamespace": "",
+    "references": [
+        "STG.Gameplay",
+        "VolumetricLines"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

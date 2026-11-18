@@ -2,7 +2,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(CapsuleCollider))]
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(PlayerHealth))]
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -17,8 +19,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Tooltip("視為地面的 Layer")] private LayerMask groundLayer = ~0;
 
     [Header("Dash")]
-    [SerializeField, Tooltip("衝刺速度為移動速度的倍數")] private float dashSpeedMultiplier = 1.5f;
+    [SerializeField, Tooltip("衝刺速度為移動速度的倍數")] private float dashSpeedMultiplier = 2.5f;
     [SerializeField, Tooltip("衝刺持續時間 (秒)")] private float dashDuration = 0.2f;
+    [SerializeField, Min(0f), Tooltip("衝刺冷卻時間 (秒)，從衝刺開始時起算；避免連按衝刺一直維持無敵")] private float dashCooldown = 2f;
+    [SerializeField, Tooltip("衝刺期間的無敵時間 (秒)；與受傷後的無敵時間 (PlayerHealth) 重疊時以較晚結束的為準，不會縮短它")] private float dashInvincibilityDuration = 0.2f;
 
     private static readonly int IsMovingHash = Animator.StringToHash("IsMoving");
     private static readonly int IsDashingHash = Animator.StringToHash("IsDashing");
@@ -26,19 +30,25 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private Animator animator;
     private CapsuleCollider capsule;
+    private PlayerHealth playerHealth;
     private Vector3 moveDirection;
     private Vector3 forwardDir;
     private Vector3 rightDir;
 
     private bool isDashing;
     private float dashTimer;
+    private float nextDashTime;
     private Vector3 dashDirection;
+
+    private bool hasFacingOverride;
+    private Vector3 facingOverride;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         capsule = GetComponent<CapsuleCollider>();
+        playerHealth = GetComponent<PlayerHealth>();
         animator.applyRootMotion = false;
 
         if (directionReference == null)
@@ -87,10 +97,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool(IsMovingHash, moveDirection.sqrMagnitude > 0f);
 
         bool dashPressed = keyboard.leftShiftKey.wasPressedThisFrame || keyboard.rightShiftKey.wasPressedThisFrame;
-        if (dashPressed && !isDashing)
-        {
-            StartDash();
-        }
+        if (dashPressed) TryStartDash();
 
         if (isDashing)
         {
@@ -103,13 +110,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // 開始衝刺，方向固定為觸發當下角色面對的方向
-    private void StartDash()
+    // 嘗試開始衝刺；衝刺中或冷卻中回傳 false。方向固定為觸發當下角色面對的方向
+    public bool TryStartDash()
     {
+        if (isDashing || Time.time < nextDashTime) return false;
+
+        nextDashTime = Time.time + dashCooldown;
         isDashing = true;
         dashTimer = dashDuration;
         dashDirection = transform.forward;
         animator.SetBool(IsDashingHash, true);
+        playerHealth.GrantInvincibility(dashInvincibilityDuration);
+        return true;
     }
 
     // 用物理引擎移動並轉向，讓角色維持在地板碰撞體上
@@ -121,12 +133,26 @@ public class PlayerMovement : MonoBehaviour
         float verticalVelocity = IsGrounded() ? -groundedStickSpeed : rb.linearVelocity.y;
         rb.linearVelocity = new Vector3(horizontalVelocity.x, verticalVelocity, horizontalVelocity.z);
 
-        if (!isDashing && moveDirection.sqrMagnitude > 0f)
+        Vector3 facing = hasFacingOverride ? facingOverride : moveDirection;
+        if (!isDashing && facing.sqrMagnitude > 0f)
         {
             // 用 rb.rotation 直接指定角度，避免 MoveRotation 的物理內插對 Halo 等偏離中心的子物件造成延遲飄移
-            Quaternion targetRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+            Quaternion targetRotation = Quaternion.LookRotation(facing, Vector3.up);
             rb.rotation = Quaternion.RotateTowards(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
         }
+    }
+
+    // 由外部 (例如射擊時) 指定角色要面向的水平方向，優先於移動方向的轉向
+    public void SetFacingOverride(Vector3 direction)
+    {
+        direction.y = 0f;
+        hasFacingOverride = direction.sqrMagnitude > 0.0001f;
+        facingOverride = direction.normalized;
+    }
+
+    public void ClearFacingOverride()
+    {
+        hasFacingOverride = false;
     }
 
     // 從腳底往下打一條射線偵測是否貼地，貼地時強制蓋掉物理碰撞造成的浮空速度
