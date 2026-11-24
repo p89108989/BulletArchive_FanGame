@@ -11,6 +11,7 @@ public static class AreaStrikeBuilder
 {
     private const string OutputFolder = "Assets/STG game/resources/prefab/AreaStrike";
     private const string PrefabPath = "Assets/STG game/resources/prefab/AreaStrike.prefab";
+    private const string DustPrefabPath = "Assets/STG game/resources/prefab/AreaStrike_Dust.prefab";
     private const int TextureSize = 256;
 
     // 外圈線寬 (佔半徑比例)
@@ -37,13 +38,23 @@ public static class AreaStrikeBuilder
         Material ringMaterial = GetOrCreateMaterial("AreaStrike_Ring", ringTexture, RingColor, 1);
         Material fillMaterial = GetOrCreateMaterial("AreaStrike_Fill", fillTexture, FillColor, 0);
 
-        GameObject root = new GameObject("AreaStrike");
+        // 一般版：火光 + 火花 + 煙霧；煙塵版：只有煙塵 (碎石等落地衝擊用)
+        BuildPrefab("AreaStrike", PrefabPath, ringMaterial, fillMaterial, parent => AreaStrikeExplosionBuilder.Build(parent, OutputFolder));
+        BuildPrefab("AreaStrike_Dust", DustPrefabPath, ringMaterial, fillMaterial, parent => AreaStrikeExplosionBuilder.BuildDust(parent, OutputFolder));
+
+        AssetDatabase.SaveAssets();
+        Debug.Log("[AreaStrikeBuilder] 已更新 " + PrefabPath + " 與 " + DustPrefabPath);
+    }
+
+    private static void BuildPrefab(string name, string path, Material ringMaterial, Material fillMaterial, System.Func<Transform, ParticleSystem> buildImpact)
+    {
+        GameObject root = new GameObject(name);
         try
         {
             Mesh quad = Resources.GetBuiltinResource<Mesh>("Quad.fbx");
             Renderer ringRenderer = CreateFlatQuad(root.transform, "Ring", quad, ringMaterial, 0.02f);
             Renderer fillRenderer = CreateFlatQuad(root.transform, "Fill", quad, fillMaterial, 0.01f);
-            ParticleSystem explosion = AreaStrikeExplosionBuilder.Build(root.transform, OutputFolder);
+            ParticleSystem explosion = buildImpact(root.transform);
 
             AreaStrike strike = root.AddComponent<AreaStrike>();
             SerializedObject serialized = new SerializedObject(strike);
@@ -55,15 +66,12 @@ public static class AreaStrikeBuilder
             serialized.FindProperty("hitLayers").intValue = LayerMask.GetMask("Player");
             serialized.ApplyModifiedPropertiesWithoutUndo();
 
-            PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
+            PrefabUtility.SaveAsPrefabAsset(root, path);
         }
         finally
         {
             Object.DestroyImmediate(root);
         }
-
-        AssetDatabase.SaveAssets();
-        Debug.Log("[AreaStrikeBuilder] 已更新 " + PrefabPath);
     }
 
     // 外圈：邊緣一圈實線，內部淡淡的底色

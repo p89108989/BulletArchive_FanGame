@@ -1,31 +1,32 @@
 #if UNITY_EDITOR
-using System.Collections.Generic;
-using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-// Apache.glb 是一體模型 (單一 Mesh)，旋翼無法單獨轉動。這個工具把主旋翼與尾旋翼的幾何
-// 從原 Mesh 拆成獨立 Mesh (旋轉中心設在槳轂)，再組成可直接使用的 prefab，原始 .glb 不會被修改。
-//
-// 拆分依據：Mesh 內部由多個互不相連的零件組成，依零件中心位置判斷屬於哪一部分。
-// 原模型座標：機頭朝 -Y、機頂朝 -Z、主旋翼軸平行 Z、尾旋翼軸平行 X。
+// 建立直升機 Prefab：使用 Enemy_Apache01 (BA 的 Heli_Apache) 模型。
+// 素材內沒有飛行動畫 (Animation/FBX 下的檔案只有網格與骨架，動畫資料遺失)，
+// 但主旋翼 (bone_wing_01) 與尾旋翼 (bone_wing_B) 是獨立骨骼，直接旋轉骨骼即可轉動槳葉。
+// 已存在的 prefab 就地更新：場景上的直升機掛了 EnemyHealth / ApacheGunship 等元件 (場景覆寫)，整個重建會遺失
 public static class ApachePrefabBuilder
 {
-    private const string SourcePath = "Assets/STG game/resources/blue-archive-vehicle-black-market/source/Apache.glb";
-    private const string OutputFolder = "Assets/STG game/resources/prefab/Apache";
+    private const string ModelPath = "Assets/STG game/resources/model/Enemy_Apache01/bundles/Assets/_MX/NPCs/HeliApache01_Original/Animation/FBX/Heli_Apache_Normal_Idle.glb";
     private const string PrefabPath = "Assets/STG game/resources/prefab/Apache.prefab";
+    private const string PropellerBlurTexturePath = "Assets/STG game/resources/model/Enemy_Apache01/bundles/Assets/_MX/NPCs/HeliApache01_Original/Model/Texture/Heli_Apache_Prop_FX 1.png";
+    private const string PropellerBlurMaterialPath = "Assets/STG game/resources/prefab/Apache_PropellerBlur.mat";
+    // 主旋翼 Heli_Apache_propeller 與尾旋翼 Heli_Apache_propeller001 的模糊圓盤
+    private const string PropellerBlurRendererPrefix = "Heli_Apache_propeller";
+    private const float PropellerBlurAlpha = 0.45f;
 
-    // 主旋翼：中心落在槳葉所在高度帶內的零件 (排除更上方固定不轉的 Longbow 雷達罩與下方的機身)
-    private const float MainRotorMinZ = -6.9f;
-    private const float MainRotorMaxZ = -4.9f;
-
-    // 尾旋翼：位於尾翼右側的槳轂附近 (排除同高度、位於尾翼中線上的垂直尾翼零件)
-    private static readonly Vector3 TailRotorHub = new Vector3(1.26f, 12.77f, -3.51f);
-    private const float TailRotorMinX = 1f;
-    private const float TailRotorRange = 1f;
-
-    // 同位置頂點焊接的精度 (glTF 會因法線/UV 不同拆開同一位置的頂點)
-    private const float WeldPrecision = 1000f;
+    // 原始模型長約 4.1，放大後約 41 m (與舊模型相同大小)
+    private const float ModelScale = 10f;
+    private const string MainRotorBone = "bone_wing_01";
+    private const string TailRotorBone = "bone_wing_B";
+    private const string BodyRendererName = "Heli_Apache_Body";
+    // 兩側飛彈莢艙的骨骼，當作飛彈發射點
+    private static readonly string[] MissileLaunchBones = { "bone_WP_L_02", "bone_WP_R_02" };
+    private const float MainRotorSpeed = 1080f;
+    private const float TailRotorSpeed = 2160f;
+    // 舊版 (Apache.glb 拆網格) 遺留的子物件，更新時移除
+    private static readonly string[] LegacyParts = { "Body", "MainRotor", "TailRotor", "Mesh" };
 
     [MenuItem("Tools/STG/Build Apache Prefab")]
     private static void Build()
@@ -36,36 +37,41 @@ public static class ApachePrefabBuilder
             return;
         }
 
-        GameObject source = AssetDatabase.LoadAssetAtPath<GameObject>(SourcePath);
-        Mesh sourceMesh = source.GetComponent<MeshFilter>().sharedMesh;
-        Material[] materials = source.GetComponent<MeshRenderer>().sharedMaterials;
-        if (!sourceMesh.isReadable)
+        GameObject modelAsset = AssetDatabase.LoadAssetAtPath<GameObject>(ModelPath);
+        if (modelAsset == null)
         {
-            Debug.LogError("[ApachePrefabBuilder] Apache Mesh 不可讀取，請在匯入設定開啟 Read/Write。");
+            Debug.LogError("[ApachePrefabBuilder] 找不到模型 " + ModelPath);
             return;
         }
 
-        EnsureFolder(OutputFolder);
-
-        int[] partOf = ClassifyVertices(sourceMesh, out int mainCount, out int tailCount);
-        Mesh body = ExtractMesh(sourceMesh, partOf, Part.Body, "Apache_Body", out _);
-        Mesh mainRotor = ExtractMesh(sourceMesh, partOf, Part.MainRotor, "Apache_MainRotor", out Vector3 mainPivot);
-        Mesh tailRotor = ExtractMesh(sourceMesh, partOf, Part.TailRotor, "Apache_TailRotor", out Vector3 tailPivot);
-
-        // 已存在的 prefab 就地更新：整個重建會換掉子物件的 ID，場景實例上手動加的元件/子物件 (碰撞體、飛彈發射點) 會失去對應而遺失
         bool exists = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabPath) != null;
         GameObject root = exists ? PrefabUtility.LoadPrefabContents(PrefabPath) : new GameObject("Apache");
         try
         {
-            // 轉正：原模型機頂 (-Z) → 世界 +Y、機頭 (-Y) → 世界 +Z
-            Transform model = GetOrCreateChild(root.transform, "Model");
-            model.localRotation = Quaternion.LookRotation(new Vector3(0f, -1f, 0f), new Vector3(0f, 0f, -1f));
+            Transform modelRoot = GetOrCreateChild(root.transform, "Model");
+            modelRoot.localRotation = Quaternion.identity;
+            modelRoot.gameObject.layer = LayerMask.NameToLayer("Enemy");
+            foreach (string part in LegacyParts)
+            {
+                Transform legacy = modelRoot.Find(part);
+                if (legacy != null) Object.DestroyImmediate(legacy.gameObject);
+            }
 
-            SetupPart(model, "Body", body, materials, Vector3.zero);
-            Transform main = SetupPart(model, "MainRotor", mainRotor, materials, mainPivot);
-            Transform tail = SetupPart(model, "TailRotor", tailRotor, materials, tailPivot);
-            if (main.GetComponent<RotorSpin>() == null) AddSpin(main, Vector3.forward, 1080f);
-            if (tail.GetComponent<RotorSpin>() == null) AddSpin(tail, Vector3.right, 2160f);
+            // 解除 prefab 連結後才能移除 glTF 匯入時自動加的空 Animator (沒有 Controller，留著也不會動)
+            GameObject mesh = (GameObject)PrefabUtility.InstantiatePrefab(modelAsset);
+            PrefabUtility.UnpackPrefabInstance(mesh, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+            mesh.name = "Mesh";
+            mesh.transform.SetParent(modelRoot, false);
+            mesh.transform.localScale = Vector3.one * ModelScale;
+            Animator unusedAnimator = mesh.GetComponent<Animator>();
+            if (unusedAnimator != null) Object.DestroyImmediate(unusedAnimator);
+
+            // 模型原點在機腹下方，平移讓機身中心對齊根物件 (盤旋高度與舊模型一致)
+            mesh.transform.localPosition = -modelRoot.InverseTransformPoint(GetRendererBounds(mesh).center);
+            ApplyPropellerBlurMaterial(mesh);
+            AddRotorSpin(mesh.transform, MainRotorBone, modelRoot.up, MainRotorSpeed);
+            AddRotorSpin(mesh.transform, TailRotorBone, modelRoot.right, TailRotorSpeed);
+            SetupCollider(modelRoot.gameObject, mesh);
 
             PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
         }
@@ -76,161 +82,102 @@ public static class ApachePrefabBuilder
         }
 
         AssetDatabase.SaveAssets();
-        Debug.Log("[ApachePrefabBuilder] 已更新 " + PrefabPath + "（主旋翼零件 " + mainCount + " 個、尾旋翼零件 " + tailCount + " 個）");
+        RewireSceneGunships();
+        Debug.Log("[ApachePrefabBuilder] 已更新 " + PrefabPath);
     }
 
-    private enum Part { Body, MainRotor, TailRotor }
-
-    // 以 union-find 找出互不相連的零件，再依零件中心決定每個頂點屬於哪一部分
-    private static int[] ClassifyVertices(Mesh mesh, out int mainCount, out int tailCount)
+    // ApacheGunship 掛在場景實例上 (不在 prefab 內)，模型重建後它對機身與發射點骨骼的引用會失效，依名稱重新接上
+    private static void RewireSceneGunships()
     {
-        Vector3[] vertices = mesh.vertices;
-        int[] triangles = mesh.triangles;
-        int[] parent = new int[vertices.Length];
-        for (int i = 0; i < parent.Length; i++) parent[i] = i;
-
-        Dictionary<Vector3Int, int> byPosition = new Dictionary<Vector3Int, int>();
-        for (int i = 0; i < vertices.Length; i++)
+        foreach (ApacheGunship gunship in Object.FindObjectsByType<ApacheGunship>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
-            Vector3Int key = Vector3Int.RoundToInt(vertices[i] * WeldPrecision);
-            if (byPosition.TryGetValue(key, out int other)) Union(parent, i, other);
-            else byPosition[key] = i;
-        }
-        for (int t = 0; t < triangles.Length; t += 3)
-        {
-            Union(parent, triangles[t], triangles[t + 1]);
-            Union(parent, triangles[t], triangles[t + 2]);
-        }
-
-        Dictionary<int, Bounds> componentBounds = new Dictionary<int, Bounds>();
-        for (int i = 0; i < vertices.Length; i++)
-        {
-            int rootIndex = Find(parent, i);
-            if (componentBounds.TryGetValue(rootIndex, out Bounds bounds)) bounds.Encapsulate(vertices[i]);
-            else bounds = new Bounds(vertices[i], Vector3.zero);
-            componentBounds[rootIndex] = bounds;
-        }
-
-        Dictionary<int, Part> componentPart = new Dictionary<int, Part>();
-        mainCount = 0;
-        tailCount = 0;
-        foreach (KeyValuePair<int, Bounds> pair in componentBounds)
-        {
-            Vector3 center = pair.Value.center;
-            Part part = Part.Body;
-            if (center.z >= MainRotorMinZ && center.z <= MainRotorMaxZ)
+            SerializedObject serialized = new SerializedObject(gunship);
+            serialized.FindProperty("bodyRenderer").objectReferenceValue = FindRenderer(gunship.transform, BodyRendererName);
+            SerializedProperty launchPoints = serialized.FindProperty("missileLaunchPoints");
+            launchPoints.arraySize = MissileLaunchBones.Length;
+            for (int i = 0; i < MissileLaunchBones.Length; i++)
             {
-                part = Part.MainRotor;
-                mainCount++;
+                launchPoints.GetArrayElementAtIndex(i).objectReferenceValue = FindChild(gunship.transform, MissileLaunchBones[i]);
             }
-            else if (center.x > TailRotorMinX
-                     && Mathf.Abs(center.y - TailRotorHub.y) < TailRotorRange
-                     && Mathf.Abs(center.z - TailRotorHub.z) < TailRotorRange)
-            {
-                part = Part.TailRotor;
-                tailCount++;
-            }
-            componentPart[pair.Key] = part;
+            serialized.ApplyModifiedProperties();
+            UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(gunship.gameObject.scene);
         }
-
-        int[] partOf = new int[vertices.Length];
-        for (int i = 0; i < vertices.Length; i++) partOf[i] = (int)componentPart[Find(parent, i)];
-        return partOf;
     }
 
-    // 只保留屬於指定部分的三角形，重新編號頂點；旋翼的頂點平移到以槳轂為原點 (pivot 回傳原位置)
-    private static Mesh ExtractMesh(Mesh source, int[] partOf, Part part, string name, out Vector3 pivot)
+    // 機身的骨骼節點與 Renderer 同名，要找的是掛 Renderer 的那個
+    private static Renderer FindRenderer(Transform root, string name)
     {
-        Vector3[] vertices = source.vertices;
-        Vector3[] normals = source.normals;
-        Vector4[] tangents = source.tangents;
-        Vector2[] uv = source.uv;
-        Color[] colors = source.colors;
-
-        Dictionary<int, int> remap = new Dictionary<int, int>();
-        List<int>[] subMeshTriangles = new List<int>[source.subMeshCount];
-        for (int s = 0; s < source.subMeshCount; s++)
+        foreach (Renderer renderer in root.GetComponentsInChildren<Renderer>(true))
         {
-            subMeshTriangles[s] = new List<int>();
-            int[] triangles = source.GetTriangles(s);
-            for (int t = 0; t < triangles.Length; t++)
-            {
-                int index = triangles[t];
-                if (partOf[index] != (int)part) continue;
-                if (!remap.TryGetValue(index, out int newIndex))
-                {
-                    newIndex = remap.Count;
-                    remap[index] = newIndex;
-                }
-                subMeshTriangles[s].Add(newIndex);
-            }
+            if (renderer.name == name) return renderer;
         }
 
-        int count = remap.Count;
-        Vector3[] newVertices = new Vector3[count];
-        Bounds bounds = new Bounds();
-        bool boundsInitialized = false;
-        foreach (KeyValuePair<int, int> pair in remap)
+        Debug.LogError("[ApachePrefabBuilder] 找不到 Renderer " + name);
+        return null;
+    }
+
+    // 旋翼的動態模糊圓盤：glb 內的材質遺失了貼圖而變成不透明的實心圓盤，改用半透明材質 + 原本的模糊貼圖
+    private static void ApplyPropellerBlurMaterial(GameObject mesh)
+    {
+        Material material = AssetDatabase.LoadAssetAtPath<Material>(PropellerBlurMaterialPath);
+        if (material == null)
         {
-            newVertices[pair.Value] = vertices[pair.Key];
-            if (!boundsInitialized) { bounds = new Bounds(vertices[pair.Key], Vector3.zero); boundsInitialized = true; }
-            else bounds.Encapsulate(vertices[pair.Key]);
+            material = new Material(Shader.Find("Universal Render Pipeline/Particles/Unlit"));
+            AssetDatabase.CreateAsset(material, PropellerBlurMaterialPath);
         }
 
-        // 旋翼槳葉左右對稱，零件範圍中心即為槳轂 (旋轉中心)
-        pivot = part == Part.Body ? Vector3.zero : bounds.center;
-        for (int i = 0; i < count; i++) newVertices[i] -= pivot;
+        material.SetTexture("_BaseMap", AssetDatabase.LoadAssetAtPath<Texture2D>(PropellerBlurTexturePath));
+        material.SetColor("_BaseColor", new Color(1f, 1f, 1f, PropellerBlurAlpha));
+        material.SetFloat("_Surface", 1f);
+        material.SetFloat("_Blend", 0f);
+        material.SetFloat("_SrcBlend", (float)UnityEngine.Rendering.BlendMode.SrcAlpha);
+        material.SetFloat("_DstBlend", (float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        material.SetFloat("_SrcBlendAlpha", (float)UnityEngine.Rendering.BlendMode.One);
+        material.SetFloat("_DstBlendAlpha", (float)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        material.SetFloat("_ZWrite", 0f);
+        material.SetFloat("_Cull", (float)UnityEngine.Rendering.CullMode.Off);
+        material.SetOverrideTag("RenderType", "Transparent");
+        material.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+        material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+        EditorUtility.SetDirty(material);
 
-        Mesh mesh = new Mesh { name = name };
-        mesh.indexFormat = count > 65535 ? UnityEngine.Rendering.IndexFormat.UInt32 : UnityEngine.Rendering.IndexFormat.UInt16;
-        mesh.vertices = newVertices;
-        if (normals.Length > 0) mesh.normals = Pick(normals, remap, count);
-        if (tangents.Length > 0) mesh.tangents = Pick(tangents, remap, count);
-        if (uv.Length > 0) mesh.uv = Pick(uv, remap, count);
-        if (colors.Length > 0) mesh.colors = Pick(colors, remap, count);
-        mesh.subMeshCount = source.subMeshCount;
-        for (int s = 0; s < source.subMeshCount; s++) mesh.SetTriangles(subMeshTriangles[s], s);
-        mesh.RecalculateBounds();
-
-        return SaveMesh(mesh, OutputFolder + "/" + name + ".asset");
-    }
-
-    private static T[] Pick<T>(T[] source, Dictionary<int, int> remap, int count)
-    {
-        T[] result = new T[count];
-        foreach (KeyValuePair<int, int> pair in remap) result[pair.Value] = source[pair.Key];
-        return result;
-    }
-
-    // 覆寫既有 Mesh 資產內容而不是刪掉重建，保留 GUID，已引用它的 prefab 不會斷掉
-    private static Mesh SaveMesh(Mesh mesh, string path)
-    {
-        Mesh existing = AssetDatabase.LoadAssetAtPath<Mesh>(path);
-        if (existing == null)
+        foreach (Renderer renderer in mesh.GetComponentsInChildren<Renderer>())
         {
-            AssetDatabase.CreateAsset(mesh, path);
-            return mesh;
+            if (renderer.name.StartsWith(PropellerBlurRendererPrefix)) renderer.sharedMaterial = material;
         }
-
-        EditorUtility.CopySerialized(mesh, existing);
-        Object.DestroyImmediate(mesh);
-        EditorUtility.SetDirty(existing);
-        return existing;
     }
 
-    private static Transform SetupPart(Transform parent, string name, Mesh mesh, Material[] materials, Vector3 localPosition)
+    // 旋翼骨骼本身的座標軸是歪的，把「直升機的上方/側方」換算成骨骼自身座標當旋轉軸
+    private static void AddRotorSpin(Transform meshRoot, string boneName, Vector3 worldAxis, float speed)
     {
-        Transform part = GetOrCreateChild(parent, name);
-        part.localPosition = localPosition;
+        Transform bone = FindChild(meshRoot, boneName);
+        if (bone == null) return;
 
-        MeshFilter filter = part.GetComponent<MeshFilter>();
-        if (filter == null) filter = part.gameObject.AddComponent<MeshFilter>();
-        filter.sharedMesh = mesh;
+        RotorSpin spin = bone.gameObject.AddComponent<RotorSpin>();
+        SerializedObject serialized = new SerializedObject(spin);
+        serialized.FindProperty("localAxis").vector3Value = bone.InverseTransformDirection(worldAxis).normalized;
+        serialized.FindProperty("degreesPerSecond").floatValue = speed;
+        serialized.ApplyModifiedPropertiesWithoutUndo();
+    }
 
-        MeshRenderer renderer = part.GetComponent<MeshRenderer>();
-        if (renderer == null) renderer = part.gameObject.AddComponent<MeshRenderer>();
-        renderer.sharedMaterials = materials;
-        return part;
+    // Trigger：只給玩家雷射判定，不推擠任何東西
+    private static void SetupCollider(GameObject modelRoot, GameObject mesh)
+    {
+        BoxCollider collider = modelRoot.GetComponent<BoxCollider>();
+        if (collider == null) collider = modelRoot.AddComponent<BoxCollider>();
+
+        Bounds world = GetRendererBounds(mesh);
+        collider.center = modelRoot.transform.InverseTransformPoint(world.center);
+        collider.size = world.size;
+        collider.isTrigger = true;
+    }
+
+    private static Bounds GetRendererBounds(GameObject target)
+    {
+        Renderer[] renderers = target.GetComponentsInChildren<Renderer>();
+        Bounds bounds = renderers[0].bounds;
+        for (int i = 1; i < renderers.Length; i++) bounds.Encapsulate(renderers[i].bounds);
+        return bounds;
     }
 
     private static Transform GetOrCreateChild(Transform parent, string name)
@@ -243,36 +190,15 @@ public static class ApachePrefabBuilder
         return child;
     }
 
-    private static void AddSpin(Transform rotor, Vector3 localAxis, float degreesPerSecond)
+    private static Transform FindChild(Transform root, string name)
     {
-        RotorSpin spin = rotor.gameObject.AddComponent<RotorSpin>();
-        SerializedObject serialized = new SerializedObject(spin);
-        serialized.FindProperty("localAxis").vector3Value = localAxis;
-        serialized.FindProperty("degreesPerSecond").floatValue = degreesPerSecond;
-        serialized.ApplyModifiedPropertiesWithoutUndo();
-    }
-
-    private static int Find(int[] parent, int x)
-    {
-        while (parent[x] != x)
+        foreach (Transform child in root.GetComponentsInChildren<Transform>(true))
         {
-            parent[x] = parent[parent[x]];
-            x = parent[x];
+            if (child.name == name) return child;
         }
-        return x;
-    }
 
-    private static void Union(int[] parent, int a, int b)
-    {
-        a = Find(parent, a);
-        b = Find(parent, b);
-        if (a != b) parent[a] = b;
-    }
-
-    private static void EnsureFolder(string folder)
-    {
-        if (AssetDatabase.IsValidFolder(folder)) return;
-        AssetDatabase.CreateFolder(Path.GetDirectoryName(folder).Replace('\\', '/'), Path.GetFileName(folder));
+        Debug.LogError("[ApachePrefabBuilder] 找不到骨骼 " + name);
+        return null;
     }
 }
 #endif

@@ -42,6 +42,23 @@ public class DisableOnDeathTests
         Assert.IsTrue(root.activeSelf);
     }
 
+    // Boss 戰期間重生倒數暫停，回到一般戰鬥後才繼續倒數
+    [UnityTest]
+    public IEnumerator BossPhase_PausesRespawnCountdown()
+    {
+        TestUtil.SetField(death, "respawnDelay", 0.2f);
+        yield return null;
+        health.TakeDamage(health.MaxHealth);
+        death.OnCombatPhaseChanged(CombatPhase.Boss);
+
+        yield return new WaitForSeconds(0.4f);
+        Assert.IsFalse(body.activeSelf, "should not respawn during the boss phase");
+
+        death.OnCombatPhaseChanged(CombatPhase.Normal);
+        yield return new WaitForSeconds(0.4f);
+        Assert.IsTrue(body.activeSelf);
+    }
+
     [UnityTest]
     public IEnumerator ReEnable_DuringRespawn_ReturnsAliveTurret()
     {

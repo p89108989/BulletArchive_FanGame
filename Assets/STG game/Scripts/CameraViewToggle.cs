@@ -5,6 +5,8 @@ public class CameraViewToggle : MonoBehaviour
 {
     [SerializeField, Tooltip("預設使用的相機，未切換時啟用")] private Camera defaultCamera;
     [SerializeField, Tooltip("按下 P 後切換成的第三人稱相機")] private Camera thirdPersonCamera;
+    [SerializeField, Tooltip("第三人稱時改用「W 沿角色面向前進、A/D 轉向」的玩家移動元件，留空時自動抓 Tag 為 Player 的角色")]
+    private PlayerMovement playerMovement;
 
     private bool isThirdPerson;
 
@@ -20,6 +22,12 @@ public class CameraViewToggle : MonoBehaviour
         {
             GameObject thirdViewCamera = GameObject.Find("Third view Camera");
             if (thirdViewCamera != null) thirdPersonCamera = thirdViewCamera.GetComponent<Camera>();
+        }
+
+        if (playerMovement == null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null) playerMovement = player.GetComponent<PlayerMovement>();
         }
 
         ApplyView();
@@ -38,11 +46,12 @@ public class CameraViewToggle : MonoBehaviour
         }
     }
 
-    // 依目前狀態開關兩台相機與各自的 AudioListener，確保同時間只有一台在運作
+    // 依目前狀態開關兩台相機與各自的 AudioListener，確保同時間只有一台在運作；移動操作跟著視角切換
     private void ApplyView()
     {
         SetCameraActive(defaultCamera, !isThirdPerson);
         SetCameraActive(thirdPersonCamera, isThirdPerson);
+        if (playerMovement != null) playerMovement.SetFacingRelativeControls(isThirdPerson);
     }
 
     private void SetCameraActive(Camera cam, bool active)

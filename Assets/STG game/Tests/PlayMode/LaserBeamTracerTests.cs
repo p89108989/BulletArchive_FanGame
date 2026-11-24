@@ -77,6 +77,25 @@ public class LaserBeamTracerTests
         Assert.IsFalse(blueRemoved);
     }
 
+    // 綠色大招光束 (藍黃合併) 以 None 當「放行的顏色」：藍、黃子彈都消除，紅色 (None) 攻擊仍只能閃避
+    [UnityTest]
+    public IEnumerator Trace_PassThroughNone_InterceptsBlueAndYellowButNotRed()
+    {
+        bool yellowRemoved = false;
+        bool blueRemoved = false;
+        bool redRemoved = false;
+        CreateBullet(new Vector3(0f, 0f, 10f), BulletPolarity.Yellow, b => yellowRemoved = true);
+        CreateBullet(new Vector3(0f, 0f, 20f), BulletPolarity.Blue, b => blueRemoved = true);
+        CreateBullet(new Vector3(0f, 0f, 30f), BulletPolarity.None, b => redRemoved = true);
+        yield return new WaitForFixedUpdate();
+
+        CreateTracer().Trace(Vector3.zero, Vector3.forward, BulletPolarity.None, out _);
+
+        Assert.IsTrue(yellowRemoved);
+        Assert.IsTrue(blueRemoved);
+        Assert.IsFalse(redRemoved);
+    }
+
     [UnityTest]
     public IEnumerator Trace_ZeroEnemies_ReturnsMaxRange()
     {

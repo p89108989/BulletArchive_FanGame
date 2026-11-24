@@ -3,6 +3,7 @@
     "rootNamespace": "",
     "references": [
         "STG.Gameplay",
+        "STG.Gameplay.Editor",
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner"
     ],

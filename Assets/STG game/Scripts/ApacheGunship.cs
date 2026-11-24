@@ -4,13 +4,13 @@ using UnityEngine;
 // 武裝直升機出場流程 (每隔固定時間一輪)：
 // 從場外飛到場景中擺放的起始位置 → 以場地中心為圓心盤旋 (機頭始終朝向中心)，期間定時呼叫一波圈形攻擊，
 // 每個圈快爆炸時從機翼發射一顆飛彈飛向圈中心 → 飛離場地並隱藏，等下一輪。
-// 場景中擺放的位置與俯仰角就是盤旋起點與盤旋時的姿勢
+// 場景中擺放的位置與俯仰角就是盤旋起點與盤旋時的姿勢。Boss 戰期間不再出場，若正在場上則立刻飛離
 [RequireComponent(typeof(EnemyHealth))]
-public class ApacheGunship : MonoBehaviour
+public class ApacheGunship : MonoBehaviour, ICombatPhaseListener
 {
     [Header("References")]
     [SerializeField, Tooltip("直升機外觀根物件，離場時隱藏")] private GameObject modelRoot;
-    [SerializeField, Tooltip("機身 Mesh，用來換算直升機長度以決定飛彈大小")] private MeshFilter bodyMesh;
+    [SerializeField, Tooltip("機身的 Renderer (MeshRenderer 或 SkinnedMeshRenderer)，用來換算直升機長度以決定飛彈大小")] private Renderer bodyRenderer;
     [SerializeField, Tooltip("負責生成圈形攻擊的 Spawner (建議關閉它的自動波次)")] private AreaStrikeSpawner strikeSpawner;
 
     [Header("Schedule")]
@@ -50,12 +50,13 @@ public class ApacheGunship : MonoBehaviour
     private float missileLength;
     private int nextLaunchPointIndex;
     private bool isAttacking;
+    private bool isBossPhase;
 
     private void Awake()
     {
         health = GetComponent<EnemyHealth>();
         if (RequiredReference.IsMissing(modelRoot, nameof(modelRoot), this)) return;
-        if (RequiredReference.IsMissing(bodyMesh, nameof(bodyMesh), this)) return;
+        if (RequiredReference.IsMissing(bodyRenderer, nameof(bodyRenderer), this)) return;
         if (RequiredReference.IsMissing(missilePrefab, nameof(missilePrefab), this)) return;
 
         homePosition = transform.position;
@@ -64,8 +65,9 @@ public class ApacheGunship : MonoBehaviour
         orbitRadius = offset.magnitude;
         startAngle = Mathf.Atan2(offset.z, offset.x);
 
-        Mesh mesh = bodyMesh.sharedMesh;
-        float bodyLength = Mathf.Max(mesh.bounds.size.x, mesh.bounds.size.y, mesh.bounds.size.z) * bodyMesh.transform.lossyScale.x;
+        // localBounds 對 MeshRenderer 與 SkinnedMeshRenderer 都可用，且不受模型是否顯示影響
+        Vector3 localSize = Vector3.Scale(bodyRenderer.localBounds.size, bodyRenderer.transform.lossyScale);
+        float bodyLength = Mathf.Max(Mathf.Abs(localSize.x), Mathf.Abs(localSize.y), Mathf.Abs(localSize.z));
         missileLength = bodyLength * missileLengthRatio;
 
         // 飛彈不掛在直升機底下，否則會跟著直升機一起移動
@@ -76,7 +78,7 @@ public class ApacheGunship : MonoBehaviour
     private void OnEnable()
     {
         if (strikeSpawner != null) strikeSpawner.OnStrikeSpawned += HandleStrikeSpawned;
-        StartCoroutine(AppearLoop());
+        if (!isBossPhase) StartCoroutine(AppearLoop(firstAppearDelay));
     }
 
     private void OnDisable()
@@ -87,9 +89,32 @@ public class ApacheGunship : MonoBehaviour
         if (modelRoot != null) modelRoot.SetActive(false);
     }
 
-    private IEnumerator AppearLoop()
+    // Boss 戰：停止出場排程與攻擊，在場上的話立刻飛離；回到一般戰鬥後隔一個出場間隔再出場
+    public void OnCombatPhaseChanged(CombatPhase phase)
     {
-        yield return new WaitForSeconds(firstAppearDelay);
+        isBossPhase = phase == CombatPhase.Boss;
+        if (!isActiveAndEnabled) return;
+
+        StopAllCoroutines();
+        isAttacking = false;
+        if (isBossPhase)
+        {
+            if (modelRoot.activeSelf) StartCoroutine(LeaveArena());
+            return;
+        }
+
+        StartCoroutine(AppearLoop(appearInterval));
+    }
+
+    private IEnumerator LeaveArena()
+    {
+        yield return Exit();
+        modelRoot.SetActive(false);
+    }
+
+    private IEnumerator AppearLoop(float initialDelay)
+    {
+        yield return new WaitForSeconds(initialDelay);
 
         while (true)
         {

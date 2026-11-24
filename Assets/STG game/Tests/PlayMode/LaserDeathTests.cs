@@ -10,6 +10,7 @@ using VolumetricLines;
 public class LaserDeathTests : InputTestFixture
 {
     private GameObject beamTemplate;
+    private GameObject shotTemplate;
     private GameObject playerObject;
     private PlayerLaser laser;
     private PlayerEnergy energy;
@@ -20,6 +21,8 @@ public class LaserDeathTests : InputTestFixture
         base.Setup();
 
         beamTemplate = CreateBeamTemplate();
+        shotTemplate = new GameObject("ShotTemplate");
+        shotTemplate.AddComponent<LineRenderer>();
 
         playerObject = new GameObject("Player");
         playerObject.SetActive(false);
@@ -29,6 +32,7 @@ public class LaserDeathTests : InputTestFixture
         health = playerObject.GetComponent<PlayerHealth>();
         playerObject.GetComponent<Rigidbody>().useGravity = false;
         TestUtil.SetField(laser, "beamPrefab", beamTemplate);
+        TestUtil.SetField(laser, "shotPrefab", shotTemplate);
         TestUtil.SetField(energy, "startingEnergy", 50f);
         PlayerDeathHandler death = playerObject.AddComponent<PlayerDeathHandler>();
         TestUtil.SetField(death, "disableOnDeath", new Behaviour[] { laser });
@@ -39,6 +43,8 @@ public class LaserDeathTests : InputTestFixture
     {
         Object.Destroy(playerObject);
         Object.Destroy(beamTemplate);
+        Object.Destroy(shotTemplate);
+        foreach (LineRenderer line in Object.FindObjectsByType<LineRenderer>(FindObjectsInactive.Include, FindObjectsSortMode.None)) Object.Destroy(line.gameObject);
         foreach (LaserBeamVisual beam in Object.FindObjectsByType<LaserBeamVisual>(FindObjectsSortMode.None)) Object.Destroy(beam.gameObject);
         base.TearDown();
     }
@@ -71,6 +77,25 @@ public class LaserDeathTests : InputTestFixture
         ParticleSystem.MainModule main = system.main;
         main.playOnAwake = false;
         return system;
+    }
+
+    // 進入 Boss 戰的轉場期間 (相機移動中) 不能使用武器：發射中會被中斷，轉場結束後按住射擊鍵即可繼續發射
+    [UnityTest]
+    public IEnumerator BossTransition_LocksWeaponUntilTransitionEnds()
+    {
+        TestUtil.SetField(laser, "bossTransitionLockDuration", 0.3f);
+        Mouse mouse = InputSystem.AddDevice<Mouse>();
+        Press(mouse.leftButton);
+        yield return null;
+        yield return null;
+        Assert.IsTrue(laser.IsFiring, "precondition: laser should be firing while LMB is held");
+
+        laser.OnCombatPhaseChanged(CombatPhase.Boss);
+        yield return null;
+        Assert.IsFalse(laser.IsFiring, "the weapon must be locked during the boss transition");
+
+        yield return new WaitForSeconds(0.4f);
+        Assert.IsTrue(laser.IsFiring, "the weapon unlocks after the transition");
     }
 
     [UnityTest]

@@ -3,7 +3,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-// 產生範圍攻擊的爆炸粒子：火球 (加算發光) + 火花 (拉長亮點) + 煙霧 (半透明灰煙)。
+// 產生範圍攻擊的爆炸粒子 (卡通風格)：火球 (分段色階的實心圓團) + 火花 (拉長亮點) + 煙霧 (帶描邊的白灰雲團)。
+// 卡通感來自硬邊圓團貼圖 + 明暗兩階 + 分段變色，並以「先膨脹再縮小消失」取代半透明淡出。
+// 煙霧/火球貼圖也被飛彈尾煙、戰車落地煙塵共用，改這裡會一起變成卡通風格。
 // 所有數值以半徑 10 的範圍設計，AreaStrike 會依實際半徑等比例縮放整組特效。
 public static class AreaStrikeExplosionBuilder
 {
@@ -12,20 +14,28 @@ public static class AreaStrikeExplosionBuilder
 
     // 火球與火花的 HDR 亮度倍數 (粒子頂點色上限 1，亮度放在材質上才會觸發 Bloom)；
     // 火球亮度不能太高，否則在亮色地板上會被洗成白色看不出火的顏色
-    private const float FireBrightness = 1.6f;
+    private const float FireBrightness = 1.25f;
     private const float SparkBrightness = 4f;
     // 整組特效離地高度，避免煙霧貼圖切進地板出現一條硬邊
     private const float HeightAboveGround = 2f;
     // Soft Particles：粒子在離地面這個距離內逐漸淡出，消除貼圖與地板交界的硬邊 (需 URP 開啟 Depth Texture)；
     // 火球貼近地面，淡出距離太大會整團變透明，所以火球用較短的距離
-    private const float SmokeSoftFadeDistance = 4f;
-    private const float FireSoftFadeDistance = 1f;
+    private const float SmokeSoftFadeDistance = 1.5f;
+    private const float FireSoftFadeDistance = 0.5f;
+
+    // 落地煙塵的米色 (與戰車落地煙塵同色系)
+    private static readonly Color DustColor = new Color(0.9f, 0.82f, 0.68f);
+
+    // 卡通圓團貼圖：描邊佔半徑比例、暗面亮度、描邊亮度
+    private const float ToonOutlineWidth = 0.09f;
+    private const float ToonShadowShade = 0.68f;
+    private const float ToonOutlineShade = 0.28f;
 
     public static ParticleSystem Build(Transform parent, string folder)
     {
-        // 煙霧用高對比雜訊 (一團團輪廓)，火球用較飽滿的雜訊 (整團火光不破碎)
-        Texture2D puffTexture = GetOrCreatePuffTexture(folder + "/Explosion_Puff_Tex.asset", 0.3f, 0.75f);
-        Texture2D fireTexture = GetOrCreatePuffTexture(folder + "/Explosion_Fire_Tex.asset", 0f, 0.55f);
+        // 煙霧帶深色描邊 (漫畫雲團)，火球不描邊，靠分段色階表現
+        Texture2D puffTexture = GetOrCreateToonPuffTexture(folder + "/Explosion_Puff_Tex.asset", true);
+        Texture2D fireTexture = GetOrCreateToonPuffTexture(folder + "/Explosion_Fire_Tex.asset", false);
         Texture2D dotTexture = GetOrCreateDotTexture(folder + "/Explosion_Dot_Tex.asset");
 
         // 火球用 Alpha 混合：加算混合疊在亮色地板上會變白，Alpha 混合才保得住橘紅色
@@ -43,23 +53,64 @@ public static class AreaStrikeExplosionBuilder
         return fire;
     }
 
-    // 火球：瞬間爆開後快速減速，顏色白黃 → 橘 → 暗紅並淡出
+    // 只有煙塵、沒有火光的落地衝擊 (例如 Boss 吐出的碎石落地)：米色卡通雲團貼地往外滾開 + 少量往上翻起
+    public static ParticleSystem BuildDust(Transform parent, string folder)
+    {
+        Texture2D puffTexture = GetOrCreateToonPuffTexture(folder + "/Explosion_Puff_Tex.asset", true);
+        Material smokeMaterial = GetOrCreateParticleMaterial(folder + "/Explosion_Smoke.mat", puffTexture, 1f, false, 5);
+        EnableSoftParticles(smokeMaterial, SmokeSoftFadeDistance);
+
+        ParticleSystem ring = CreateSystem(parent, "Explosion");
+        ring.transform.localPosition = new Vector3(0f, HeightAboveGround, 0f);
+        ParticleSystem.MainModule ringMain = SetupMain(ring, 0f, new Vector2(1f, 1.6f), new Vector2(18f, 30f), new Vector2(5f, 9f), 0f, 40);
+        ringMain.startRotation = new ParticleSystem.MinMaxCurve(0f, Mathf.PI * 2f);
+        SetBurst(ring, 16);
+        ParticleSystem.ShapeModule ringShape = ring.shape;
+        ringShape.enabled = true;
+        ringShape.shapeType = ParticleSystemShapeType.Circle;
+        ringShape.radius = 3f;
+        ringShape.radiusThickness = 0f;
+        // Circle 預設在 XY 平面，轉成貼地的 XZ 平面往外滾開
+        ringShape.rotation = new Vector3(90f, 0f, 0f);
+        SetDamping(ring, 3f, 0.3f);
+        SetPopSizeCurve(ring, 0.5f, 1.5f, 0.3f);
+        SetColorGradient(ring,
+            new[] { new GradientColorKey(DustColor, 0f), new GradientColorKey(DustColor * 1.08f, 1f) },
+            new[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(1f, 1f) });
+        SetupRenderer(ring, smokeMaterial, ParticleSystemRenderMode.Billboard);
+
+        ParticleSystem plume = CreateSystem(ring.transform, "Plume");
+        ParticleSystem.MainModule plumeMain = SetupMain(plume, 0.05f, new Vector2(1.2f, 1.8f), new Vector2(4f, 9f), new Vector2(6f, 10f), -0.1f, 20);
+        plumeMain.startRotation = new ParticleSystem.MinMaxCurve(0f, Mathf.PI * 2f);
+        SetBurst(plume, 8);
+        SetHemisphereShape(plume, 4f);
+        SetDamping(plume, 2.5f, 0.2f);
+        SetPopSizeCurve(plume, 0.4f, 1.3f, 0.35f);
+        SetColorGradient(plume,
+            new[] { new GradientColorKey(DustColor * 0.92f, 0f), new GradientColorKey(DustColor, 1f) },
+            new[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(1f, 1f) });
+        SetupRenderer(plume, smokeMaterial, ParticleSystemRenderMode.Billboard);
+        return ring;
+    }
+
+    // 火球：瞬間爆開後快速減速，顏色分段跳變 亮黃 → 橘 → 紅 → 深灰 (燒成黑煙)，最後縮小消失
     private static void SetupFire(ParticleSystem system, Material material)
     {
-        ParticleSystem.MainModule main = SetupMain(system, 0f, new Vector2(0.4f, 0.8f), new Vector2(12f, 28f), new Vector2(7f, 14f), -0.3f, 80);
-        SetBurst(system, 45);
+        ParticleSystem.MainModule main = SetupMain(system, 0f, new Vector2(0.5f, 0.9f), new Vector2(12f, 26f), new Vector2(7f, 13f), -0.4f, 80);
+        SetBurst(system, 40);
         SetHemisphereShape(system, 4f);
         SetDamping(system, 5f, 0.25f);
-        SetSizeCurve(system, 0.6f, 1.4f);
+        SetPopSizeCurve(system, 0.5f, 1.3f, 0.3f);
         SetColorGradient(system,
             new[]
             {
-                new GradientColorKey(new Color(1f, 0.9f, 0.5f), 0f),
-                new GradientColorKey(new Color(1f, 0.5f, 0.08f), 0.2f),
-                new GradientColorKey(new Color(0.75f, 0.15f, 0.03f), 0.55f),
-                new GradientColorKey(new Color(0.15f, 0.05f, 0.03f), 1f)
+                new GradientColorKey(new Color(1f, 0.95f, 0.45f), 0.18f),
+                new GradientColorKey(new Color(1f, 0.6f, 0.08f), 0.4f),
+                new GradientColorKey(new Color(0.95f, 0.22f, 0.05f), 0.65f),
+                new GradientColorKey(new Color(0.25f, 0.2f, 0.22f), 1f)
             },
-            new[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0.95f, 0.45f), new GradientAlphaKey(0f, 1f) });
+            new[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(1f, 1f) },
+            GradientMode.Fixed);
         main.startRotation = new ParticleSystem.MinMaxCurve(0f, Mathf.PI * 2f);
 
         SetupRenderer(system, material, ParticleSystemRenderMode.Billboard);
@@ -80,18 +131,18 @@ public static class AreaStrikeExplosionBuilder
         renderer.lengthScale = 1f;
     }
 
-    // 煙霧：比火光稍晚出現，緩慢上升、旋轉、擴散後淡出
+    // 煙霧：比火光稍晚出現，白灰色雲團緩慢上升、旋轉、膨脹後縮小消失
     private static void SetupSmoke(ParticleSystem system, Material material)
     {
-        ParticleSystem.MainModule main = SetupMain(system, 0.1f, new Vector2(1.8f, 2.8f), new Vector2(4f, 10f), new Vector2(10f, 16f), -0.15f, 50);
+        ParticleSystem.MainModule main = SetupMain(system, 0.12f, new Vector2(1.4f, 2.2f), new Vector2(4f, 10f), new Vector2(9f, 14f), -0.2f, 50);
         main.startRotation = new ParticleSystem.MinMaxCurve(0f, Mathf.PI * 2f);
-        SetBurst(system, 24);
+        SetBurst(system, 15);
         SetHemisphereShape(system, 6f);
         SetDamping(system, 2.5f, 0.2f);
-        SetSizeCurve(system, 0.6f, 1.6f);
+        SetPopSizeCurve(system, 0.4f, 1.4f, 0.35f);
         SetColorGradient(system,
-            new[] { new GradientColorKey(new Color(0.42f, 0.37f, 0.34f), 0f), new GradientColorKey(new Color(0.62f, 0.62f, 0.64f), 1f) },
-            new[] { new GradientAlphaKey(0f, 0f), new GradientAlphaKey(0.8f, 0.15f), new GradientAlphaKey(0.5f, 0.6f), new GradientAlphaKey(0f, 1f) });
+            new[] { new GradientColorKey(new Color(0.55f, 0.52f, 0.55f), 0f), new GradientColorKey(new Color(0.95f, 0.95f, 0.97f), 0.35f), new GradientColorKey(new Color(0.85f, 0.85f, 0.9f), 1f) },
+            new[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(1f, 1f) });
 
         ParticleSystem.RotationOverLifetimeModule rotation = system.rotationOverLifetime;
         rotation.enabled = true;
@@ -153,18 +204,25 @@ public static class AreaStrikeExplosionBuilder
         limitVelocity.dampen = dampen;
     }
 
-    private static void SetSizeCurve(ParticleSystem system, float start, float end)
+    // 卡通式消失：先膨脹到 peak (在 peakTime 時)，再縮小到 0，取代半透明淡出
+    private static void SetPopSizeCurve(ParticleSystem system, float start, float peak, float peakTime)
     {
         ParticleSystem.SizeOverLifetimeModule sizeOverLifetime = system.sizeOverLifetime;
         sizeOverLifetime.enabled = true;
-        sizeOverLifetime.size = new ParticleSystem.MinMaxCurve(1f, AnimationCurve.EaseInOut(0f, start, 1f, end));
+        AnimationCurve curve = new AnimationCurve(
+            new Keyframe(0f, start, 0f, 0f),
+            new Keyframe(peakTime, peak, 0f, 0f),
+            new Keyframe(1f, 0f, -1.5f, 0f));
+        sizeOverLifetime.size = new ParticleSystem.MinMaxCurve(1f, curve);
     }
 
-    private static void SetColorGradient(ParticleSystem system, GradientColorKey[] colorKeys, GradientAlphaKey[] alphaKeys)
+    // Fixed 模式的漸層會在色鍵之間直接跳色，做出卡通的分段色階
+    private static void SetColorGradient(ParticleSystem system, GradientColorKey[] colorKeys, GradientAlphaKey[] alphaKeys, GradientMode mode = GradientMode.Blend)
     {
         ParticleSystem.ColorOverLifetimeModule colorOverLifetime = system.colorOverLifetime;
         colorOverLifetime.enabled = true;
         Gradient gradient = new Gradient();
+        gradient.mode = mode;
         gradient.SetKeys(colorKeys, alphaKeys);
         colorOverLifetime.color = gradient;
     }
@@ -217,21 +275,31 @@ public static class AreaStrikeExplosionBuilder
         EditorUtility.SetDirty(material);
     }
 
-    // 雲團貼圖：多層 Perlin 雜訊乘上圓形衰減；densityMin/Max 決定雜訊對比 (區間越窄、輪廓越分明)
-    private static Texture2D GetOrCreatePuffTexture(string path, float densityMin, float densityMax)
+    // 卡通圓團貼圖：外緣略帶起伏的硬邊圓 + 左上亮右下暗的兩階明暗 (+ 可選的深色描邊)。
+    // 只在邊緣留 1~2 像素的反鋸齒，避免放大後鋸齒明顯
+    private static Texture2D GetOrCreateToonPuffTexture(string path, bool outline)
     {
         Texture2D texture = GetOrCreateTextureAsset(path, NoiseTextureSize, out bool isNew);
         float half = (NoiseTextureSize - 1) * 0.5f;
+        float pixel = 1f / half;
         for (int y = 0; y < NoiseTextureSize; y++)
         {
             for (int x = 0; x < NoiseTextureSize; x++)
             {
-                float distance = Mathf.Sqrt((x - half) * (x - half) + (y - half) * (y - half)) / half;
-                float falloff = Mathf.Pow(Mathf.Clamp01(1f - distance), 1.5f);
-                float noise = FractalNoise(x / (float)NoiseTextureSize, y / (float)NoiseTextureSize);
-                float shade = Mathf.Lerp(0.55f, 1f, noise);
-                float density = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(densityMin, densityMax, noise));
-                texture.SetPixel(x, y, new Color(shade, shade, shade, falloff * density));
+                float u = (x - half) / half;
+                float v = (y - half) / half;
+                float angle = Mathf.Atan2(v, u);
+                // 外緣做成幾個圓弧鼓起，看起來像一團雲而不是正圓
+                float edge = 0.9f + 0.06f * Mathf.Sin(angle * 5f) + 0.03f * Mathf.Sin(angle * 9f + 1.3f);
+                float distance = Mathf.Sqrt(u * u + v * v) / edge;
+                float alpha = Mathf.Clamp01((1f - distance) / (pixel * 1.5f));
+
+                // 往左上偏移的圓之外就是暗面 (月牙形陰影)
+                float lit = Mathf.Sqrt((u + 0.22f) * (u + 0.22f) + (v - 0.22f) * (v - 0.22f)) / edge;
+                float shade = Mathf.Lerp(1f, ToonShadowShade, Mathf.Clamp01((lit - 0.95f) / (pixel * 2f)));
+                if (outline) shade = Mathf.Lerp(shade, ToonOutlineShade, Mathf.Clamp01((distance - (1f - ToonOutlineWidth)) / (pixel * 1.5f)));
+
+                texture.SetPixel(x, y, new Color(shade, shade, shade, alpha));
             }
         }
         return SaveTexture(texture, path, isNew);
@@ -250,20 +318,6 @@ public static class AreaStrikeExplosionBuilder
             }
         }
         return SaveTexture(texture, path, isNew);
-    }
-
-    private static float FractalNoise(float u, float v)
-    {
-        float sum = 0f;
-        float amplitude = 0.5f;
-        float frequency = 4f;
-        for (int octave = 0; octave < 4; octave++)
-        {
-            sum += amplitude * Mathf.PerlinNoise(u * frequency + 13.7f * octave, v * frequency + 7.3f * octave);
-            amplitude *= 0.5f;
-            frequency *= 2f;
-        }
-        return Mathf.Clamp01(sum / 0.9375f);
     }
 
     private static Texture2D GetOrCreateTextureAsset(string path, int size, out bool isNew)

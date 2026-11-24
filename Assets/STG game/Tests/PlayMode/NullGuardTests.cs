@@ -30,6 +30,23 @@ public class NullGuardTests
     }
 
     [UnityTest]
+    public IEnumerator PlayerLaser_MissingShotPrefab_LogsErrorAndDisables()
+    {
+        GameObject beam = new GameObject("Beam");
+        subject = new GameObject("Player");
+        subject.SetActive(false);
+        PlayerLaser laser = subject.AddComponent<PlayerLaser>();
+        TestUtil.SetField(laser, "beamPrefab", beam);
+
+        LogAssert.Expect(LogType.Error, new Regex("shotPrefab"));
+        subject.SetActive(true);
+        yield return null;
+
+        Assert.IsFalse(laser.enabled);
+        Object.Destroy(beam);
+    }
+
+    [UnityTest]
     public IEnumerator PlayerLaser_BeamPrefabWithoutVisual_LogsErrorAndDisables()
     {
         GameObject notABeam = new GameObject("NotABeam");
@@ -37,6 +54,7 @@ public class NullGuardTests
         subject.SetActive(false);
         PlayerLaser laser = subject.AddComponent<PlayerLaser>();
         TestUtil.SetField(laser, "beamPrefab", notABeam);
+        TestUtil.SetField(laser, "shotPrefab", notABeam);
 
         LogAssert.Expect(LogType.Error, new Regex("LaserBeamVisual"));
         subject.SetActive(true);
@@ -73,7 +91,7 @@ public class NullGuardTests
     }
 
     [UnityTest]
-    public IEnumerator ApacheGunship_MissingBodyMesh_LogsErrorAndDisables()
+    public IEnumerator ApacheGunship_MissingBodyRenderer_LogsErrorAndDisables()
     {
         subject = new GameObject("Apache");
         subject.SetActive(false);
@@ -82,7 +100,7 @@ public class NullGuardTests
         model.transform.SetParent(subject.transform);
         TestUtil.SetField(gunship, "modelRoot", model);
 
-        LogAssert.Expect(LogType.Error, new Regex("bodyMesh"));
+        LogAssert.Expect(LogType.Error, new Regex("bodyRenderer"));
         subject.SetActive(true);
         yield return null;
 

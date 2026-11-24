@@ -6,15 +6,21 @@ using UnityEngine.Rendering;
 // 一鍵建立：
 // 1. 玩家雷射外觀 prefab：VolumetricLines 光劍光束 + 槍口光暈 + 命中火花 (顏色由 PlayerLaser 依極性設定)
 // 2. 敵人爆炸 prefab：複製 AreaStrike 的爆炸粒子並改成生成即播放，供砲台等敵人被擊毀時使用
+// 3. 玩家一般射擊的光束子彈 prefab：一條 LineRenderer，用光暈材質拉長成一小段光 (顏色由 PlayerLaser 依極性設定)
 // 粒子材質沿用 AreaStrike 與極性子彈建置工具產生的材質，請先執行那兩個工具。
 public static class PlayerLaserBuilder
 {
     private const string BeamPrefabPath = "Assets/STG game/resources/prefab/PlayerLaserBeam.prefab";
     private const string ExplosionPrefabPath = "Assets/STG game/resources/prefab/EnemyExplosion.prefab";
     private const string AreaStrikePrefabPath = "Assets/STG game/resources/prefab/AreaStrike.prefab";
-    private const string LineSourcePath = "Assets/STG game/resources/shooting item/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-LightSaber.prefab";
+    private const string LineSourcePath = "Assets/STG game/resources/model/shooting item/VolumetricLines/BuiltInRenderPipeline/Prefabs/SingleLine-LightSaber.prefab";
     private const string SparkMaterialPath = "Assets/STG game/resources/prefab/AreaStrike/Explosion_Spark.mat";
     private const string GlowMaterialPath = "Assets/STG game/resources/prefab/BulletPolarity/Bullet_Glow.mat";
+    private const string ShotPrefabPath = "Assets/STG game/resources/prefab/PlayerShot.prefab";
+    private const string ShotMaterialPath = "Assets/STG game/resources/prefab/PlayerShot.mat";
+    private const float ShotWidth = 1.6f;
+    // 場地地板很亮，子彈要夠亮 (HDR，觸發 Bloom) 才看得清楚
+    private static readonly Color ShotBrightness = new Color(4f, 4f, 4f, 1f);
 
     [MenuItem("Tools/STG/Build Player Laser")]
     private static void Build()
@@ -29,8 +35,63 @@ public static class PlayerLaserBuilder
 
         BuildBeam(sparkMaterial, glowMaterial);
         BuildExplosion();
+        BuildShot(glowMaterial);
         AssetDatabase.SaveAssets();
-        Debug.Log("[PlayerLaserBuilder] 已更新 " + BeamPrefabPath + " 與 " + ExplosionPrefabPath);
+        Debug.Log("[PlayerLaserBuilder] 已更新 " + BeamPrefabPath + "、" + ExplosionPrefabPath + " 與 " + ShotPrefabPath);
+    }
+
+    // 光暈貼圖沿線段拉長 (Stretch)：中間亮、頭尾與兩側淡出，看起來就是一小段光束
+    private static void BuildShot(Material glowMaterial)
+    {
+        GameObject root = new GameObject("PlayerShot");
+        try
+        {
+            LineRenderer line = root.AddComponent<LineRenderer>();
+            line.sharedMaterial = GetOrCreateShotMaterial(glowMaterial);
+            line.useWorldSpace = true;
+            line.positionCount = 2;
+            line.widthMultiplier = ShotWidth;
+            line.numCapVertices = 4;
+            line.alignment = LineAlignment.View;
+            line.textureMode = LineTextureMode.Stretch;
+            line.shadowCastingMode = ShadowCastingMode.Off;
+            line.receiveShadows = false;
+            PrefabUtility.SaveAsPrefabAsset(root, ShotPrefabPath);
+        }
+        finally
+        {
+            Object.DestroyImmediate(root);
+        }
+    }
+
+    // 複製光暈材質再調亮，不影響共用同一材質的敵方子彈
+    private static Material GetOrCreateShotMaterial(Material glowMaterial)
+    {
+        Material material = AssetDatabase.LoadAssetAtPath<Material>(ShotMaterialPath);
+        if (material == null)
+        {
+            material = new Material(glowMaterial);
+            AssetDatabase.CreateAsset(material, ShotMaterialPath);
+        }
+        else
+        {
+            material.CopyPropertiesFromMaterial(glowMaterial);
+        }
+
+        material.SetColor("_BaseColor", ShotBrightness);
+        // 加算混合：藍色子彈疊在淺藍地板上用一般混合幾乎看不到，加算後會發亮浮出來。
+        // 透過腳本設定不會經過 ShaderGUI，混合狀態要手動寫齊
+        material.SetFloat("_Surface", 1f);
+        material.SetFloat("_Blend", 2f);
+        material.SetFloat("_SrcBlend", (float)BlendMode.SrcAlpha);
+        material.SetFloat("_DstBlend", (float)BlendMode.One);
+        material.SetFloat("_SrcBlendAlpha", (float)BlendMode.One);
+        material.SetFloat("_DstBlendAlpha", (float)BlendMode.One);
+        material.SetFloat("_ZWrite", 0f);
+        material.SetOverrideTag("RenderType", "Transparent");
+        material.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+        EditorUtility.SetDirty(material);
+        return material;
     }
 
     private static void BuildBeam(Material sparkMaterial, Material glowMaterial)

@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 3429723497118206106}
   - component: {fileID: 3221150463616103828}
   - component: {fileID: 3239012670936818038}
+  - component: {fileID: 6758588595109783716}
   m_Layer: 0
   m_Name: EnemyTurret
   m_TagString: Untagged
@@ -167,6 +168,22 @@ MonoBehaviour:
   effectOffset: {x: 0, y: 3.5, z: 0}
   effectScale: 0.6
   effectLifetime: 3
+--- !u!114 &6758588595109783716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8731321667003501582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc52b1a9f40a1c349a648ab7918fe12c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+  holdDuration: 0.06
+  fadeDuration: 0.08
+  pulseInterval: 0.25
 --- !u!1001 &1483059214134660613
 PrefabInstance:
   m_ObjectHideFlags: 0

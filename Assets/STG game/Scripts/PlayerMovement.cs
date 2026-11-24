@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField, Tooltip("轉向面對移動方向的速度 (度/秒)")] private float rotationSpeed = 720f;
     [SerializeField, Tooltip("決定 WASD 前後左右方向的參考相機，預設抓場景中的 Up Camera")]
     private Transform directionReference;
+    [SerializeField, Tooltip("跟隨角色的視角下，A/D 原地轉向的速度 (度/秒)")] private float turnSpeed = 150f;
 
     [Header("Ground Stick")]
     [SerializeField, Tooltip("腳底往下偵測地面的距離")] private float groundCheckDistance = 0.15f;
@@ -42,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
 
     private bool hasFacingOverride;
     private Vector3 facingOverride;
+
+    // 跟隨角色的視角 (相機掛在角色身上) 改用「W/S 沿面向前後、A/D 轉向」，否則角色轉向會帶著相機一起轉，方向鍵跟著改變
+    private bool facingRelativeControls;
+    private float turnInput;
 
     private void Awake()
     {
@@ -93,7 +98,17 @@ public class PlayerMovement : MonoBehaviour
         if (keyboard.dKey.isPressed) horizontal += 1f;
         if (keyboard.aKey.isPressed) horizontal -= 1f;
 
-        moveDirection = (forwardDir * vertical + rightDir * horizontal).normalized;
+        if (facingRelativeControls)
+        {
+            Vector3 facingForward = Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
+            moveDirection = facingForward * vertical;
+            turnInput = horizontal;
+        }
+        else
+        {
+            moveDirection = (forwardDir * vertical + rightDir * horizontal).normalized;
+            turnInput = 0f;
+        }
         animator.SetBool(IsMovingHash, moveDirection.sqrMagnitude > 0f);
 
         bool dashPressed = keyboard.leftShiftKey.wasPressedThisFrame || keyboard.rightShiftKey.wasPressedThisFrame;
@@ -133,10 +148,18 @@ public class PlayerMovement : MonoBehaviour
         float verticalVelocity = IsGrounded() ? -groundedStickSpeed : rb.linearVelocity.y;
         rb.linearVelocity = new Vector3(horizontalVelocity.x, verticalVelocity, horizontalVelocity.z);
 
-        Vector3 facing = hasFacingOverride ? facingOverride : moveDirection;
-        if (!isDashing && facing.sqrMagnitude > 0f)
+        if (isDashing) return;
+
+        // 用 rb.rotation 直接指定角度，避免 MoveRotation 的物理內插對 Halo 等偏離中心的子物件造成延遲飄移
+        if (!hasFacingOverride && facingRelativeControls)
         {
-            // 用 rb.rotation 直接指定角度，避免 MoveRotation 的物理內插對 Halo 等偏離中心的子物件造成延遲飄移
+            rb.rotation *= Quaternion.Euler(0f, turnInput * turnSpeed * Time.fixedDeltaTime, 0f);
+            return;
+        }
+
+        Vector3 facing = hasFacingOverride ? facingOverride : moveDirection;
+        if (facing.sqrMagnitude > 0f)
+        {
             Quaternion targetRotation = Quaternion.LookRotation(facing, Vector3.up);
             rb.rotation = Quaternion.RotateTowards(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
         }
@@ -153,6 +176,12 @@ public class PlayerMovement : MonoBehaviour
     public void ClearFacingOverride()
     {
         hasFacingOverride = false;
+    }
+
+    // true = W/S 沿角色面向前後移動、A/D 原地轉向 (跟隨角色的視角)；false = WASD 以參考相機的方向移動
+    public void SetFacingRelativeControls(bool enabled)
+    {
+        facingRelativeControls = enabled;
     }
 
     // 從腳底往下打一條射線偵測是否貼地，貼地時強制蓋掉物理碰撞造成的浮空速度

@@ -9,7 +9,7 @@ using UnityEngine.Rendering;
 public static class StrikeMissileBuilder
 {
     private const string PrefabPath = "Assets/STG game/resources/prefab/StrikeMissile.prefab";
-    private const string MissileFolder = "Assets/STG game/resources/shooting item/BTM_Rockets_Missiles_Bombs/Prefabs/";
+    private const string MissileFolder = "Assets/STG game/resources/model/shooting item/BTM_Rockets_Missiles_Bombs/Prefabs/";
     private const string MissileName = "/RMB_16.prefab";
     private const string SmokeMaterialPath = "Assets/STG game/resources/prefab/AreaStrike/Explosion_Smoke.mat";
     private const string FlameMaterialPath = "Assets/STG game/resources/prefab/AreaStrike/Explosion_Spark.mat";

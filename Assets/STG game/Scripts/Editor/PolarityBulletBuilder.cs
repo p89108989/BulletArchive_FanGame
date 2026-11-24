@@ -9,7 +9,7 @@ using UnityEngine.Rendering;
 public static class PolarityBulletBuilder
 {
     private const string PrefabPath = "Assets/STG game/resources/prefab/EnemyBullet_SM05.prefab";
-    private const string SourceBodyMaterialPath = "Assets/STG game/resources/shooting item/Bullets Pack/Materials/Bullets_M.mat";
+    private const string SourceBodyMaterialPath = "Assets/STG game/resources/model/shooting item/Bullets Pack/Materials/Bullets_M.mat";
     private const string OutputFolder = "Assets/STG game/resources/prefab/BulletPolarity";
 
     // 顏色要夠飽和，乘上 HDR 亮度後才不會被 Bloom/色調映射洗成白色

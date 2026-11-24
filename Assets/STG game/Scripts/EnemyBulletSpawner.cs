@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class EnemyBulletSpawner : MonoBehaviour
+public class EnemyBulletSpawner : MonoBehaviour, ICombatPhaseListener
 {
     [Header("Bullet")]
     [SerializeField, Tooltip("要生成的子彈 Prefab (需帶有 EnemyBullet 元件)")] private GameObject bulletPrefab;
-    [SerializeField, Tooltip("子彈飛行速度 (m/s)")] private float bulletSpeed = 25f;
+    [SerializeField, Tooltip("子彈飛行速度 (m/s)")] private float bulletSpeed = 37.5f;
     [SerializeField, Tooltip("物件池預先建立的子彈數量")] private int poolPrewarmCount = 20;
     [SerializeField, Tooltip("每發子彈從這些屬性中隨機挑一種")] private BulletPolarity[] randomPolarities = { BulletPolarity.Blue, BulletPolarity.Yellow };
 
@@ -22,6 +22,7 @@ public class EnemyBulletSpawner : MonoBehaviour
     private GameObjectPool bulletPool;
     private int nextSpawnIndex;
     private Coroutine fireRoutine;
+    private bool isPaused;
 
     private void Awake()
     {
@@ -61,7 +62,7 @@ public class EnemyBulletSpawner : MonoBehaviour
 
     private void FireFromNextSpawnPoint()
     {
-        if (spawnPoints == null || spawnPoints.Length == 0 || target == null || bulletPrefab == null) return;
+        if (isPaused || spawnPoints == null || spawnPoints.Length == 0 || target == null || bulletPrefab == null) return;
 
         Transform spawnPoint = spawnPoints[nextSpawnIndex];
         nextSpawnIndex = (nextSpawnIndex + 1) % spawnPoints.Length;
@@ -74,6 +75,12 @@ public class EnemyBulletSpawner : MonoBehaviour
         GameObject bulletObject = bulletPool.Get(spawnPoint.position, Quaternion.identity);
         EnemyBullet bullet = bulletObject.GetComponent<EnemyBullet>();
         bullet.Launch(direction, bulletSpeed, PickRandomPolarity(), ReturnBulletToPool);
+    }
+
+    // Boss 戰期間砲台暫停發射 (計時照跑，回到一般戰鬥時直接接續)
+    public void OnCombatPhaseChanged(CombatPhase phase)
+    {
+        isPaused = phase == CombatPhase.Boss;
     }
 
     private BulletPolarity PickRandomPolarity()
