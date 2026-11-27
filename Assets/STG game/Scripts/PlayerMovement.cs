@@ -41,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
     private float nextDashTime;
     private Vector3 dashDirection;
 
+    private Vector3 pushDestination;
+    private float pushEndTime;
+
     private bool hasFacingOverride;
     private Vector3 facingOverride;
 
@@ -125,15 +128,25 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // 嘗試開始衝刺；衝刺中或冷卻中回傳 false。方向固定為觸發當下角色面對的方向
+    public float DashCooldown => dashCooldown;
+    // 衝刺還要等幾秒才能再用 (技能卡顯示冷卻用)
+    public float DashCooldownRemaining => Mathf.Max(0f, nextDashTime - Time.time);
+
+    // 嘗試開始衝刺；衝刺中或冷卻中回傳 false。
+    // 方向在觸發當下決定並固定：有按方向鍵就往方向鍵的方向 (射擊時角色會被鎖定面向，不能用面向判斷)，沒按才往角色面向；
+    // 角色同時轉向衝刺方向
     public bool TryStartDash()
     {
-        if (isDashing || Time.time < nextDashTime) return false;
+        if (isDashing || IsBeingPushed || Time.time < nextDashTime) return false;
 
         nextDashTime = Time.time + dashCooldown;
         isDashing = true;
         dashTimer = dashDuration;
-        dashDirection = transform.forward;
+        dashDirection = moveDirection.sqrMagnitude > 0f
+            ? moveDirection.normalized
+            : Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
+        // 衝刺很短，直接轉向衝刺方向 (不用 RotateTowards 慢慢轉)；衝刺期間 FixedUpdate 不再轉向，衝完才回到射擊/移動的面向
+        if (dashDirection.sqrMagnitude > 0f) rb.rotation = Quaternion.LookRotation(dashDirection, Vector3.up);
         animator.SetBool(IsDashingHash, true);
         playerHealth.GrantInvincibility(dashInvincibilityDuration);
         return true;
@@ -142,6 +155,17 @@ public class PlayerMovement : MonoBehaviour
     // 用物理引擎移動並轉向，讓角色維持在地板碰撞體上
     private void FixedUpdate()
     {
+        if (IsBeingPushed)
+        {
+            // 每一步依「剩餘距離 / 剩餘時間」重新算速度：被地面摩擦或碰撞拖慢時會自己補回來，準時推到目的地
+            Vector3 remaining = pushDestination - rb.position;
+            remaining.y = 0f;
+            Vector3 pushVelocity = remaining / Mathf.Max(pushEndTime - Time.time, Time.fixedDeltaTime);
+            float pushVertical = IsGrounded() ? -groundedStickSpeed : rb.linearVelocity.y;
+            rb.linearVelocity = new Vector3(pushVelocity.x, pushVertical, pushVelocity.z);
+            return;
+        }
+
         Vector3 horizontalVelocity = isDashing
             ? dashDirection * (moveSpeed * dashSpeedMultiplier)
             : moveDirection * moveSpeed;
@@ -163,6 +187,18 @@ public class PlayerMovement : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(facing, Vector3.up);
             rb.rotation = Quaternion.RotateTowards(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
         }
+    }
+
+    // 是否正被外力推送 (推送期間不吃移動輸入、也不能衝刺)
+    public bool IsBeingPushed => Time.time < pushEndTime;
+
+    // 在 duration 秒內把角色等速推到 destination (只看水平位置)，例如 Binah 潑水把玩家沖到場地最下方
+    public void PushTo(Vector3 destination, float duration)
+    {
+        pushDestination = destination;
+        pushEndTime = Time.time + Mathf.Max(duration, Time.fixedDeltaTime);
+        isDashing = false;
+        animator.SetBool(IsDashingHash, false);
     }
 
     // 由外部 (例如射擊時) 指定角色要面向的水平方向，優先於移動方向的轉向

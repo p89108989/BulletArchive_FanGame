@@ -1,0 +1,5282 @@
+fileFormatVersion: 2
+guid: 88e13445538316e4f88b533fca25a4ec
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CCG_Bg_22px
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 657
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8758c7f5c2f024f833c9a678324899
+      internalID: -920796280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_8px
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1376
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32879500fd88e004a9524a0fd821afe7
+      internalID: 2141418039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BgLogEffect
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1014
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 44, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dba78ea685cdfd428b6cb078085fd2b
+      internalID: -858895972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Btn_Dim
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1273
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 26, z: 26, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b825c63c04dc1534c9e5d0843beb81f2
+      internalID: -777592032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnAccept
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 757
+        width: 224
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 112, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1dfadd60ef9d94eb65ecb6d0e23fd1
+      internalID: 1368476743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnBg
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 912
+        width: 100
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 48, y: 46, z: 48, w: 46}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4155fafb13c20041ac3b1134f49a590
+      internalID: -1505523407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnClose
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1242
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5256872a78ab243a439a03e3f65fda
+      internalID: 1592392954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnDisable
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 705
+        width: 224
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 102, y: 0, z: 114, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0706e60dcf5884141a19e9ee2de07653
+      internalID: 1090032395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnDumpCards
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1284
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771dc385240d26d44924c48ab9fe40c5
+      internalID: -782087498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnFuntion
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1384
+        width: 69
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 26, z: 26, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1fea59052b9dc43b71cbe4651f905e
+      internalID: 1790731104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnMenu
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1714
+        width: 50
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 0, z: 14, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cddc6cd16639440a4ff42dc9058b41
+      internalID: 1904462710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnMenu_Worldrade
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 992
+        width: 64
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 0, z: 30, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a31060e90635064cafb6fde1f044cd8
+      internalID: 100763107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnMenuDeco
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1368
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 16, z: 0, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8241115aeed7c614b99ec080a87a73f2
+      internalID: -1526030405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnMove
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1041
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 44, z: 36, w: 30}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1649dec89d8394409ac85209cf84d42
+      internalID: -1485769146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnNext
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 613
+        width: 224
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 116, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0234a66d1ed7f7429ece502789d2de8
+      internalID: -1583104609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnStageArrow
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 601
+        width: 155
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19096fe65d0c73c469d88a0f99886f98
+      internalID: -738750849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_BtnStand
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 224
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 116, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67036442d31d1804dafffe542fe88cdc
+      internalID: 1293404592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_CardReward
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1714
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 44, z: 22, w: 44}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ae64ccce7747b4fb6887ee8d6a8aec
+      internalID: 2139982561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_CardTooltip
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 562
+        width: 255
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 15, z: 232, w: 124}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ca4360909c8ee4bad5d65725b9f7ad
+      internalID: 1283091837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Condition
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 1145
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1916a8e01da2ce4408265eb4e7dc2c44
+      internalID: -893238510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Cost
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1706
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882aa8f4debf1b040a4166f3171d186a
+      internalID: -1482935012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_DeckMyCardInfo
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1491
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a936af458287f489ba5ec835a1982f
+      internalID: -1467339548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Dialog
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 757
+        width: 214
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 152, y: 54, z: 54, w: 84}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbfe9f53e28c5b4a9c0cbcb98163832
+      internalID: -60025949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_DumpCards
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1491
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98ad00ddbea6984a80f85a5b4d9dce0
+      internalID: -365176994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_DumpCardsFrame
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1543
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e2033154db5054fa7e6045756e6b1a
+      internalID: -144750079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_EffectTab
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1018
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 0, z: 32, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3395e740f44a8d040871838e5b41784f
+      internalID: 268695341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_EffectType
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1515
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bbf447aeddfcd4990cf56901275d03
+      internalID: -369402028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Ex_Skill
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1178
+        width: 124
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890b52172a44910408ad0f6ed8e32178
+      internalID: 1262128167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_ExitMyDeck
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1122
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8f84967f06a2b45b9e45e360e20a0c
+      internalID: 564508922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_GearCount
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 232
+        width: 94
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f731a41ccfac2a140baa35648a42d38d
+      internalID: -645006721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_GearItem
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 601
+        width: 181
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f376aac829ba6a74195b5ff8b7141ccd
+      internalID: 1724265463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Hediff
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1588
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f914080904dbcb40ad8812f3596df35
+      internalID: -441736565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_HediffFrame
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1724
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1cca8ab34114b4b81a29ba54ed85dd
+      internalID: 217637633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_HediffTab
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1102
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 26, z: 26, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72cf2a8c4153894f83c61aa064d687c
+      internalID: 520662435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_HpValue
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1319
+        width: 109
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea24569f284edc4c9145ae727b4788a
+      internalID: 1144625327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_HudReinforce
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1645
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 26, z: 26, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7f21a3ebcf9024dadb1864f6859db1
+      internalID: 270220840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_HudStage
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 461
+        width: 603
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 555, y: 54, z: 34, w: 34}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f2623c004fafb4dbc9bf019865de2d
+      internalID: -590175980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_InfoLabel
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1258
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 42, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee595b6fd1172740a34b23b55de00cb
+      internalID: -945397670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_InfoTab
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 962
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cc1e9fa94b8ee48b29b4cd0fac2f03
+      internalID: -1007785090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Log_Mask
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1515
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a78c13ffb5f4a47b0438fd8c42883f
+      internalID: -390934774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_LogDefault
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1376
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 12, z: 32, w: 42}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c929ea461ac7f4f8c7b52f05843d18
+      internalID: -702340612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_MapPerk_Off
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1632
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 0, z: 40, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7749c8f164f155b45af628fb29ee80db
+      internalID: 109316686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_MapPerk_On
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 944
+        width: 92
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 0, z: 40, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee565bbad34bf04d9f6a0e448730c4c
+      internalID: -223358884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_MyCardList
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1129
+        width: 71
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 48, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c999c5efc99034fb310f29b3ce4335
+      internalID: 1498553001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_NamePlate
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1802
+        width: 86
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 46, z: 60, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b26cdbee031f1f408933d6948c7890a
+      internalID: 1828188937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Passive_Skill
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1259
+        width: 116
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31a1f5ca55eb3e408386b7243205732
+      internalID: 652822888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_RestStageNotice
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1634
+        width: 111
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 0, z: 74, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a474b435fd04f494893ae9cb8dc0812e
+      internalID: 2065750197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Skill_EX
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1122
+        width: 120
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e965d16432249458ad401a8471b5db
+      internalID: -1620148234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_Skill_Passive
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1506
+        width: 110
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a908a7a8092b334ca9a153e6fe41789
+      internalID: -393735262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_SkillPlate
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1634
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 42, y: 42, z: 42, w: 42}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8989ceeba255fd409b84e0933dbd17c
+      internalID: -1773169620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_StageComplete
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 613
+        width: 96
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 44, y: 0, z: 44, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92885b32a72511c479b4670db7ee7065
+      internalID: -1132054817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_TabComplete
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1193
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 28, z: 28, w: 28}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209b40d374bcdfa49b71ae1f9e8c5a81
+      internalID: -1423683991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_TargetCardCheck
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1475
+        width: 175
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcbf532202655d459b8584fb3a712a9
+      internalID: 1739353473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_ToastLogAlly
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 846
+        width: 205
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 16, z: 182, w: 44}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59ffe7768f9aca448cd8cf3463a2ebf
+      internalID: 1455005840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_ToastLogDefault
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 820
+        width: 205
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 16, z: 182, w: 44}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8099c77a393d8b347acf7893e040dfe9
+      internalID: 810481334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_ToastLogEnemy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1568
+        width: 205
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 16, z: 182, w: 44}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a1d3496f76a7647be2426968010bc4
+      internalID: 554300801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_ToastMaster
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 750
+        width: 284
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 162, y: 0, z: 116, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2caa1ae45e46449a5c2f85d9aafc66
+      internalID: 96385069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Bg_UseCost
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1080
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 0, z: 32, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1568ee61d5e9c4e9656e83ed81f010
+      internalID: -1499878252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_BottomDeco_Wave
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 820
+        width: 676
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b603f2ca3810154aaf113cb4027a002
+      internalID: -770634184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_Active
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1257
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 32, z: 24, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43fbcd315eb7f94ba9775eecdd017db
+      internalID: 2066559430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_BattleBtn
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 846
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c223fa0872e254a9a39fe8b2df6fe5
+      internalID: -1418747628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_Disable
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 461
+        width: 217
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 104, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373768086c5905946a4f51b739fc0f09
+      internalID: -178693844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_Enable
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 461
+        width: 217
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 104, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d2a21398892ae4f958ae86b32bdc31
+      internalID: -118517927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_Home
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1260
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85138a7fee3ae0749a46ddbbdf516595
+      internalID: -198030666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_HudLog
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1118
+        width: 140
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be48e50864ce6834082c35c61264b9cd
+      internalID: 1331717040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_HudPause
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 998
+        width: 140
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5976a7ce1a7685741ab0742d338b1cab
+      internalID: 1820850094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_HudSpeed_x1
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1368
+        width: 114
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c0d90fda7e2b0478e3b616f7b5c430
+      internalID: -1510182794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_HudSpeed_x2
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1392
+        width: 114
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c5d87ced1d2184cb38d1b331968e53
+      internalID: -605977575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_Info
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1383
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abff449c5122bce4ba9c66b4f801bec1
+      internalID: -2095744673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_InfoTab
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 1008
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ae5f3b105b16246a056abd4374fbdf
+      internalID: -1625792022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_Settig
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1445
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8f48bca45344344b8412e419822f53
+      internalID: 16671405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_SortMyCard
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1026
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 28, z: 28, w: 28}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b2363d977fb444b8cf63a60f7f48dd
+      internalID: -1529426909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_TurnEnd
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 901
+        width: 217
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 104, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8391e478341e64ba6251c01aa19adf
+      internalID: -752767041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_TurnIn
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1256
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 32, z: 24, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6ca26c9e0926346a8470e8d09faf88
+      internalID: 107923091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_TurnOut
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1216
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 32, z: 24, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbcf03b6d0496944ab37b550efce6d2
+      internalID: 1725639319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Btn_TurnProgress
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 461
+        width: 217
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 104, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c97e853b8a22944a7d06a0950c7e61
+      internalID: 1986142599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Effect_CostUse
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1324
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcd7412036fce04ea50e093e629ca28
+      internalID: -1415194489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Arrow_Big
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 844
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb3f810772e8e249bcb7589216a19b1
+      internalID: -1936039601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ArrowChange
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 962
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4d2162fdbc0464590898eb06848155
+      internalID: 939200706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_BattleLog
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1313
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10faa01da4da14e48a9a26e34d712473
+      internalID: 1531418819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_BattleLog_Small
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 1164
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f15b0750517aa4c857ba306c7a7fb7
+      internalID: -23391363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_BattlePause
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 940
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35424c9a3fdfb6e47b705bc927dd6025
+      internalID: 843451925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Big_Damage
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1041
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2e984daed9a1543a01ef50b20fbd58
+      internalID: -1826220060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Big_Heal
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1041
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44de5a08c3a33d42a09611a2fcc40fc
+      internalID: -1651006820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Big_Shield
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1123
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87821e3c2987c0942a222a69c9f37b89
+      internalID: -2005113412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_BossBattle
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1036
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451d4c27ed5901246a735a5b4e7da17d
+      internalID: 345839872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Change_Small
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1567
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b605ac59d6eca194498c522f88128e91
+      internalID: -2117503938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Check
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1092
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1dc27a48fb9834198a5422cac5adb5
+      internalID: -812557221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Close
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1258
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753c0851af60bb547bcc85abd49ede7a
+      internalID: -2019523921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Cost
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1148
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68616bf52b894e440b3b396384539ad6
+      internalID: -1420225148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_CountDurability
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 1361
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee17a8800bca1b4cbb6cec6750d5bfe
+      internalID: 1368625461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Damage
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1158
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60325b385db1b04fa8f52e70a78da9d
+      internalID: 991013273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Dump
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 1048
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa7f89756dedd94b8138b2e7247bbd9
+      internalID: 1603550431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_DumpBig
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1315
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39553bd6ef824745b9bff9c3b71df1c
+      internalID: -1869593394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Enemy
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1172
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b062fae0d5f2f504085f6bfa56921db1
+      internalID: -782069561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Exit
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 1114
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eb5d4bfbffa0c4fb30203516afc92d
+      internalID: 2120033097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_GoPass
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1082
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbf71728d1c18e4094f5a6235ba2804
+      internalID: 1630595422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Heal
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1198
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f13098b12bc72b45a5c61cb8296ba50
+      internalID: -304160388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Hp_Ally
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 633
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf612699be398a42a00e13ae5fc8f8d
+      internalID: -1626516101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_MyDeck
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1079
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e02aba9597cc66448d8448719a68e14
+      internalID: -1485751835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_NormalBattle
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1026
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738cf20a0a7555040a397a9bfa7aba2a
+      internalID: -289890900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Pass
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859ca339c64139e4582d4884f6d59311
+      internalID: 1317514082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Reinforce
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1314
+        width: 61
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e8a4b405885c940bfecef616c6f654
+      internalID: 1622776645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ReplaceCards
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 952
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6636b6d0a3b57fe47ab63d6a45a7f384
+      internalID: 1478191251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ReRoll
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1127
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42254a673cacf31469aa508592e1cec3
+      internalID: -1385371472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Reset
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 886
+        width: 77
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbc208dfc59a8846811fb79e7b47f60
+      internalID: -1836607628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Rest
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 1018
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afef959fe6cbaa4ebc8efdb4039326a
+      internalID: -2136041325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Return
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1013
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf3f89de09f4764babfad2519fd6489
+      internalID: -909760264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Revive
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 952
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ac8738cfd0de143a09d1f10004a715
+      internalID: -1903906560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ReviveBig
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1129
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec17df30491f36d46b3f0560094e3de9
+      internalID: 1522681036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Scenario
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 1048
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44e3920d81d8974db597a20ba2c0f18
+      internalID: -1485983472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Shield
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 1154
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d738b6c432171e43b12ab4d92556739
+      internalID: -2128517708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Shift
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 982
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c47c52026ae81418643d75440d7364
+      internalID: 840008120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Sort
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 705
+        width: 92
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30aa9e2da705494dae8d4833db41248
+      internalID: 775588713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_StageArrow
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 904
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b4100856a677041aaf1d718a476392
+      internalID: 833280244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Stamp
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1142
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e2ad1171c035041b88db13e272229e
+      internalID: 872938516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ToastHeal
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 982
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1bf527c0041a549a9fab8100c1f6e0
+      internalID: 991923970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ToastNotice
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 886
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3124175a16716479c5c91935c5be3f
+      internalID: 1300153424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_Turn
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 947
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b546900211fc774592bcc14c6c2084e
+      internalID: -1035379606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_TurnEnd
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 886
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a38d246005fae34fbbf1542f64e99ea
+      internalID: -718070660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_TurnProgress
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1242
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf838237dabfe448b0715444f016ae
+      internalID: -101943406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ViewCost
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 1092
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f135f80161ce05469265b49f3adc887
+      internalID: -1271427536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ViewDamage
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1114
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e416836d7f00d408b0b089a5600517
+      internalID: -345574920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ViewDurability
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 1150
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b18ea22d773ef4eb9c25fafef1bb7b
+      internalID: 104072943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ViewHeal
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 1153
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed99ae59ff9fcb742bab0282fcd485e3
+      internalID: -1527569628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Icon_ViewShield
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1160
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977c74bb764dfff43a71230db022d8de
+      internalID: 1473968814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Big_None
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1123
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4912092168d31de4687a67cfa49d5b80
+      internalID: -79861850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Small_Damage
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1565
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3146dd7135e4e41827fa8b2e775be9
+      internalID: 671809005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Small_Equipment
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1492
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bad2943705be941a110f7990e2a85f
+      internalID: -192784712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Small_Heal
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1514
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e292722e5a539554a9ae0c2d07b6b6bc
+      internalID: 1070766361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Small_None
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1164
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac5f6c09e277c9469028e4b0940f8f7
+      internalID: 837077584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Small_Shield
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1543
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac5c235b9b75894584a89c872d29ff1
+      internalID: -1749029410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Small_Spell
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 1145
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ee39d90dba8af49af0640c158e95e4
+      internalID: -865826154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_IconType_Small_Zone
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1514
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810c3162160384a4b8a20114f5fe8e6c
+      internalID: -2072480151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_16px
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1706
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a0d7701eb7cae498385b56899d71d8
+      internalID: -688762745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_32px
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b703f6cb0e3c74286e1e40dda995fd
+      internalID: 12433970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_4px
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1796
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306a6a1f179b1a94793f657437a89468
+      internalID: 28593222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_AalarmCostEmpty_0
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 335
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bc212e62f5ed940a05eb638abe381d
+      internalID: 671029047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_AalarmCostEmpty_1
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1127
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663628a246908cb468b54264d2b78572
+      internalID: 1635262809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_AalarmCostEmpty_2
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1314
+        width: 11
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ff22c0cd29fbe4dbb5001a6c90c1e8
+      internalID: 1625424122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgCost
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1216
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62efb41908af194990fc1f8c4210d4b
+      internalID: 1717694985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgCostEmpty
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1206
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9010097cb02d167449c63ca3e9c8a9a6
+      internalID: -791648940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgCostError
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1014
+        width: 66
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4595496702e3c1e49954240f26a7e2dd
+      internalID: 632234443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgCostOn
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1212
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fe4f2e3a3f9f24281c7306939af1cc
+      internalID: 1381261403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgLogAlly
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1556
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2d936d1ec63884a9d71937f34791c7
+      internalID: -4297473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgLogDefault
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1036
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2af6ff3faf2f8d4bb27d4e7ea60235a
+      internalID: -1571378095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgLogEnemy
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 601
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988eef4495974c94eab535b73d1556a4
+      internalID: -1602594375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgLogExit
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 757
+        width: 54
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 47, y: 0, z: 4, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9668d824b63793642af985200e5c630b
+      internalID: 894367188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgLogName
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 944
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951342b5f782ff345b85dcc488f4c954
+      internalID: 2005706451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgLogTurn
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 1084
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 0, z: 30, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bd861526f05194cad515240d448cd8
+      internalID: -784566254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgPointItem
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 562
+        width: 186
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf523b67ebf0c849be77c27635dd4b5
+      internalID: 975455300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BgStagePopup
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 0
+        width: 251
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 208, z: 228, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f81aa243f9e4b49a5e2e3b22cb6f65
+      internalID: 112182578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BtnRestSelect
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 378
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 0, z: 310, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0023812d04111cb4a9399ffb4e146b87
+      internalID: -666784010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_BtnRestSelectDim
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 0
+        width: 378
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 0, z: 310, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d5f9f67bcc0e94f8ec3c6281642ac6
+      internalID: 1985894107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DeckMyCardNext
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 849
+        width: 80
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733091360e2e2154e8a3dcb68280ae2f
+      internalID: 1193976453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoEnemyDeck
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 940
+        width: 136
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539da277733635242ac4aeb82a836105
+      internalID: 175891038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoMainTab
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 601
+        width: 253
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 230, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25e8f36d8b2529489a1072b38dd9eee
+      internalID: 1810724696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoMainTab_1
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1208
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916c0588532e8bb4c8661bb3e1dd7aa2
+      internalID: -1286792558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoMyDeck
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 998
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31c95820f6d65846ba3162d1a6db726
+      internalID: -488287341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoNamePlate
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 846
+        width: 175
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0849ba7846b7dbf418ba740ab29fc31d
+      internalID: 1624959162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoQuarter
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1514
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe9639f948dad14f9ded62fe6bed657
+      internalID: -1615275358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoShadow
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 705
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 16, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ff45fae06ff0541aaa877b11ee988a
+      internalID: -374940010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoSkillPlate
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 725
+        width: 642
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9989ffe1382fba446a26bdd499c9ee1c
+      internalID: -1495086063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DecoSubTab
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1068
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 14, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de71f5864e19394facf6d5358882f24
+      internalID: -1103072718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DimHudBtn
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 232
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 24, z: 24, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08cd9b201898b349ae7765263203576
+      internalID: -1927535955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DimHudStage
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1257
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 34, z: 36, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e6a710d79a4704bbbd29c84c1b28ed
+      internalID: 1028902032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_DimStriker
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1796
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 34, y: 40, z: 40, w: 34}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da154da8aeb23b419f702a55b38ac93
+      internalID: 1536725306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_GetPointPopup
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 820
+        width: 136
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 106, z: 64, w: 64}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7cadc1fe0e3984b8d23e0321d00268
+      internalID: 1627078723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_Gradient
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 757
+        width: 8
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 3, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d102bc812a45544b52c23e8642e451
+      internalID: -48214034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_GradientFull
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1697
+        width: 54
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 0, z: 22, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f54750805b779489b388181f56360e
+      internalID: -157470401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_GradientReward
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 445
+        width: 373
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fbe4e7c2284754489afb0eaffccb76
+      internalID: 719235625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_GradientRoundFull
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1506
+        width: 54
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 0, z: 8, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebef70d6db9e6b46af78b6b4a708546
+      internalID: -545631455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_GradientRoundHalf
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1092
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 0, z: 10, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934ea8ebf520d3a4aaa4e9a968637f80
+      internalID: 1924784126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_HudBattleFrame
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 562
+        width: 158
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 74, y: 0, z: 74, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5521c115692354d83f6572c846ece3
+      internalID: 1074416557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_HudBattleIcon
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 912
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7891cef021a92488bd7f926030f698
+      internalID: 457640073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_InfoArrow
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 650
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c174ab829ee0b499faf17b4bd432f3
+      internalID: 1843981134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_LabelTag
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1384
+        width: 163
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 78, y: 0, z: 78, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de055b50813d1546bde29704bc7feb1
+      internalID: 570660671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_LogEffectDamage
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 232
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 36, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650af27159057524eb69a381c1eff8cb
+      internalID: 1097020961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_LogEffectHeal
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 232
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 36, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bbc97d9c27e124cae1b3545d6cfb63
+      internalID: -1216851560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_LogEffectShield
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1320
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 36, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e709c6900347b4ca1da63632fe7801
+      internalID: 795477224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_LogGradient
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1506
+        width: 32
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 14, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264c7d2887e53fa48817cc0613d68de1
+      internalID: 18966491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeArrow_Off_0
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 768
+        width: 506
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 46, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1d5d66a8dd14b4a9ebcafa863f7a39
+      internalID: 1091334354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeArrow_Off_1
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 290
+        width: 506
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62db6d6d30bf6c4cb4915a8546e83d5
+      internalID: -220127770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeArrow_Off_2
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 506
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8034b1b1a075b9441a83b9de2aa2838a
+      internalID: -1497633091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeArrow_On_0
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 768
+        width: 506
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d25f5654e5b4841b52e8f39a13cd7d
+      internalID: 328638180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeArrow_On_1
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 290
+        width: 506
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3420f12749811904d99562525f80a825
+      internalID: 1244596151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeArrow_On_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 506
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2374bcf9853e5540b707efab6c207ee
+      internalID: -601953288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeComplete
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 335
+        width: 348
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef8fb8c698944e4bb8ee7d5c5801e72
+      internalID: 1389235931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeDim
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 461
+        width: 222
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 0, z: 104, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d75719b5cbf7ce4bb0b8ba56fd29a0f
+      internalID: 1763678030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeFrame
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1556
+        width: 56
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 96, z: 24, w: 36}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3485ecd70030de149baa2b6961fd079e
+      internalID: -1623556468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeLine
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1242
+        width: 88
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 0, z: 40, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605f94429124b7146938bb207e55f085
+      internalID: -747327682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodeNormal
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 335
+        width: 276
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df59d9d4f85455d42864c3c0941ab7a5
+      internalID: -1507775771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_NodePaid
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 335
+        width: 276
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a53d1f01d7ab9344afabbbfadd22220
+      internalID: 1899371540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_R22
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1114
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1934ca927ce2c8642bf7f37c3bae6631
+      internalID: 807182291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_RewardBoxPopup
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1211
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 18, z: 18, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806bd057f29b6bf4fb06410d000ee1fa
+      internalID: -1832992940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_RoundQuartar
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 1208
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9f6f7bb1403d94fbc06a79cda255a2
+      internalID: 711318077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_SelectEffect
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 844
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 72, y: 68, z: 72, w: 68}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3d1bb6025f55d49b55481c006c7564
+      internalID: 1578586316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_SkillPlateGlow
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 846
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 52, y: 52, z: 52, w: 52}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ccd1eca23c5e24c943c52346c885d0
+      internalID: 1386759748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_SkillPlateStroke
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 886
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 44, y: 44, z: 44, w: 44}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a005bac68f71bb4eba9e232feb72a04
+      internalID: -1365103745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_Sort
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1258
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b20a603b08504c48ae0384c4c7c6276
+      internalID: -1500876561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_Stamp
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1260
+        width: 121
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a4ade846ceed44b89fcf70082c1fd7
+      internalID: 2136421586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_Stroke32px
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 843
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 18, z: 18, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f2ff1d6ba37ea4fae1829840250cb6
+      internalID: 733617091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Img_Stroke32px_Half
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1092
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 16, z: 18, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606477ea0d538004e9006342877ac258
+      internalID: -43882048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Line_36px
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 846
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5e0d7e248020c428b3c44e492b2511
+      internalID: 1774662463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Line_Dots
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 986
+        width: 64
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 20, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8facf499e28194f8c1e249652a61de
+      internalID: -1537972715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CCG_Skill_Info
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 681
+        width: 669
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 38}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2966edf95a30bc547a38388ea1d2b8b3
+      internalID: 1273778254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Buff_CCGATK
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1436
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53731ab7be61b6349b1413da04f943cb
+      internalID: 919713391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Buff_CCGChangeCost
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1402
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3502e152962508b4b8519e70c9df5a2e
+      internalID: -1753713291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Buff_CCGCoolDown
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1402
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc6c60c3abf8b540a5032897e824b64
+      internalID: -91798616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Buff_CCGMAXHP
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1396
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8b29f501040414d8368c15a54e0206
+      internalID: -1658511798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Buff_CCGSkillCost
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1361
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08db808468b82e44bf92be20bfbe4e1
+      internalID: 886255586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_CC_CCGChangeBan
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1388
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f720dc6f7e16544954840ab50ce112
+      internalID: -1308660342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Debuff_CCGATK
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1340
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafc5824b368b02469a940243d1d9eab
+      internalID: 12967621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Debuff_CCGChangeCost
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1313
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0016d899f4f129641ad70584f847d91b
+      internalID: 1617423669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Debuff_CCGCoolDown
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1458
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2e5be5389fbec4bbe50c1ddd5aa15e
+      internalID: -1192241547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Debuff_CCGMAXHP
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1444
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41389d097212c7f4c86bdfd2fed882a2
+      internalID: -327821280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icon_Debuff_CCGSkillCost
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1458
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a26bdd4db61dfb4f9010c2566a034a6
+      internalID: -35162511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKILLICON_EFFECT
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 992
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6d3c68a36b45b46baa581c7778c283
+      internalID: -1121480803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKILLICON_HEAL
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 986
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c12075fc4cc624ba378a86347ab04f
+      internalID: 1947528390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKILLICON_RELOAD
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 904
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0d292255dab9c4688de86798a5d4af
+      internalID: 1070301063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKILLICON_SHIELD
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 849
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ba4de59e5ac824981c7083bd5edbfb
+      internalID: 1062228966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKILLICON_STATBUFF
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 981
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f061af6afe4884c8d64de0738a3bff
+      internalID: -1075174716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKILLICON_STATDEBUFF
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 986
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dd5a07900e32e4492a98b9ff5a0b0e
+      internalID: -1603353524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SKILLICON_TARGET
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1178
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3535b1f1576ad489ada22ab35ea9db
+      internalID: 638781303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4b31f367ebc13ca4abbc1d6a9f225f48
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CCG_Bg_22px: -920796280
+      CCG_Bg_8px: 2141418039
+      CCG_Bg_BgLogEffect: -858895972
+      CCG_Bg_BtnAccept: 1368476743
+      CCG_Bg_BtnBg: -1505523407
+      CCG_Bg_BtnClose: 1592392954
+      CCG_Bg_BtnDisable: 1090032395
+      CCG_Bg_BtnDumpCards: -782087498
+      CCG_Bg_BtnFuntion: 1790731104
+      CCG_Bg_BtnMenu: 1904462710
+      CCG_Bg_BtnMenuDeco: -1526030405
+      CCG_Bg_BtnMenu_Worldrade: 100763107
+      CCG_Bg_BtnMove: -1485769146
+      CCG_Bg_BtnNext: -1583104609
+      CCG_Bg_BtnStageArrow: -738750849
+      CCG_Bg_BtnStand: 1293404592
+      CCG_Bg_Btn_Dim: -777592032
+      CCG_Bg_CardReward: 2139982561
+      CCG_Bg_CardTooltip: 1283091837
+      CCG_Bg_Condition: -893238510
+      CCG_Bg_Cost: -1482935012
+      CCG_Bg_DeckMyCardInfo: -1467339548
+      CCG_Bg_Dialog: -60025949
+      CCG_Bg_DumpCards: -365176994
+      CCG_Bg_DumpCardsFrame: -144750079
+      CCG_Bg_EffectTab: 268695341
+      CCG_Bg_EffectType: -369402028
+      CCG_Bg_Ex_Skill: 1262128167
+      CCG_Bg_ExitMyDeck: 564508922
+      CCG_Bg_GearCount: -645006721
+      CCG_Bg_GearItem: 1724265463
+      CCG_Bg_Hediff: -441736565
+      CCG_Bg_HediffFrame: 217637633
+      CCG_Bg_HediffTab: 520662435
+      CCG_Bg_HpValue: 1144625327
+      CCG_Bg_HudReinforce: 270220840
+      CCG_Bg_HudStage: -590175980
+      CCG_Bg_InfoLabel: -945397670
+      CCG_Bg_InfoTab: -1007785090
+      CCG_Bg_LogDefault: -702340612
+      CCG_Bg_Log_Mask: -390934774
+      CCG_Bg_MapPerk_Off: 109316686
+      CCG_Bg_MapPerk_On: -223358884
+      CCG_Bg_MyCardList: 1498553001
+      CCG_Bg_NamePlate: 1828188937
+      CCG_Bg_Passive_Skill: 652822888
+      CCG_Bg_RestStageNotice: 2065750197
+      CCG_Bg_SkillPlate: -1773169620
+      CCG_Bg_Skill_EX: -1620148234
+      CCG_Bg_Skill_Passive: -393735262
+      CCG_Bg_StageComplete: -1132054817
+      CCG_Bg_TabComplete: -1423683991
+      CCG_Bg_TargetCardCheck: 1739353473
+      CCG_Bg_ToastLogAlly: 1455005840
+      CCG_Bg_ToastLogDefault: 810481334
+      CCG_Bg_ToastLogEnemy: 554300801
+      CCG_Bg_ToastMaster: 96385069
+      CCG_Bg_UseCost: -1499878252
+      CCG_BottomDeco_Wave: -770634184
+      CCG_Btn_Active: 2066559430
+      CCG_Btn_BattleBtn: -1418747628
+      CCG_Btn_Disable: -178693844
+      CCG_Btn_Enable: -118517927
+      CCG_Btn_Home: -198030666
+      CCG_Btn_HudLog: 1331717040
+      CCG_Btn_HudPause: 1820850094
+      CCG_Btn_HudSpeed_x1: -1510182794
+      CCG_Btn_HudSpeed_x2: -605977575
+      CCG_Btn_Info: -2095744673
+      CCG_Btn_InfoTab: -1625792022
+      CCG_Btn_Settig: 16671405
+      CCG_Btn_SortMyCard: -1529426909
+      CCG_Btn_TurnEnd: -752767041
+      CCG_Btn_TurnIn: 107923091
+      CCG_Btn_TurnOut: 1725639319
+      CCG_Btn_TurnProgress: 1986142599
+      CCG_Effect_CostUse: -1415194489
+      CCG_IconType_Big_None: -79861850
+      CCG_IconType_Small_Damage: 671809005
+      CCG_IconType_Small_Equipment: -192784712
+      CCG_IconType_Small_Heal: 1070766361
+      CCG_IconType_Small_None: 837077584
+      CCG_IconType_Small_Shield: -1749029410
+      CCG_IconType_Small_Spell: -865826154
+      CCG_IconType_Small_Zone: -2072480151
+      CCG_Icon_ArrowChange: 939200706
+      CCG_Icon_Arrow_Big: -1936039601
+      CCG_Icon_BattleLog: 1531418819
+      CCG_Icon_BattleLog_Small: -23391363
+      CCG_Icon_BattlePause: 843451925
+      CCG_Icon_Big_Damage: -1826220060
+      CCG_Icon_Big_Heal: -1651006820
+      CCG_Icon_Big_Shield: -2005113412
+      CCG_Icon_BossBattle: 345839872
+      CCG_Icon_Change_Small: -2117503938
+      CCG_Icon_Check: -812557221
+      CCG_Icon_Close: -2019523921
+      CCG_Icon_Cost: -1420225148
+      CCG_Icon_CountDurability: 1368625461
+      CCG_Icon_Damage: 991013273
+      CCG_Icon_Dump: 1603550431
+      CCG_Icon_DumpBig: -1869593394
+      CCG_Icon_Enemy: -782069561
+      CCG_Icon_Exit: 2120033097
+      CCG_Icon_GoPass: 1630595422
+      CCG_Icon_Heal: -304160388
+      CCG_Icon_Hp_Ally: -1626516101
+      CCG_Icon_MyDeck: -1485751835
+      CCG_Icon_NormalBattle: -289890900
+      CCG_Icon_Pass: 1317514082
+      CCG_Icon_ReRoll: -1385371472
+      CCG_Icon_Reinforce: 1622776645
+      CCG_Icon_ReplaceCards: 1478191251
+      CCG_Icon_Reset: -1836607628
+      CCG_Icon_Rest: -2136041325
+      CCG_Icon_Return: -909760264
+      CCG_Icon_Revive: -1903906560
+      CCG_Icon_ReviveBig: 1522681036
+      CCG_Icon_Scenario: -1485983472
+      CCG_Icon_Shield: -2128517708
+      CCG_Icon_Shift: 840008120
+      CCG_Icon_Sort: 775588713
+      CCG_Icon_StageArrow: 833280244
+      CCG_Icon_Stamp: 872938516
+      CCG_Icon_ToastHeal: 991923970
+      CCG_Icon_ToastNotice: 1300153424
+      CCG_Icon_Turn: -1035379606
+      CCG_Icon_TurnEnd: -718070660
+      CCG_Icon_TurnProgress: -101943406
+      CCG_Icon_ViewCost: -1271427536
+      CCG_Icon_ViewDamage: -345574920
+      CCG_Icon_ViewDurability: 104072943
+      CCG_Icon_ViewHeal: -1527569628
+      CCG_Icon_ViewShield: 1473968814
+      CCG_Img_16px: -688762745
+      CCG_Img_32px: 12433970
+      CCG_Img_4px: 28593222
+      CCG_Img_AalarmCostEmpty_0: 671029047
+      CCG_Img_AalarmCostEmpty_1: 1635262809
+      CCG_Img_AalarmCostEmpty_2: 1625424122
+      CCG_Img_BgCost: 1717694985
+      CCG_Img_BgCostEmpty: -791648940
+      CCG_Img_BgCostError: 632234443
+      CCG_Img_BgCostOn: 1381261403
+      CCG_Img_BgLogAlly: -4297473
+      CCG_Img_BgLogDefault: -1571378095
+      CCG_Img_BgLogEnemy: -1602594375
+      CCG_Img_BgLogExit: 894367188
+      CCG_Img_BgLogName: 2005706451
+      CCG_Img_BgLogTurn: -784566254
+      CCG_Img_BgPointItem: 975455300
+      CCG_Img_BgStagePopup: 112182578
+      CCG_Img_BtnRestSelect: -666784010
+      CCG_Img_BtnRestSelectDim: 1985894107
+      CCG_Img_DeckMyCardNext: 1193976453
+      CCG_Img_DecoEnemyDeck: 175891038
+      CCG_Img_DecoMainTab: 1810724696
+      CCG_Img_DecoMainTab_1: -1286792558
+      CCG_Img_DecoMyDeck: -488287341
+      CCG_Img_DecoNamePlate: 1624959162
+      CCG_Img_DecoQuarter: -1615275358
+      CCG_Img_DecoShadow: -374940010
+      CCG_Img_DecoSkillPlate: -1495086063
+      CCG_Img_DecoSubTab: -1103072718
+      CCG_Img_DimHudBtn: -1927535955
+      CCG_Img_DimHudStage: 1028902032
+      CCG_Img_DimStriker: 1536725306
+      CCG_Img_GetPointPopup: 1627078723
+      CCG_Img_Gradient: -48214034
+      CCG_Img_GradientFull: -157470401
+      CCG_Img_GradientReward: 719235625
+      CCG_Img_GradientRoundFull: -545631455
+      CCG_Img_GradientRoundHalf: 1924784126
+      CCG_Img_HudBattleFrame: 1074416557
+      CCG_Img_HudBattleIcon: 457640073
+      CCG_Img_InfoArrow: 1843981134
+      CCG_Img_LabelTag: 570660671
+      CCG_Img_LogEffectDamage: 1097020961
+      CCG_Img_LogEffectHeal: -1216851560
+      CCG_Img_LogEffectShield: 795477224
+      CCG_Img_LogGradient: 18966491
+      CCG_Img_NodeArrow_Off_0: 1091334354
+      CCG_Img_NodeArrow_Off_1: -220127770
+      CCG_Img_NodeArrow_Off_2: -1497633091
+      CCG_Img_NodeArrow_On_0: 328638180
+      CCG_Img_NodeArrow_On_1: 1244596151
+      CCG_Img_NodeArrow_On_2: -601953288
+      CCG_Img_NodeComplete: 1389235931
+      CCG_Img_NodeDim: 1763678030
+      CCG_Img_NodeFrame: -1623556468
+      CCG_Img_NodeLine: -747327682
+      CCG_Img_NodeNormal: -1507775771
+      CCG_Img_NodePaid: 1899371540
+      CCG_Img_R22: 807182291
+      CCG_Img_RewardBoxPopup: -1832992940
+      CCG_Img_RoundQuartar: 711318077
+      CCG_Img_SelectEffect: 1578586316
+      CCG_Img_SkillPlateGlow: 1386759748
+      CCG_Img_SkillPlateStroke: -1365103745
+      CCG_Img_Sort: -1500876561
+      CCG_Img_Stamp: 2136421586
+      CCG_Img_Stroke32px: 733617091
+      CCG_Img_Stroke32px_Half: -43882048
+      CCG_Line_36px: 1774662463
+      CCG_Line_Dots: -1537972715
+      CCG_Skill_Info: 1273778254
+      Combat_Icon_Buff_CCGATK: 919713391
+      Combat_Icon_Buff_CCGChangeCost: -1753713291
+      Combat_Icon_Buff_CCGCoolDown: -91798616
+      Combat_Icon_Buff_CCGMAXHP: -1658511798
+      Combat_Icon_Buff_CCGSkillCost: 886255586
+      Combat_Icon_CC_CCGChangeBan: -1308660342
+      Combat_Icon_Debuff_CCGATK: 12967621
+      Combat_Icon_Debuff_CCGChangeCost: 1617423669
+      Combat_Icon_Debuff_CCGCoolDown: -1192241547
+      Combat_Icon_Debuff_CCGMAXHP: -327821280
+      Combat_Icon_Debuff_CCGSkillCost: -35162511
+      SKILLICON_EFFECT: -1121480803
+      SKILLICON_HEAL: 1947528390
+      SKILLICON_RELOAD: 1070301063
+      SKILLICON_SHIELD: 1062228966
+      SKILLICON_STATBUFF: -1075174716
+      SKILLICON_STATDEBUFF: -1603353524
+      SKILLICON_TARGET: 638781303
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

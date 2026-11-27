@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 // 建立 Boss 雷射的外觀 Prefab (Boss_Beam)，由 PerorozillaPrefabBuilder 一起呼叫：
-// 兩條互相纏繞的扭轉光帶 (BossBeamRibbon，像拓樸學的紙帶) + 細亮芯與淡藍光暈 (BossBeamWave，一波波往前鼓起) +
-// 覆蓋整顆眼球的白色激光球 + 發射點光團粒子 + 落點地面波紋 (平貼地面往外擴散的光環) 與火花；整體為藍白配色
+// 卡通風格 (STG/ToonBeam：亮芯 / 主色 / 邊緣三段純色 + 描邊，與開始畫面相同)：一根藍色光管 + 蓋住整顆眼球的卡通光球 +
+// 發射點光團粒子 + 落點地面波紋 (平貼地面往外擴散的光環) 與火花
 public static class PerorozillaBeamBuilder
 {
     private const string OutputFolder = "Assets/STG game/resources/prefab";
@@ -16,71 +16,49 @@ public static class PerorozillaBeamBuilder
     private const string WarningRingMaterialPath = OutputFolder + "/AreaStrike/AreaStrike_Ring.mat";
     private const string WarningFillMaterialPath = OutputFolder + "/AreaStrike/AreaStrike_Fill.mat";
     private const string TubeMeshPath = BeamFolder + "/BossBeam_Tube.asset";
-    private const string NoiseTexturePath = "Assets/STG game/resources/model/Boss_Perorozilla/bundles/Assets/_MX/NPCs/Perorozilla_Original/Perorozilla_Original/Effect/Texture/FX_TEX_Noise_02.png";
     private const string DotTexturePath = OutputFolder + "/AreaStrike/Explosion_Dot_Tex.asset";
     private const string RingTexturePath = OutputFolder + "/AreaStrike/AreaStrike_Ring_Tex.asset";
 
-    // 圓管網格解析度：沿光束方向要夠密，波形鼓起才會平滑
+    // 圓管網格解析度：沿光束方向要夠密，卡通 shader 的波動鼓起才會平滑
     private const int TubeSegmentsAround = 24;
     private const int TubeSegmentsAlong = 200;
 
-    private const string RibbonMeshPath = BeamFolder + "/BossBeam_Ribbon.asset";
-    private const int RibbonSegmentsAlong = 240;
-
-    // 藍白配色：帶子中央接近白色、邊緣藍色；亮芯白中帶藍；外層淡藍光暈
-    private static readonly Color RibbonCenterColor = new Color(2.6f, 2.9f, 3.4f, 1f);
-    private static readonly Color RibbonEdgeColor = new Color(0.25f, 1f, 3.6f, 1f);
-    private static readonly Color GlowColor = new Color(0.3f, 0.9f, 2.6f, 0.45f);
-    private static readonly Color GlowCrestColor = new Color(0.8f, 1.6f, 3.2f, 0.6f);
-    private static readonly Color CoreColor = new Color(2.8f, 3.1f, 3.6f, 1f);
-    private static readonly Color CoreCrestColor = new Color(4f, 4.3f, 4.8f, 1f);
-    private static readonly Color EffectColor = new Color(0.55f, 0.85f, 1f, 1f);
-    // 發射期間覆蓋整顆眼球的白色激光球
-    // 光束起點在眼球處鼓成球形光團 (直徑約等於眼球)，光束看起來是從整顆眼睛噴出來，而不是另外貼一顆白球
+    // 光管粗細 (BossBeam_Tube 網格直徑 1，BossBeamVisual 依強度縮放)；不透明的卡通管看起來比原本半透明的光暈粗，所以比例調小
     private const float BeamWidth = 9f;
+    private const float BeamWidthScale = 0.7f;
+    // 發射期間蓋住整顆眼球的卡通光球 (直徑)；光管起點往後退一半，從球裡面射出來
     private const float EyeFlareDiameter = 24f;
-    private static readonly Color CoreFlareColor = new Color(0.2f, 0.5f, 1.3f, 0.4f);
-    // 眼球層：加算光疊在白色眼球上只會更白、也蓋不住瞳孔，所以另用一層一般混合的藍白光團 (只在起點光團出現) 把眼睛蓋掉
-    private static readonly Color EyeEdgeColor = new Color(0.08f, 0.45f, 1.5f, 0f);
-    private static readonly Color EyeCenterColor = new Color(0.6f, 1.05f, 1.9f, 0.97f);
-    private static readonly Color GlowFlareColor = new Color(0.05f, 0.3f, 1.1f, 0.3f);
+    // 發射點光團、地面波紋、火花粒子的藍白色
+    private static readonly Color EffectColor = new Color(0.55f, 0.85f, 1f, 1f);
 
     public static BossBeamVisual BuildBeam()
     {
         if (!AssetDatabase.IsValidFolder(BeamFolder)) AssetDatabase.CreateFolder(OutputFolder, "BossBeam");
 
         Mesh tube = GetOrCreateTubeMesh();
-        Mesh ribbon = GetOrCreateRibbonMesh();
-        Texture2D noise = LoadRepeatTexture(NoiseTexturePath);
-        // 兩條扭轉光帶錯開 90 度，互相纏繞成帶狀光束；中間一條細亮芯，外面一層淡藍光暈
-        Material ribbonA = GetOrCreateRibbonMaterial("BossBeam_RibbonA", noise, 0f);
-        Material ribbonB = GetOrCreateRibbonMaterial("BossBeam_RibbonB", noise, 90f);
-        Material glow = GetOrCreateWaveMaterial("BossBeam_Glow", noise, GlowColor, GlowCrestColor, 0.35f, 14f, 50f, 2.5f, 1.2f);
-        Material core = GetOrCreateWaveMaterial("BossBeam_Core", noise, CoreColor, CoreCrestColor, 0.15f, 14f, 50f, 5f, 2.5f);
+        Material beam = ToonBeamMaterials.GetOrCreate("Battle_Laser", ToonBeamMaterials.Laser, ToonBeamMaterials.AxisZ, wave: ToonBeamMaterials.BattleLaserWave);
+        Material eyeBall = ToonBeamMaterials.GetOrCreate("Battle_LaserBall", ToonBeamMaterials.Laser, ToonBeamMaterials.NoAxis);
         Material dot = GetOrCreateParticleMaterial("BossBeam_Dot", AssetDatabase.LoadAssetAtPath<Texture2D>(DotTexturePath));
         Material ring = GetOrCreateParticleMaterial("BossBeam_Ring", AssetDatabase.LoadAssetAtPath<Texture2D>(RingTexturePath));
-        Material eye = GetOrCreateWaveMaterial("BossBeam_Eye", noise, EyeEdgeColor, EyeEdgeColor, 0f, 14f, 50f, 1f, 1f);
-        eye.SetFloat("_DstBlend", (float)BlendMode.OneMinusSrcAlpha);
-        eye.renderQueue = (int)RenderQueue.Transparent + 19;
-        float[] layerWidths = { 1.15f, 1f, 1f, 0.32f, 1f };
-        SetFlare(eye, layerWidths[4], EyeCenterColor);
-        SetFlare(glow, layerWidths[0], GlowFlareColor);
-        SetFlare(ribbonA, layerWidths[1], Color.white);
-        SetFlare(ribbonB, layerWidths[2], Color.white);
-        SetFlare(core, layerWidths[3], CoreFlareColor);
 
         GameObject root = new GameObject("Boss_Beam");
         try
         {
-            Renderer glowTube = CreateTube(root.transform, "Glow", tube, glow);
-            Renderer ribbonATube = CreateTube(root.transform, "RibbonA", ribbon, ribbonA);
-            Renderer ribbonBTube = CreateTube(root.transform, "RibbonB", ribbon, ribbonB);
-            Renderer coreTube = CreateTube(root.transform, "Core", tube, core);
-            Renderer eyeTube = CreateTube(root.transform, "EyeFlare", tube, eye);
+            Renderer beamTube = CreateTube(root.transform, "Beam", tube, beam);
 
+            // Muzzle 由 BossBeamVisual 依強度縮放，球跟著一起長大/收起
             Transform muzzle = new GameObject("Muzzle").transform;
             muzzle.SetParent(root.transform, false);
             ParticleSystem muzzleGlow = CreateMuzzleGlow(muzzle, dot);
+            GameObject ball = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            ball.name = "EyeBall";
+            Object.DestroyImmediate(ball.GetComponent<Collider>());
+            ball.transform.SetParent(muzzle, false);
+            ball.transform.localScale = Vector3.one * EyeFlareDiameter;
+            Renderer ballRenderer = ball.GetComponent<Renderer>();
+            ballRenderer.sharedMaterial = eyeBall;
+            ballRenderer.shadowCastingMode = ShadowCastingMode.Off;
+            ballRenderer.receiveShadows = false;
 
             Transform impact = new GameObject("Impact").transform;
             impact.SetParent(root.transform, false);
@@ -90,15 +68,11 @@ public static class PerorozillaBeamBuilder
             BossBeamVisual visual = root.AddComponent<BossBeamVisual>();
             SerializedObject serialized = new SerializedObject(visual);
             SerializedProperty tubes = serialized.FindProperty("beamTubes");
-            Renderer[] layers = { glowTube, ribbonATube, ribbonBTube, coreTube, eyeTube };
-            tubes.arraySize = layers.Length;
+            tubes.arraySize = 1;
+            tubes.GetArrayElementAtIndex(0).objectReferenceValue = beamTube;
             SerializedProperty scales = serialized.FindProperty("tubeWidthScales");
-            scales.arraySize = layers.Length;
-            for (int i = 0; i < layers.Length; i++)
-            {
-                tubes.GetArrayElementAtIndex(i).objectReferenceValue = layers[i];
-                scales.GetArrayElementAtIndex(i).floatValue = layerWidths[i];
-            }
+            scales.arraySize = 1;
+            scales.GetArrayElementAtIndex(0).floatValue = BeamWidthScale;
             serialized.FindProperty("width").floatValue = BeamWidth;
             serialized.FindProperty("startBackOffset").floatValue = EyeFlareDiameter * 0.5f;
             serialized.FindProperty("muzzle").objectReferenceValue = muzzle;
@@ -172,71 +146,6 @@ public static class PerorozillaBeamBuilder
         renderer.shadowCastingMode = ShadowCastingMode.Off;
         renderer.receiveShadows = false;
         return renderer;
-    }
-
-    // 光團寬度以「管寬的倍數」設定，所以每層依自己的寬度換算，讓各層光團都約等於眼球大小
-    private static void SetFlare(Material material, float layerWidthScale, Color flareColor)
-    {
-        material.SetFloat("_FlareScale", Mathf.Max(1f, EyeFlareDiameter / (BeamWidth * layerWidthScale)));
-        material.SetFloat("_FlareLength", EyeFlareDiameter);
-        if (material.HasProperty("_FlareColor")) material.SetColor("_FlareColor", flareColor);
-        EditorUtility.SetDirty(material);
-    }
-
-    private static Mesh GetOrCreateRibbonMesh()
-    {
-        Mesh mesh = AssetDatabase.LoadAssetAtPath<Mesh>(RibbonMeshPath);
-        bool isNew = mesh == null;
-        if (isNew) mesh = new Mesh { name = "BossBeam_Ribbon" };
-        mesh.Clear();
-
-        int rows = RibbonSegmentsAlong + 1;
-        Vector3[] vertices = new Vector3[rows * 2];
-        Vector2[] uvs = new Vector2[vertices.Length];
-        for (int row = 0; row < rows; row++)
-        {
-            float along = (float)row / RibbonSegmentsAlong;
-            vertices[row * 2] = new Vector3(-0.5f, 0f, along);
-            vertices[row * 2 + 1] = new Vector3(0.5f, 0f, along);
-            uvs[row * 2] = new Vector2(0f, along);
-            uvs[row * 2 + 1] = new Vector2(1f, along);
-        }
-
-        int[] triangles = new int[RibbonSegmentsAlong * 6];
-        for (int row = 0, t = 0; row < RibbonSegmentsAlong; row++)
-        {
-            int a = row * 2;
-            triangles[t++] = a; triangles[t++] = a + 2; triangles[t++] = a + 1;
-            triangles[t++] = a + 1; triangles[t++] = a + 2; triangles[t++] = a + 3;
-        }
-
-        mesh.vertices = vertices;
-        mesh.uv = uvs;
-        mesh.triangles = triangles;
-        // 扭轉後帶子會轉到任何方向，外框涵蓋整個圓柱範圍
-        mesh.bounds = new Bounds(new Vector3(0f, 0f, 0.5f), new Vector3(2f, 2f, 1f));
-
-        if (isNew) AssetDatabase.CreateAsset(mesh, RibbonMeshPath);
-        else EditorUtility.SetDirty(mesh);
-        return mesh;
-    }
-
-    private static Material GetOrCreateRibbonMaterial(string name, Texture2D noise, float phaseOffset)
-    {
-        string path = BeamFolder + "/" + name + ".mat";
-        Material material = AssetDatabase.LoadAssetAtPath<Material>(path);
-        if (material == null)
-        {
-            material = new Material(Shader.Find("STG/BossBeamRibbon"));
-            AssetDatabase.CreateAsset(material, path);
-        }
-
-        material.SetColor("_CenterColor", RibbonCenterColor);
-        material.SetColor("_EdgeColor", RibbonEdgeColor);
-        material.SetTexture("_NoiseTex", noise);
-        material.SetFloat("_PhaseOffset", phaseOffset);
-        EditorUtility.SetDirty(material);
-        return material;
     }
 
     // 發射點：眼睛前一團持續閃動的光
@@ -332,7 +241,7 @@ public static class PerorozillaBeamBuilder
         color.color = gradient;
     }
 
-    // 開口圓管：半徑 0.5、沿 Z 從 0 到 1；uv.x 繞一圈、uv.y 沿光束 (shader 依 uv.y 計算波形)
+    // 開口圓管：半徑 0.5、沿 Z 從 0 到 1；三角形朝外 (卡通 shader 正面畫色塊、背面畫描邊)
     private static Mesh GetOrCreateTubeMesh()
     {
         Mesh mesh = AssetDatabase.LoadAssetAtPath<Mesh>(TubeMeshPath);
@@ -368,8 +277,8 @@ public static class PerorozillaBeamBuilder
             {
                 int a = row * columns + column;
                 int b = a + columns;
-                triangles[t++] = a; triangles[t++] = b; triangles[t++] = a + 1;
-                triangles[t++] = a + 1; triangles[t++] = b; triangles[t++] = b + 1;
+                triangles[t++] = a; triangles[t++] = a + 1; triangles[t++] = b;
+                triangles[t++] = a + 1; triangles[t++] = b + 1; triangles[t++] = b;
             }
         }
 
@@ -377,34 +286,11 @@ public static class PerorozillaBeamBuilder
         mesh.normals = normals;
         mesh.uv = uvs;
         mesh.triangles = triangles;
-        // 波形會讓頂點往外鼓，外框放大一點避免被提早裁掉
-        mesh.bounds = new Bounds(new Vector3(0f, 0f, 0.5f), new Vector3(2f, 2f, 1f));
+        mesh.RecalculateBounds();
 
         if (isNew) AssetDatabase.CreateAsset(mesh, TubeMeshPath);
         else EditorUtility.SetDirty(mesh);
         return mesh;
-    }
-
-    private static Material GetOrCreateWaveMaterial(string name, Texture2D noise, Color color, Color crest, float amplitude, float waveLength, float waveSpeed, float scrollSpeed, float edgePower)
-    {
-        string path = BeamFolder + "/" + name + ".mat";
-        Material material = AssetDatabase.LoadAssetAtPath<Material>(path);
-        if (material == null)
-        {
-            material = new Material(Shader.Find("STG/BossBeamWave"));
-            AssetDatabase.CreateAsset(material, path);
-        }
-
-        material.SetColor("_Color", color);
-        material.SetColor("_CrestColor", crest);
-        material.SetTexture("_NoiseTex", noise);
-        material.SetFloat("_WaveAmplitude", amplitude);
-        material.SetFloat("_WaveLength", waveLength);
-        material.SetFloat("_WaveSpeed", waveSpeed);
-        material.SetFloat("_ScrollSpeed", scrollSpeed);
-        material.SetFloat("_EdgePower", edgePower);
-        EditorUtility.SetDirty(material);
-        return material;
     }
 
     // URP Particles/Unlit 加算混合；透過腳本設定時不會經過 ShaderGUI，所以混合狀態要手動寫齊
@@ -435,16 +321,5 @@ public static class PerorozillaBeamBuilder
         return material;
     }
 
-    // 雜訊貼圖要沿光束重複捲動，匯入設定必須是 Repeat
-    private static Texture2D LoadRepeatTexture(string path)
-    {
-        TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
-        if (importer != null && importer.wrapMode != TextureWrapMode.Repeat)
-        {
-            importer.wrapMode = TextureWrapMode.Repeat;
-            importer.SaveAndReimport();
-        }
-        return AssetDatabase.LoadAssetAtPath<Texture2D>(path);
-    }
 }
 #endif

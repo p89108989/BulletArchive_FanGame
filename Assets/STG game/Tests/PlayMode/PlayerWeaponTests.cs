@@ -197,6 +197,51 @@ public class PlayerWeaponTests : InputTestFixture
         Assert.AreEqual(10f, energy.GetEnergy(BulletPolarity.Blue), 0.001f);
     }
 
+    // 技能卡用：藍黃都夠 30% 才能開；開啟中不能再開 (卡片顯示發動中而不是可用)
+    [UnityTest]
+    public IEnumerator CanStartBurst_NeedsEnergyAndNotAlreadyActive()
+    {
+        playerObject.SetActive(true);
+        Keyboard keyboard = InputSystem.AddDevice<Keyboard>();
+        yield return null;
+        Assert.IsTrue(laser.CanStartBurst, "50% blue and yellow is enough");
+
+        PressAndRelease(keyboard.fKey);
+        yield return null;
+
+        Assert.IsTrue(laser.IsBurstActive);
+        Assert.IsFalse(laser.CanStartBurst, "already active");
+        Assert.AreEqual(5f, laser.BurstDuration, 0.001f);
+    }
+
+    // 對話框等外部系統靠這個事件得知大招開了
+    [UnityTest]
+    public IEnumerator BurstKey_RaisesBurstStartedOnce()
+    {
+        playerObject.SetActive(true);
+        int started = 0;
+        laser.OnBurstStarted += () => started++;
+        Keyboard keyboard = InputSystem.AddDevice<Keyboard>();
+        yield return null;
+
+        PressAndRelease(keyboard.fKey);
+        yield return null;
+        PressAndRelease(keyboard.fKey);
+        yield return null;
+
+        Assert.AreEqual(1, started, "pressing F again while active does not restart the burst");
+    }
+
+    [UnityTest]
+    public IEnumerator CanStartBurst_FalseWithoutEnoughEnergy()
+    {
+        TestUtil.SetField(energy, "startingEnergy", 10f);
+        playerObject.SetActive(true);
+        yield return null;
+
+        Assert.IsFalse(laser.CanStartBurst);
+    }
+
     [UnityTest]
     public IEnumerator BurstBeam_CancelsBothBlueAndYellowBullets()
     {

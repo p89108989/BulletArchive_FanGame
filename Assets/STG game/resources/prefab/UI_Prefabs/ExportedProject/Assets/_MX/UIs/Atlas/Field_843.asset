@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0000000deadbeef15deadf00d0000000, type: 2}
+  m_Name: Field_843
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: dfccbb29e25a21c4bba3fca7d5e29bec, type: 2}
+  mSprites:
+  - name: Common_Bg_10px
+    x: 430
+    y: 40
+    width: 28
+    height: 28
+    borderLeft: 12
+    borderRight: 12
+    borderTop: 12
+    borderBottom: 12
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Bg_5px
+    x: 436
+    y: 182
+    width: 20
+    height: 20
+    borderLeft: 5
+    borderRight: 5
+    borderTop: 5
+    borderBottom: 5
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Bg_Glow_5px
+    x: 460
+    y: 40
+    width: 28
+    height: 28
+    borderLeft: 12
+    borderRight: 12
+    borderTop: 9
+    borderBottom: 16
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Deco_Tri
+    x: 458
+    y: 180
+    width: 13
+    height: 22
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Deco014
+    x: 0
+    y: 154
+    width: 388
+    height: 102
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Deco02
+    x: 0
+    y: 91
+    width: 308
+    height: 61
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_EffectLine_5px
+    x: 388
+    y: 109
+    width: 43
+    height: 43
+    borderLeft: 15
+    borderRight: 15
+    borderTop: 15
+    borderBottom: 15
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_EffectLine_Deco
+    x: 430
+    y: 70
+    width: 37
+    height: 37
+    borderLeft: 9
+    borderRight: 19
+    borderTop: 9
+    borderBottom: 19
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_EffectLine_Tile
+    x: 310
+    y: 76
+    width: 76
+    height: 76
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_EffectLine2_5px
+    x: 433
+    y: 127
+    width: 23
+    height: 43
+    borderLeft: 3
+    borderRight: 15
+    borderTop: 16
+    borderBottom: 20
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Line_10px
+    x: 436
+    y: 228
+    width: 28
+    height: 28
+    borderLeft: 12
+    borderRight: 12
+    borderTop: 12
+    borderBottom: 12
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Line_15px
+    x: 388
+    y: 67
+    width: 40
+    height: 40
+    borderLeft: 19
+    borderRight: 19
+    borderTop: 19
+    borderBottom: 19
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Line_5px
+    x: 436
+    y: 204
+    width: 21
+    height: 22
+    borderLeft: 8
+    borderRight: 8
+    borderTop: 8
+    borderBottom: 8
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Square_Bg
+    x: 436
+    y: 176
+    width: 4
+    height: 4
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Field_Undercover_Icon_01_Disable
+    x: 390
+    y: 172
+    width: 44
+    height: 41
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Field_Undercover_Icon_01_Enable
+    x: 390
+    y: 215
+    width: 44
+    height: 41
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

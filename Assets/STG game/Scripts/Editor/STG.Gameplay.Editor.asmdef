@@ -3,7 +3,9 @@
     "rootNamespace": "",
     "references": [
         "STG.Gameplay",
-        "VolumetricLines"
+        "VolumetricLines",
+        "Unity.2D.Sprite.Editor",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [
         "Editor"

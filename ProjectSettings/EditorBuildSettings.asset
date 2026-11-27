@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/STG game/Scenes/Title.unity
+    guid: 0f03bee5519a0df40beff734056897f2
+  - enabled: 1
+    path: Assets/STG game/Scenes/CharacterSelect.unity
+    guid: bc8af2fdc4507e944a0fcdb0e37b2a97
+  - enabled: 1
     path: Assets/STG game/Scenes/mian game.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

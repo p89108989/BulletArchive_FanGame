@@ -238,7 +238,7 @@ public static class AreaStrikeExplosionBuilder
     }
 
     // URP Particles/Unlit 材質；透過腳本設定時不會經過 ShaderGUI，所以混合狀態要手動寫齊
-    private static Material GetOrCreateParticleMaterial(string path, Texture2D texture, float brightness, bool additive, int queueOffset)
+    internal static Material GetOrCreateParticleMaterial(string path, Texture2D texture, float brightness, bool additive, int queueOffset)
     {
         Material material = AssetDatabase.LoadAssetAtPath<Material>(path);
         if (material == null)
@@ -265,7 +265,7 @@ public static class AreaStrikeExplosionBuilder
     }
 
     // URP 粒子材質的 Soft Particles 參數；透過腳本設定時 ShaderGUI 不會幫忙換算 _SoftParticleFadeParams，所以手動寫入
-    private static void EnableSoftParticles(Material material, float fadeDistance)
+    internal static void EnableSoftParticles(Material material, float fadeDistance)
     {
         material.SetFloat("_SoftParticlesEnabled", 1f);
         material.SetFloat("_SoftParticlesNearFadeDistance", 0f);

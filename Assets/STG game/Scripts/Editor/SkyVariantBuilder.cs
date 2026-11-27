@@ -22,6 +22,11 @@ public static class SkyVariantBuilder
     // 黑夜時 Rio 頭頂的補光 (Rio 的頭髮與衣服偏深色，在暗場景裡容易看不清楚)
     private const string CharacterLightName = "NightFillLight";
     private const float NightCharacterLight = 25f;
+    // 太陽從相機那側 (場地 +Z) 斜上方打下來：俯視相機看到的是角色受光面，影子往畫面上方倒
+    private static readonly Quaternion SunRotation = Quaternion.Euler(50f, 150f, 0f);
+    // 天空盒算出的環境光只有 0.2~0.3，角色背光面會發黑；白天、黃昏額外疊加環境光 (黃昏偏橘)，黑夜維持暗、靠角色補光
+    private static readonly Color DayAmbientTint = new Color(0.3f, 0.3f, 0.32f);
+    private static readonly Color DuskAmbientTint = new Color(0.32f, 0.22f, 0.16f);
     private static readonly Vector3 CharacterLightOffset = new Vector3(0f, 6f, 0f);
     private static readonly Color CharacterLightColor = new Color(0.75f, 0.85f, 1f);
 
@@ -116,6 +121,7 @@ public static class SkyVariantBuilder
         if (environment == null) environment = skyObject.AddComponent<SkyEnvironment>();
 
         Light sun = RenderSettings.sun;
+        if (sun != null) sun.transform.rotation = SunRotation;
         float dayIntensity = sun != null ? sun.intensity : 1f;
         Color dayColor = sun != null ? sun.color : Color.white;
         float transition = 2f;
@@ -134,8 +140,8 @@ public static class SkyVariantBuilder
         serialized.FindProperty("transitionDuration").floatValue = transition;
         SerializedProperty presets = serialized.FindProperty("presets");
         presets.arraySize = 3;
-        WritePreset(presets.GetArrayElementAtIndex(DayPreset), SkyEnvironment.CreatePreset("Day", day, dayColor, dayIntensity, 1f, Color.black, 0f));
-        WritePreset(presets.GetArrayElementAtIndex(DuskPreset), SkyEnvironment.CreatePreset("Dusk", dusk, new Color(1f, 0.62f, 0.4f), dayIntensity * 0.85f, 0.7f, new Color(0.12f, 0.05f, 0.03f), 0f));
+        WritePreset(presets.GetArrayElementAtIndex(DayPreset), SkyEnvironment.CreatePreset("Day", day, dayColor, dayIntensity, 1f, DayAmbientTint, 0f));
+        WritePreset(presets.GetArrayElementAtIndex(DuskPreset), SkyEnvironment.CreatePreset("Dusk", dusk, new Color(1f, 0.62f, 0.4f), dayIntensity * 0.85f, 0.7f, DuskAmbientTint, 0f));
         WritePreset(presets.GetArrayElementAtIndex(NightPreset), SkyEnvironment.CreatePreset("Night", night, new Color(0.55f, 0.65f, 1f), dayIntensity * 0.6f, 0.6f, new Color(0.02f, 0.03f, 0.08f), NightCharacterLight));
         serialized.ApplyModifiedPropertiesWithoutUndo();
 

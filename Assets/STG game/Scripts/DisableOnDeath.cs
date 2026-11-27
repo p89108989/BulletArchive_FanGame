@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 // 敵人血量歸零時播放爆炸特效並停用指定物件；可設定一段時間後重生 (回滿血並重新啟用)。
-// 要重生時，停用目標必須是子物件 (例如砲台的 Pivot)，自己保持啟用才能計時。Boss 戰期間暫停重生倒數
+// 要重生時，停用目標必須是子物件 (例如砲台的 Pivot)，自己保持啟用才能計時。Boss 戰期間不重生，Boss 戰結束時立刻重生
 [RequireComponent(typeof(EnemyHealth))]
 public class DisableOnDeath : MonoBehaviour, ICombatPhaseListener
 {
@@ -58,7 +58,7 @@ public class DisableOnDeath : MonoBehaviour, ICombatPhaseListener
         StartCoroutine(RespawnAfterDelay());
     }
 
-    // Boss 戰期間倒數暫停，回到一般戰鬥後從剩餘秒數繼續
+    // Boss 戰期間倒數暫停 (結束時由 OnCombatPhaseChanged 直接重生)
     private IEnumerator RespawnAfterDelay()
     {
         float remaining = respawnDelay;
@@ -70,9 +70,15 @@ public class DisableOnDeath : MonoBehaviour, ICombatPhaseListener
         Respawn();
     }
 
+    // Boss 戰期間不重生；Boss 戰結束時等待中的立刻重生 (砲台在 Boss 戰開始時全部拆除，結束後直接回來)
     public void OnCombatPhaseChanged(CombatPhase phase)
     {
         isRespawnPaused = phase == CombatPhase.Boss;
+        if (isRespawnPaused || !health.IsDead) return;
+        if (respawnDelay <= 0f || disableTarget == null || disableTarget == gameObject) return;
+
+        StopAllCoroutines();
+        Respawn();
     }
 
     private void Respawn()

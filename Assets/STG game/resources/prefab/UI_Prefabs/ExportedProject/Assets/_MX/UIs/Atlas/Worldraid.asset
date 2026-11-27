@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0000000deadbeef15deadf00d0000000, type: 2}
+  m_Name: Worldraid
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: c3f0aee8f11d69c4d9ee2a73abd0f86e, type: 2}
+  mSprites:
+  - name: Cafe_Icon_Confirm
+    x: 820
+    y: 934
+    width: 90
+    height: 90
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Btn_BG
+    x: 384
+    y: 580
+    width: 68
+    height: 70
+    borderLeft: 28
+    borderRight: 28
+    borderTop: 20
+    borderBottom: 35
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Btn_Normal_Y_S_Pt
+    x: 284
+    y: 652
+    width: 251
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Icon_Lock
+    x: 912
+    y: 864
+    width: 65
+    height: 83
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Icon_Reddot
+    x: 979
+    y: 912
+    width: 39
+    height: 35
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Line_Dot
+    x: 989
+    y: 950
+    width: 10
+    height: 10
+    borderLeft: 2
+    borderRight: 2
+    borderTop: 2
+    borderBottom: 2
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Bg1
+    x: 989
+    y: 995
+    width: 29
+    height: 29
+    borderLeft: 10
+    borderRight: 10
+    borderTop: 8
+    borderBottom: 8
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Bg2
+    x: 979
+    y: 895
+    width: 11
+    height: 15
+    borderLeft: 4
+    borderRight: 4
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Bg3_Corrosion
+    x: 284
+    y: 505
+    width: 98
+    height: 145
+    borderLeft: 46
+    borderRight: 46
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Circle
+    x: 504
+    y: 797
+    width: 135
+    height: 135
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Engine
+    x: 912
+    y: 949
+    width: 75
+    height: 75
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_GaugeBg
+    x: 284
+    y: 485
+    width: 290
+    height: 18
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_GaugeFront
+    x: 284
+    y: 466
+    width: 288
+    height: 17
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Img_Cover_Corrosion
+    x: 0
+    y: 450
+    width: 282
+    height: 264
+    borderLeft: 134
+    borderRight: 134
+    borderTop: 126
+    borderBottom: 126
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Img_District1_3
+    x: 0
+    y: 716
+    width: 270
+    height: 308
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Img_District4
+    x: 272
+    y: 794
+    width: 230
+    height: 230
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_PanelLine1
+    x: 272
+    y: 720
+    width: 8
+    height: 72
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_PanelLine2
+    x: 284
+    y: 452
+    width: 150
+    height: 12
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_PanelLine3
+    x: 384
+    y: 572
+    width: 64
+    height: 6
+    borderLeft: 30
+    borderRight: 30
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Tab_Active
+    x: 0
+    y: 302
+    width: 327
+    height: 146
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Eventlobby_Tab_Normal
+    x: 989
+    y: 962
+    width: 26
+    height: 31
+    borderLeft: 8
+    borderRight: 15
+    borderTop: 18
+    borderBottom: 8
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Phase_Battle_Limit
+    x: 504
+    y: 934
+    width: 314
+    height: 90
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Phase_Notice_Line
+    x: 1017
+    y: 981
+    width: 3
+    height: 12
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Conquest_2nd_Phase_Notice_Pt
+    x: 992
+    y: 898
+    width: 6
+    height: 12
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

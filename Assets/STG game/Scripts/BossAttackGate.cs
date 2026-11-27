@@ -16,6 +16,12 @@ public class BossAttackGate : MonoBehaviour
         return true;
     }
 
+    // 不等待、直接接管使用權 (例如由血量觸發的特殊機制)；原本的攻擊之後呼叫 Release 不會放掉這次的使用權
+    public void ForceAcquire(Object requester)
+    {
+        owner = requester;
+    }
+
     public void Release(Object requester)
     {
         if (owner == requester) owner = null;

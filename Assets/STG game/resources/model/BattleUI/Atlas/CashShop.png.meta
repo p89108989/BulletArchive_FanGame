@@ -1,0 +1,2545 @@
+fileFormatVersion: 2
+guid: a8069eab38542d645b389fd8cd771d87
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CashShop_Bg_DesignTag
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1193
+        width: 86
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 38, y: 35, z: 38, w: 35}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d736a96b2410d541bdc5370bf61ab86
+      internalID: -1215647524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Btn_RecommandPage_00
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1029
+        width: 83
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 46, y: 0, z: 28, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa5c98d5974cc840a0694e5f065a9d3
+      internalID: -218674934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Btn_RecommandPage_01
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1111
+        width: 83
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 46, y: 0, z: 28, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473d2e77e51337d489036f341ba33175
+      internalID: -344713389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Btn_RecommandPage_02
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1631
+        width: 68
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 0, z: 28, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea33c68cf34e0ef44810d2b7b457bdc5
+      internalID: 1171929430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Btn_RecommandPage_03
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1549
+        width: 68
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 0, z: 28, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b09ecefb24c1348bfd5fb69a249c33
+      internalID: -1108569423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Btn_RecommandPage_04
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1190
+        width: 116
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 54, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e93900728c7374a9a06c5edffe7124
+      internalID: 1740815756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Btn_RecommandPage_05
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1824
+        width: 116
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 54, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3748b0ebbc7424393c7b1a1d3c2735
+      internalID: 220053924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Gradient_Horizon
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1983
+        width: 256
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5c155611069984d8609ba3a19c475b
+      internalID: -1578953811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Gradient_Vertical
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 361
+        width: 16
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e9f35550fecbe46b52d3ccd32e72de
+      internalID: 629956794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Ap_00
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 82
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96dca4ebdacb6b4caf822942c020520
+      internalID: -1246226186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Arona
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1327
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49369083f4ebc46488c3757a153c93f4
+      internalID: 37266762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Gem_00
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 82
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12b2019d3b8d8047b9ae87e01379402
+      internalID: 795419641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Gem_01
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1619
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc85d57ed4395264595888baf5c07c9c
+      internalID: 390925330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Hot_00
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1111
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5523c8f09b1f949a81725a01e781ce
+      internalID: -1130719898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Hot_01
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1906
+        width: 74
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f9b47949a943e42a66c42073ce3a89
+      internalID: 153236422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Monthly_00
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1438
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c5d67204b96504bbd2c028c4c27af4
+      internalID: 262613849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Monthly_01
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1355
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f8197f96d4d2f4e87a7feca736ad43
+      internalID: -1468133651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Package_00
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b777ad2201453d48a0c895c9108fe30
+      internalID: -262735465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Package_01
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 132
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007d7453a6b757f4eb1920dc090b8f72
+      internalID: 885835452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Recommend_00
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb3c7b5d1d241045926efcc357d567b
+      internalID: -1304395300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Recommend_01
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 132
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7ecf6c8479c8a4a9f6a5e02e800d4a
+      internalID: 2049762839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Recommend_02
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98126d15653dae14f940088b7a13917b
+      internalID: -1182608545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_StepUp_00
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 132
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed9b2eda495eb042ad195de1bbe4df6
+      internalID: 1949697641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_StepUp_01
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06756597eba566542903cecfe95d2619
+      internalID: 1428916698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_StepUp_TurnBack
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 82
+        width: 41
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11469f8e30679a043854455aaa0ff178
+      internalID: 149403563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Support_00
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 132
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed7126660459154abe0c22818817aa5
+      internalID: 1617617310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Support_01
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1d1f9427a6ce44f867560003df6f88
+      internalID: -476878974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Tag_New
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1934
+        width: 98
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866c4c447d88c44448db829bd7396620
+      internalID: 722922710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_Tag_Reset
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1060
+        width: 98
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274eb8869d2f1524bb4cfba4f2bb458d
+      internalID: 1819047027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_TimeLimit_00
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59dd4d20c1d2e44e8d68ad31c8a195a
+      internalID: 949486485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Icon_TimeLimit_01
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289e18807f50bc0428ccfe14023bc6b9
+      internalID: 738457775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Box_10Rd
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1029
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75113544116773948a258e62e8425ece
+      internalID: -797175076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Box_14Rd
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1983
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 15, z: 15, w: 15}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780fa96334ce134409785ce951a0fe32
+      internalID: 455578525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Box_4px
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 66
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc082c37fe1b29546b45e5e4cc8b545c
+      internalID: -1641337375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Box_6Rd
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1731
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 8, z: 8, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd9442dc2b50d04ca4c0ddf28122b5e
+      internalID: 473523062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Box_6Rd_Half
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1355
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 6, z: 8, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199d6b59059f35e4594b25693cdfd758
+      internalID: 32561871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_CategoryDefault
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1377
+        width: 440
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6ce24f65b7d9e46a46b93b3452fdb3
+      internalID: 561781150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_CategorySelect
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1377
+        width: 440
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 420, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9522ca8c66886b149b82e27958c50513
+      internalID: 1756120483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_CategorySelect_IDC
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2027
+        width: 216
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 104, y: 6, z: 104, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae0792befa9fff4a86141c987c8b540
+      internalID: 563630903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Circle_64px
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 32, z: 32, w: 32}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe83bf260eb8d1045aa625472e660087
+      internalID: -733230408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Deco_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1731
+        width: 528
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19de83bb89ad29d47b239cc35de9fcc9
+      internalID: 1056380139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Deco_01
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1197
+        width: 77
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 0, z: 32, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3365acfb46f7f4a41a5f27d05ac57e01
+      internalID: -2108371237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Deco_02
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 718
+        width: 148
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79159ef0724f26249a135e61e98a30a0
+      internalID: -423009617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Frame_10Rd
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1438
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 11, z: 11, w: 11}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8f5327275849545ae3fb25e634293b
+      internalID: 1324017735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_Frame_MainScene
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1265
+        width: 63
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 48, y: 42, z: 12, w: 42}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c074f9ecc221b4ca063f3b08cb4627
+      internalID: -1393705767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_IDC_00
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1029
+        width: 43
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 22, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8596ddd926e13c549a0921c3264a64cd
+      internalID: 889961565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_IDC_01
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1060
+        width: 73
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 62, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a4ebacf33b2e4458ded1f0b7b617b4
+      internalID: 722392514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_ItemPreview_bg
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6da7e9aa3e40d4599d9731220516a1
+      internalID: -2042723467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_ItemPreview_bg_gra
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1983
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c7d4e62ffc75b409dfaf70de1f9314
+      internalID: -683520582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_ItemPreview_SubCate
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 166
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bf85d4b26efea4086cd6cf35d2e319
+      internalID: 944830810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_JpMoney
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1272
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7098b1816f23f48b2cbba82e8adf91
+      internalID: 467295191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_LabelGradient
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1751
+        width: 634
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 600, y: 18, z: 16, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78cb6014c816c448bcd8d790276821b
+      internalID: -1668579593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1635
+        width: 548
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3b3564dff2e4f438ebe59f6ee020ed
+      internalID: -690676310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_01
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1549
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 32, z: 32, w: 32}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece5ca6a444c0e24684a43fe2406eea8
+      internalID: -1975756578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_02
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1370
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 48, y: 62, z: 48, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b425a03559765248824e0ede5802af1
+      internalID: 1601454063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_03
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1521
+        width: 548
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb4f94bf1e4fcb419a72ffae0074a4a
+      internalID: 1043669214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_04
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1906
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 14, z: 12, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd603c20b72c424c8ae88bb39396775
+      internalID: -1373769645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_05
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 1685
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 38, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f47e3d2ba01302459796d058e6d1f6b
+      internalID: 94079341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 666
+        width: 548
+        height: 476
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9497f2319b4b4544b692d76f193d1fb
+      internalID: -525148394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_07
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1466
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a6494c849f0bd4ab57d85975da9f3b
+      internalID: -1430864445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_08
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 137
+        width: 216
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddc92801eb6f8d40a81a01e8c55838f
+      internalID: -1352684623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_09
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2041
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 4, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871069183ce5c894dab6361f4779eebd
+      internalID: -480037890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyDeco_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 548
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7865f553213079b4a8d04dc509c251f3
+      internalID: 1830446243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyLabel_00
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1983
+        width: 144
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d91ee44add45a468c2b2f686f09c88
+      internalID: 1284753374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_MonthlyLabel_01
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2001
+        width: 144
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191b393eb70fd4146a5edd7714945199
+      internalID: 420794473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_NoticeBg
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1466
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 23, y: 23, z: 23, w: 23}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7e59ba37bfb054687c94bf1ce1f19b
+      internalID: 1204240847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1144
+        width: 597
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d796c592cf1135408063a6ea106a8d1
+      internalID: 442758155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_01
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2001
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028be95111500c940ab5c54cebc9399d
+      internalID: -698590457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_02
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1355
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9259a99adad964895652eaaddd975f
+      internalID: 883688848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_03
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1746
+        width: 151
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd8440d78c78de4e9d061cca89bd0e7
+      internalID: -704607182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_04
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 150
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc11ed527b7190b4bb83401e534a07ca
+      internalID: -55722330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_05
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1521
+        width: 151
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3f9a9fa6424c94f9df59e9d1f2a233
+      internalID: -2113875164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_06
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1824
+        width: 148
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832ae02e8c292d8469931a48db1a6cf6
+      internalID: -1140401613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_07
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1906
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 8, z: 0, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9ffaf3cf4e5e04c91b2cf275f5ab42
+      internalID: 100467797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_08
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 566
+        width: 144
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d0d54f31885204596b2e95524de3b5
+      internalID: 1531250234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_09
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 401
+        width: 144
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136fb95ed7f827d44871223d86458791
+      internalID: -1179862692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_10
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 956
+        width: 110
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db77872f8e45e154d923822169d7ddf4
+      internalID: 1032637750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_RecommendDeco_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 225
+        width: 136
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b6c5dbd4c582544bc8bf2efe72f2d6
+      internalID: -2033765595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_C_00
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1107
+        width: 177
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 0, z: 66, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a51b21efcee5d46ab498b19d741464
+      internalID: 537743332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_C_01
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1197
+        width: 169
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaf91c3a56ffe64e8f05e21011739a5
+      internalID: -1882141966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_C_02
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 865
+        width: 98
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 63, y: 0, z: 28, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236c8e3af709cce4e95630625b1cf267
+      internalID: -1680716138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_Deco
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1713
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0891e3d38acfe614cb5299f2109e56e7
+      internalID: 855177765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_Frame
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 956
+        width: 147
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 66, y: 0, z: 71, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7e6d2361fe8c24880fe85d3a922c42
+      internalID: -1848611433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_L_00
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1824
+        width: 182
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 88, y: 0, z: 88, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236de06ea8b7d8946a0c496d201c3e6b
+      internalID: -258912148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_R_00
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1824
+        width: 182
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 88, y: 0, z: 88, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742a663d61e261848911d7cb7058d318
+      internalID: -774804358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_R_01
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 0
+        width: 170
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a57b8d2f4927f642a3ba64662b183a3
+      internalID: -449152796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_R_02
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 947
+        width: 98
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 56, y: 0, z: 40, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e82d351261d794396fb383a484cc01
+      internalID: -1838717011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_S_00
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 862
+        width: 181
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727b2eaf43c90e144b58be70c8345cde
+      internalID: 630538951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_SubCategory_S_01
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1279
+        width: 169
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 0, z: 80, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bde52485b0aa1849b686fc6fa2f9daf
+      internalID: -941147169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_WaveBox_00
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1934
+        width: 564
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 14, z: 0, w: 23}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fd781770ffd4c488a254aada42a32b
+      internalID: -629263775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_WaveBox_01
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1971
+        width: 564
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 20, z: 0, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e406df98620715b42b64ed8b137a0737
+      internalID: 599685003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_WaveBox_02
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 203
+        width: 565
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66ccf5ae499fea4abd49af0255208b2
+      internalID: 320667912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CashShop_Img_WaveBox_03
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1751
+        width: 215
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 96, y: 18, z: 96, w: 152}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbb5218345f0994cba568214dbcf187
+      internalID: -1470518652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Bg_Raius16px
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1934
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819c02ab2462bc64495f65d96da591a1
+      internalID: 1706760120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Bg_Raius20px_Shadow
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 148
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 21, y: 27, z: 28, w: 21}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9a205bb58b602459f836de5300afe1
+      internalID: -944520042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Bg_DesignTag1
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 148
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 27, y: 0, z: 27, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f4aa7ef7ec68745bae475fe73d9450
+      internalID: 1492063156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Bg_Recommend
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 225
+        width: 169
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daddbf33f912c6147ae5249d4f9d5314
+      internalID: -1894575791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Frame_Gauge
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1504
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 19, y: 19, z: 19, w: 19}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ee7824cf7a617438ece41b896b7a29
+      internalID: -566378733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Icon_Check_00
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1521
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bda6de687e35145bfebffec4060df3
+      internalID: 2973598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Icon_Check_01
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1272
+        width: 98
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4aa95a7652469546a6c8ecbcf7ac992
+      internalID: -1673868120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Icon_Check_Type01
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1983
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271c4cb15f790bc4b9a8bd0cfb701956
+      internalID: -1005816649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Icon_RedDot
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 2009
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40715080c86d2db4faca805448b93ede
+      internalID: 1659959439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Img_BackGroundGradient
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 361
+        width: 18
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 480, z: 6, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda7d622d93431b42ad8e42836dc5ee0
+      internalID: 1462904240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Img_Gauge
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1107
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 17, y: 17, z: 17, w: 17}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4847f2c090aa54997d8b40b05b626e
+      internalID: 1782880256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StepUp_Img_Step
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2001
+        width: 63
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87083992774d0cc4caea396eb4637a12
+      internalID: -1061458040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab199863de498b541bed089e4c59c65f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CashShop_Bg_DesignTag: -1215647524
+      CashShop_Btn_RecommandPage_00: -218674934
+      CashShop_Btn_RecommandPage_01: -344713389
+      CashShop_Btn_RecommandPage_02: 1171929430
+      CashShop_Btn_RecommandPage_03: -1108569423
+      CashShop_Btn_RecommandPage_04: 1740815756
+      CashShop_Btn_RecommandPage_05: 220053924
+      CashShop_Gradient_Horizon: -1578953811
+      CashShop_Gradient_Vertical: 629956794
+      CashShop_Icon_Ap_00: -1246226186
+      CashShop_Icon_Arona: 37266762
+      CashShop_Icon_Gem_00: 795419641
+      CashShop_Icon_Gem_01: 390925330
+      CashShop_Icon_Hot_00: -1130719898
+      CashShop_Icon_Hot_01: 153236422
+      CashShop_Icon_Monthly_00: 262613849
+      CashShop_Icon_Monthly_01: -1468133651
+      CashShop_Icon_Package_00: -262735465
+      CashShop_Icon_Package_01: 885835452
+      CashShop_Icon_Recommend_00: -1304395300
+      CashShop_Icon_Recommend_01: 2049762839
+      CashShop_Icon_Recommend_02: -1182608545
+      CashShop_Icon_StepUp_00: 1949697641
+      CashShop_Icon_StepUp_01: 1428916698
+      CashShop_Icon_StepUp_TurnBack: 149403563
+      CashShop_Icon_Support_00: 1617617310
+      CashShop_Icon_Support_01: -476878974
+      CashShop_Icon_Tag_New: 722922710
+      CashShop_Icon_Tag_Reset: 1819047027
+      CashShop_Icon_TimeLimit_00: 949486485
+      CashShop_Icon_TimeLimit_01: 738457775
+      CashShop_Img_Box_10Rd: -797175076
+      CashShop_Img_Box_14Rd: 455578525
+      CashShop_Img_Box_4px: -1641337375
+      CashShop_Img_Box_6Rd: 473523062
+      CashShop_Img_Box_6Rd_Half: 32561871
+      CashShop_Img_CategoryDefault: 561781150
+      CashShop_Img_CategorySelect: 1756120483
+      CashShop_Img_CategorySelect_IDC: 563630903
+      CashShop_Img_Circle_64px: -733230408
+      CashShop_Img_Deco_00: 1056380139
+      CashShop_Img_Deco_01: -2108371237
+      CashShop_Img_Deco_02: -423009617
+      CashShop_Img_Frame_10Rd: 1324017735
+      CashShop_Img_Frame_MainScene: -1393705767
+      CashShop_Img_IDC_00: 889961565
+      CashShop_Img_IDC_01: 722392514
+      CashShop_Img_ItemPreview_SubCate: 944830810
+      CashShop_Img_ItemPreview_bg: -2042723467
+      CashShop_Img_ItemPreview_bg_gra: -683520582
+      CashShop_Img_JpMoney: 467295191
+      CashShop_Img_LabelGradient: -1668579593
+      CashShop_Img_MonthlyDeco_00: -690676310
+      CashShop_Img_MonthlyDeco_01: -1975756578
+      CashShop_Img_MonthlyDeco_02: 1601454063
+      CashShop_Img_MonthlyDeco_03: 1043669214
+      CashShop_Img_MonthlyDeco_04: -1373769645
+      CashShop_Img_MonthlyDeco_05: 94079341
+      CashShop_Img_MonthlyDeco_06: -525148394
+      CashShop_Img_MonthlyDeco_07: -1430864445
+      CashShop_Img_MonthlyDeco_08: -1352684623
+      CashShop_Img_MonthlyDeco_09: -480037890
+      CashShop_Img_MonthlyDeco_10: 1830446243
+      CashShop_Img_MonthlyLabel_00: 1284753374
+      CashShop_Img_MonthlyLabel_01: 420794473
+      CashShop_Img_NoticeBg: 1204240847
+      CashShop_Img_RecommendDeco_00: 442758155
+      CashShop_Img_RecommendDeco_01: -698590457
+      CashShop_Img_RecommendDeco_02: 883688848
+      CashShop_Img_RecommendDeco_03: -704607182
+      CashShop_Img_RecommendDeco_04: -55722330
+      CashShop_Img_RecommendDeco_05: -2113875164
+      CashShop_Img_RecommendDeco_06: -1140401613
+      CashShop_Img_RecommendDeco_07: 100467797
+      CashShop_Img_RecommendDeco_08: 1531250234
+      CashShop_Img_RecommendDeco_09: -1179862692
+      CashShop_Img_RecommendDeco_10: 1032637750
+      CashShop_Img_RecommendDeco_11: -2033765595
+      CashShop_Img_SubCategory_C_00: 537743332
+      CashShop_Img_SubCategory_C_01: -1882141966
+      CashShop_Img_SubCategory_C_02: -1680716138
+      CashShop_Img_SubCategory_Deco: 855177765
+      CashShop_Img_SubCategory_Frame: -1848611433
+      CashShop_Img_SubCategory_L_00: -258912148
+      CashShop_Img_SubCategory_R_00: -774804358
+      CashShop_Img_SubCategory_R_01: -449152796
+      CashShop_Img_SubCategory_R_02: -1838717011
+      CashShop_Img_SubCategory_S_00: 630538951
+      CashShop_Img_SubCategory_S_01: -941147169
+      CashShop_Img_WaveBox_00: -629263775
+      CashShop_Img_WaveBox_01: 599685003
+      CashShop_Img_WaveBox_02: 320667912
+      CashShop_Img_WaveBox_03: -1470518652
+      Common_Bg_Raius16px: 1706760120
+      Common_Bg_Raius20px_Shadow: -944520042
+      StepUp_Bg_DesignTag1: 1492063156
+      StepUp_Bg_Recommend: -1894575791
+      StepUp_Frame_Gauge: -566378733
+      StepUp_Icon_Check_00: 2973598
+      StepUp_Icon_Check_01: -1673868120
+      StepUp_Icon_Check_Type01: -1005816649
+      StepUp_Icon_RedDot: 1659959439
+      StepUp_Img_BackGroundGradient: 1462904240
+      StepUp_Img_Gauge: 1782880256
+      StepUp_Img_Step: -1061458040
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

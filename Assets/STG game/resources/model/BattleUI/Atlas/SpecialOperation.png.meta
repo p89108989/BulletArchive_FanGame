@@ -1,0 +1,1050 @@
+fileFormatVersion: 2
+guid: 23c88c0cdff75e5458d7680d7e922d36
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Common_Square_Line
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 54
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b0ead6ddb94b0439f1aff6caa33fd2
+      internalID: 80470997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgFont_Collection
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1000
+        width: 154
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b122e0352820140a6bc9962cd8db74
+      internalID: -387551027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgFont_Emblem
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1000
+        width: 104
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5920d64c6d40b7e43ac1cd978b1b9962
+      internalID: 1491212896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgFont_Image
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 979
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc31487d12fc364f88708cf0c184f54
+      internalID: -1775676619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImgFont_Infomation
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 979
+        width: 170
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ebe37b89b44654bbf13d2217bddabe
+      internalID: -1226022355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingame_Icon_Arrow
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 180
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2964b9606d8ce5e4895e870f0858ab7a
+      internalID: 1537187972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingame_Icon_Carrier
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 184
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b46312431a2d7f44b5ed8489fbfe8c1
+      internalID: 2089313785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ingame_MarkBg_Circle_Carrier
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5330ff9065b8b404cbda939c88c123f4
+      internalID: -556670381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Collection_BG
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 0
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 104, z: 24, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2a6305af5fc29468713026c619ae68
+      internalID: -1970341041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Collection_Deco_Bottom
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 958
+        width: 1024
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6fce45778c137458ad730ea8ba679b
+      internalID: -5789658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Collection_Deco_Side
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 979
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 9, z: 0, w: 9}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a855e569b061a45967197507b501c1
+      internalID: 2058384204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Collection_Deco_Top
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 979
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 20, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e54b7713d3ecf34688756a0f35a01eb
+      internalID: 1448426348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Collection_Innerglow
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 0
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 106, z: 40, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b019a804793536f43b8c8eb5d9b44093
+      internalID: 1558128274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Collection_Line
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 0
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 104, z: 24, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f377a8220731db54eb13bf80211a7ff6
+      internalID: -1405419113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Collection_Shadow
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 821
+        width: 172
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 106, z: 40, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74b896ae833d54489ddb00435a12874
+      internalID: -258607785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Dotline
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 179
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581ab6e850eb32c49a2e2f9bd798614f
+      internalID: 722220996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Emblem_BG
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 932
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58bbd75fc9d7be4399d12536859c64a
+      internalID: -1851082207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Emblem_Deco
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 821
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31381861c9ccf7443a0da4e3be5d51f9
+      internalID: -384096841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Emblem_Shadow
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 853
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ef49a22d5cafa4bbbf3fa39be5d0eb
+      internalID: 158489508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_01
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 137
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e300b6aaabd0f4f8cc2bc41908372c
+      internalID: -1910766884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_02
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 137
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c5e099922bca942895328d24afd704
+      internalID: 1138137694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_03
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 137
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232adb09367638b42a1c482f9ae4f2bd
+      internalID: -644109918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_04
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 137
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230a32a423d744846b84de1ffea916b3
+      internalID: -1370240775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_05
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 180
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14faa047b1837f4d808ec8f51f8218c
+      internalID: 940055696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_06
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 123
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a9161456c16db4891a352e7b19d93a
+      internalID: 551093878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_07
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 119
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d139ff8e6ed937740b3878bedd93890b
+      internalID: -2033847270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_08
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 58
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13acadb8e346cd941984f1140338b284
+      internalID: -1105866930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_09
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 137
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f134b1cb3b07c094694801a1718b930a
+      internalID: 1156635945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Icon_Sephira_10
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 137
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135aec844f061a7479abd2d863173575
+      internalID: -2143731764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_List_Pattern
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 89
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3631c3cb243593941a18bba9517def96
+      internalID: -520969803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_SephiraGauge_BG
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 853
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae070a93566fc0498d25ca035d4a99b
+      internalID: -1335939563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_SephiraList_Able
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9822909c47f487e4daaf923381cdcfb4
+      internalID: 1486850488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_SephiraList_BG
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 602
+        width: 218
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69c018c0034d0c40b8e2f0cef60f62e
+      internalID: -527435460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_SephiraList_Deco
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2382f6dc49bd101499caafc690a2573a
+      internalID: 1035039258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_SephiraList_Disable
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82a1a11ce0abc14e9a2cbdfde2994e7
+      internalID: -1338726341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Series2_DecoLine
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 0
+        width: 109
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93600bc402ff1c14592043d1c45629db
+      internalID: 580766408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Series2_List_Pattern
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 58
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d001fc1a9485f445b0d70400f2710c0
+      internalID: 198188403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Series2_Pattern
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 184
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a745675a044fafe4480e7d17350bf216
+      internalID: 1884222885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Series2_Pin
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 137
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61056aeb3724ef4893cd2066d390956
+      internalID: 1276474234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Special_Operation_Stripe
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 137
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f6e41624661bc459e4bd07802c2670
+      internalID: -1759269013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eeb2a5e3307d897499e1306056c74c85
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Common_Square_Line: 80470997
+      ImgFont_Collection: -387551027
+      ImgFont_Emblem: 1491212896
+      ImgFont_Image: -1775676619
+      ImgFont_Infomation: -1226022355
+      Ingame_Icon_Arrow: 1537187972
+      Ingame_Icon_Carrier: 2089313785
+      Ingame_MarkBg_Circle_Carrier: -556670381
+      Special_Operation_Collection_BG: -1970341041
+      Special_Operation_Collection_Deco_Bottom: -5789658
+      Special_Operation_Collection_Deco_Side: 2058384204
+      Special_Operation_Collection_Deco_Top: 1448426348
+      Special_Operation_Collection_Innerglow: 1558128274
+      Special_Operation_Collection_Line: -1405419113
+      Special_Operation_Collection_Shadow: -258607785
+      Special_Operation_Dotline: 722220996
+      Special_Operation_Emblem_BG: -1851082207
+      Special_Operation_Emblem_Deco: -384096841
+      Special_Operation_Emblem_Shadow: 158489508
+      Special_Operation_Icon_Sephira_01: -1910766884
+      Special_Operation_Icon_Sephira_02: 1138137694
+      Special_Operation_Icon_Sephira_03: -644109918
+      Special_Operation_Icon_Sephira_04: -1370240775
+      Special_Operation_Icon_Sephira_05: 940055696
+      Special_Operation_Icon_Sephira_06: 551093878
+      Special_Operation_Icon_Sephira_07: -2033847270
+      Special_Operation_Icon_Sephira_08: -1105866930
+      Special_Operation_Icon_Sephira_09: 1156635945
+      Special_Operation_Icon_Sephira_10: -2143731764
+      Special_Operation_List_Pattern: -520969803
+      Special_Operation_SephiraGauge_BG: -1335939563
+      Special_Operation_SephiraList_Able: 1486850488
+      Special_Operation_SephiraList_BG: -527435460
+      Special_Operation_SephiraList_Deco: 1035039258
+      Special_Operation_SephiraList_Disable: -1338726341
+      Special_Operation_Series2_DecoLine: 580766408
+      Special_Operation_Series2_List_Pattern: 198188403
+      Special_Operation_Series2_Pattern: 1884222885
+      Special_Operation_Series2_Pin: 1276474234
+      Special_Operation_Stripe: -1759269013
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

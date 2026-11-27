@@ -70,6 +70,13 @@ public class PlayerLaser : MonoBehaviour, ICombatPhaseListener
     // 大招光束剩餘秒數，供 UI 顯示
     public float BurstTimeRemaining => Mathf.Max(0f, burstUntil - Time.time);
     public int ActiveShotCount => volley != null ? volley.ActiveCount : 0;
+    public float BurstDuration => burstDuration;
+    // 大招開啟時觸發一次 (對話框等外部系統訂閱)
+    public event System.Action OnBurstStarted;
+    // 現在按 F 能不能開大招：藍、黃能量都夠，而且不在發動中 (技能卡用來顯示可用 / 能量不足)
+    public bool CanStartBurst => !IsBurstActive && playerEnergy != null
+        && playerEnergy.GetEnergy(BulletPolarity.Blue) >= burstEnergyCost
+        && playerEnergy.GetEnergy(BulletPolarity.Yellow) >= burstEnergyCost;
 
     private void Awake()
     {
@@ -143,13 +150,13 @@ public class PlayerLaser : MonoBehaviour, ICombatPhaseListener
     private void TryStartBurst()
     {
         Keyboard keyboard = Keyboard.current;
-        if (keyboard == null || !keyboard[burstKey].wasPressedThisFrame || IsBurstActive) return;
-        if (playerEnergy.GetEnergy(BulletPolarity.Blue) < burstEnergyCost || playerEnergy.GetEnergy(BulletPolarity.Yellow) < burstEnergyCost) return;
+        if (keyboard == null || !keyboard[burstKey].wasPressedThisFrame || !CanStartBurst) return;
 
         playerEnergy.TrySpend(BulletPolarity.Blue, burstEnergyCost);
         playerEnergy.TrySpend(BulletPolarity.Yellow, burstEnergyCost);
         burstUntil = Time.time + burstDuration;
         tickTimer = 0f;
+        OnBurstStarted?.Invoke();
     }
 
     // 綠色光束以 None 為「放行的顏色」：藍、黃子彈都會被消除，紅色 (None) 攻擊不受影響

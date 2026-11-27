@@ -2,7 +2,8 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-// 遊戲戰鬥階段的狀態機：開場為一般戰鬥，經過 bossStartDelay 秒後進入 Boss 戰。
+// 遊戲戰鬥階段的狀態機：開場為一般戰鬥，經過 bossStartDelay 秒後進入 Boss 戰；
+// 無盡模式擊倒一隻 Boss 後由 BossEncounter 呼叫 RestartBossCountdown，倒數結束下一隻出場。
 // 切換階段時通知所有監聽者 (砲台、直升機、戰車暫停攻擊；Boss 出場；相機換到 Boss 視角)，
 // 各元件自己決定怎麼反應，這裡只負責「現在是哪個階段」與「什麼時候切換」
 public class CombatPhaseController : MonoBehaviour
@@ -19,6 +20,8 @@ public class CombatPhaseController : MonoBehaviour
     // 階段切換時觸發，供 UI 等不在清單內的系統訂閱
     public event Action<CombatPhase> OnPhaseChanged;
 
+    private Coroutine countdown;
+
     private void Awake()
     {
         for (int i = 0; i < phaseListeners.Length; i++)
@@ -32,12 +35,13 @@ public class CombatPhaseController : MonoBehaviour
 
     private void OnEnable()
     {
-        if (CurrentPhase == CombatPhase.Normal) StartCoroutine(BossCountdown());
+        if (CurrentPhase == CombatPhase.Normal) RestartBossCountdown();
     }
 
     private void OnDisable()
     {
         StopAllCoroutines();
+        countdown = null;
     }
 
     // 切換到指定階段並通知所有監聽者；已在該階段時不重複通知
@@ -53,9 +57,18 @@ public class CombatPhaseController : MonoBehaviour
         OnPhaseChanged?.Invoke(phase);
     }
 
+    // 重新開始 Boss 倒數 (只保留一個倒數，不會與開場倒數疊在一起)
+    public void RestartBossCountdown()
+    {
+        if (!isActiveAndEnabled) return;
+        if (countdown != null) StopCoroutine(countdown);
+        countdown = StartCoroutine(BossCountdown());
+    }
+
     private IEnumerator BossCountdown()
     {
         yield return new WaitForSeconds(bossStartDelay);
+        countdown = null;
         EnterPhase(CombatPhase.Boss);
     }
 }

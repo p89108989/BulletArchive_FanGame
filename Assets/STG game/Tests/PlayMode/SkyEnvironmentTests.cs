@@ -118,6 +118,28 @@ public class SkyEnvironmentTests
         Assert.Less(RenderSettings.ambientProbe[0, 0], originalWhiteDc() * 0.5f, "ambient light dims at night");
     }
 
+    // 每隻 Boss 可在 BossProfile 指定自己的時段 (Binah = 黃昏)；這裡用索引 0 (Day) 證明不是用預設的 bossPreset (Night)
+    [UnityTest]
+    public IEnumerator BossPhase_UsesTheSelectedBossSkyPreset()
+    {
+        BossProfile profile = ScriptableObject.CreateInstance<BossProfile>();
+        TestUtil.SetField(profile, "skyPreset", 0);
+        GameObject encounterObject = new GameObject("Encounter");
+        encounterObject.SetActive(false);
+        BossEncounter encounter = encounterObject.AddComponent<BossEncounter>();
+        TestUtil.SetField(encounter, "bossProfile", profile);
+        TestUtil.SetField(environment, "bossEncounter", encounter);
+        yield return null;
+
+        environment.OnCombatPhaseChanged(CombatPhase.Boss);
+        yield return new WaitForSeconds(0.55f);
+
+        Assert.AreEqual(1.2f, sun.intensity, 0.01f, "the profile's preset, not the default night");
+        Assert.AreEqual(dayTexture, TargetTexture());
+        Object.Destroy(encounterObject);
+        Object.Destroy(profile);
+    }
+
     [UnityTest]
     public IEnumerator NormalPhase_ReturnsToDay()
     {

@@ -1,0 +1,382 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0000000deadbeef15deadf00d0000000, type: 2}
+  m_Name: Dreammaker
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: e8fa5c25ecc995940ab7e5b6f5829b67, type: 2}
+  mSprites:
+  - name: Common_Bg_Raius10px
+    x: 186
+    y: 240
+    width: 24
+    height: 24
+    borderLeft: 10
+    borderRight: 10
+    borderTop: 10
+    borderBottom: 10
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Bg_Raius10px_Shadow
+    x: 42
+    y: 14
+    width: 33
+    height: 36
+    borderLeft: 15
+    borderRight: 15
+    borderTop: 10
+    borderBottom: 24
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 1
+    paddingBottom: 1
+  - name: Common_Bg_Raius20px
+    x: 87
+    y: 160
+    width: 54
+    height: 54
+    borderLeft: 20
+    borderRight: 20
+    borderTop: 20
+    borderBottom: 20
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Bg_Raius20px_Shadow
+    x: 150
+    y: 318
+    width: 52
+    height: 52
+    borderLeft: 20
+    borderRight: 25
+    borderTop: 20
+    borderBottom: 28
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Btn_BG
+    x: 189
+    y: 2
+    width: 67
+    height: 70
+    borderLeft: 28
+    borderRight: 28
+    borderTop: 28
+    borderBottom: 35
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Btn_Normal_B_C_Pt
+    x: 216
+    y: 233
+    width: 206
+    height: 138
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 44
+    paddingRight: 1
+    paddingTop: 2
+    paddingBottom: 0
+  - name: Common_Btn_Normal_B_S_Pt
+    x: 216
+    y: 373
+    width: 214
+    height: 139
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 35
+    paddingRight: 2
+    paddingTop: 1
+    paddingBottom: 0
+  - name: Common_Btn_Normal_Y_S_Pt
+    x: 0
+    y: 372
+    width: 214
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 36
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Dotline
+    x: 150
+    y: 237
+    width: 21
+    height: 3
+    borderLeft: 9
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Icon_Search
+    x: 150
+    y: 143
+    width: 87
+    height: 88
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Icon_Time
+    x: 0
+    y: 5
+    width: 40
+    height: 45
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Square_Bg
+    x: 178
+    y: 68
+    width: 4
+    height: 4
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Top_Home_Btn
+    x: 0
+    y: 133
+    width: 85
+    height: 81
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_Top_Option_Btn
+    x: 0
+    y: 52
+    width: 78
+    height: 79
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_UIHide_Icon
+    x: 87
+    y: 66
+    width: 89
+    height: 75
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Common_UIHide_Icon2
+    x: 178
+    y: 74
+    width: 78
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Btn_Back
+    x: 0
+    y: 216
+    width: 148
+    height: 154
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_ImgFont_Max
+    x: 80
+    y: 14
+    width: 107
+    height: 50
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 1
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Lobby_Info_BG_01
+    x: 150
+    y: 266
+    width: 50
+    height: 50
+    borderLeft: 18
+    borderRight: 18
+    borderTop: 18
+    borderBottom: 18
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Lobby_Info_BG_02
+    x: 239
+    y: 168
+    width: 70
+    height: 63
+    borderLeft: 28
+    borderRight: 28
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Parameter_Icon_01
+    x: 432
+    y: 410
+    width: 50
+    height: 50
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Parameter_Icon_02
+    x: 424
+    y: 321
+    width: 50
+    height: 50
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Parameter_Icon_03
+    x: 432
+    y: 462
+    width: 50
+    height: 50
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Parameter_Icon_04
+    x: 424
+    y: 269
+    width: 50
+    height: 50
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Dreammaker_Schedule_Bonus_Minus_01
+    x: 468
+    y: 375
+    width: 34
+    height: 33
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 1
+  - name: Dreammaker_Schedule_Bonus_Minus_02
+    x: 150
+    y: 242
+    width: 34
+    height: 22
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 4
+    paddingBottom: 8
+  - name: Dreammaker_Schedule_Bonus_Plus_01
+    x: 432
+    y: 375
+    width: 34
+    height: 33
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 1
+    paddingBottom: 0
+  - name: Dreammaker_Schedule_Bonus_Plus_02
+    x: 239
+    y: 146
+    width: 34
+    height: 20
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 7
+    paddingBottom: 7
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

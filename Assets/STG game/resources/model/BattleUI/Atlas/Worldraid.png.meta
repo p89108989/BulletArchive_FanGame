@@ -1,0 +1,682 @@
+fileFormatVersion: 2
+guid: cef9192ab387b8744bdc35332ad5aae5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cafe_Icon_Confirm
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774f5492420ed9e4ca923f81e2d37bd5
+      internalID: -1436240339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Btn_BG
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 374
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 35, z: 28, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc80a800d1a72e418493f4217d98f21
+      internalID: 2145043586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Btn_Normal_Y_S_Pt
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 232
+        width: 251
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22de12816d8754243a765193bf835939
+      internalID: -1843338200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_Lock
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 77
+        width: 65
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b0961d42017e3428258f102ed0f255
+      internalID: -1419879918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_Reddot
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 77
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9926c738aa2097449061d22536c2dd5
+      internalID: 6228335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Line_Dot
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 64
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dce89565860bb408f8799ce80b5598
+      internalID: -137353012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Bg1
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 0
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 8, z: 10, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30040ff1258040469e78491ca74fc68
+      internalID: -521650689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Bg2
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 114
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 0, z: 4, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcb5e0853640cd41970ed538d9302cb
+      internalID: 873081280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Bg3_Corrosion
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 374
+        width: 98
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 46, y: 0, z: 46, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a706a8bb5f49140a2b2ab7c9406b62
+      internalID: -612835060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Circle
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 92
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e606d6a9b38b75843b359062534cea14
+      internalID: -1541685113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Engine
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc7666230efc9d4e926b83a291a6af4
+      internalID: -437422926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_GaugeBg
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 521
+        width: 290
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d303c10824bf4af42934b8e1b238539b
+      internalID: 1212623874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_GaugeFront
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 541
+        width: 288
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd57f23441b1f9419cb6ce266d1c92d
+      internalID: 855758396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Img_Cover_Corrosion
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 134, y: 126, z: 134, w: 126}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de896f8f8a36ce64491a720d8137e08c
+      internalID: -1793122307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Img_District1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 270
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1885188c5696c47ad25cc33739160a
+      internalID: -291815116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Img_District4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf004babbc73504585d9872b47371db
+      internalID: -1880683379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_PanelLine1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 232
+        width: 8
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e32c85c898c37849b67b30579a9c128
+      internalID: 1647860812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_PanelLine2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 560
+        width: 150
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153637d6e46736645a1dd35cdb909bc5
+      internalID: 99527639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_PanelLine3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 446
+        width: 64
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 0, z: 30, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41895ca043ff610499c2fce7aa8465c5
+      internalID: 664897535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Tab_Active
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 327
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13038a4492f032f43aba92af959a92e5
+      internalID: 1495831522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Eventlobby_Tab_Normal
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 31
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 8, z: 15, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004683121d489c94f9fb6e2ef0bf60af
+      internalID: 627147669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Phase_Battle_Limit
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 314
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae39d7375e7d6c49b2a9c50ea53f5d0
+      internalID: -161553570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Phase_Notice_Line
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 31
+        width: 3
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b744cf9f02b67479bc42fc4ccff383
+      internalID: 1323695875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conquest_2nd_Phase_Notice_Pt
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 114
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426fd287372db3b468eafc88eb6bfe8f
+      internalID: -390885785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 953712cb84be233438a528fe74750f91
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cafe_Icon_Confirm: -1436240339
+      Common_Btn_BG: 2145043586
+      Common_Btn_Normal_Y_S_Pt: -1843338200
+      Common_Icon_Lock: -1419879918
+      Common_Icon_Reddot: 6228335
+      Common_Line_Dot: -137353012
+      Conquest_2nd_Eventlobby_Bg1: -521650689
+      Conquest_2nd_Eventlobby_Bg2: 873081280
+      Conquest_2nd_Eventlobby_Bg3_Corrosion: -612835060
+      Conquest_2nd_Eventlobby_Circle: -1541685113
+      Conquest_2nd_Eventlobby_Engine: -437422926
+      Conquest_2nd_Eventlobby_GaugeBg: 1212623874
+      Conquest_2nd_Eventlobby_GaugeFront: 855758396
+      Conquest_2nd_Eventlobby_Img_Cover_Corrosion: -1793122307
+      Conquest_2nd_Eventlobby_Img_District1_3: -291815116
+      Conquest_2nd_Eventlobby_Img_District4: -1880683379
+      Conquest_2nd_Eventlobby_PanelLine1: 1647860812
+      Conquest_2nd_Eventlobby_PanelLine2: 99527639
+      Conquest_2nd_Eventlobby_PanelLine3: 664897535
+      Conquest_2nd_Eventlobby_Tab_Active: 1495831522
+      Conquest_2nd_Eventlobby_Tab_Normal: 627147669
+      Conquest_2nd_Phase_Battle_Limit: -161553570
+      Conquest_2nd_Phase_Notice_Line: 1323695875
+      Conquest_2nd_Phase_Notice_Pt: -390885785
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

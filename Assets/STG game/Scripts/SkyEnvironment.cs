@@ -28,6 +28,8 @@ public class SkyEnvironment : MonoBehaviour, ICombatPhaseListener
     [SerializeField, Tooltip("可用的時段，例如 0 白天、1 黃昏、2 黑夜")] private SkyPreset[] presets = Array.Empty<SkyPreset>();
     [SerializeField, Min(0), Tooltip("一般戰鬥使用的時段 (presets 的索引)")] private int normalPreset;
     [SerializeField, Min(0), Tooltip("Boss 戰使用的時段 (presets 的索引)；Perorozilla 為黑夜")] private int bossPreset = 2;
+    [SerializeField, Tooltip("目前選定的 Boss；BossProfile 有指定時段 (例如 Binah = 黃昏) 時優先使用，留空則一律用 bossPreset")]
+    private BossEncounter bossEncounter;
     [SerializeField, Min(0f), Tooltip("切換時段的漸變時間 (秒)，建議與鏡頭轉場時間相同")] private float transitionDuration = 2f;
 
     private static readonly int MainTexId = Shader.PropertyToID("_MainTex");
@@ -75,7 +77,13 @@ public class SkyEnvironment : MonoBehaviour, ICombatPhaseListener
 
     public void OnCombatPhaseChanged(CombatPhase phase)
     {
-        BeginTransition(phase == CombatPhase.Boss ? bossPreset : normalPreset, transitionDuration);
+        BeginTransition(phase == CombatPhase.Boss ? CurrentBossPreset() : normalPreset, transitionDuration);
+    }
+
+    private int CurrentBossPreset()
+    {
+        BossProfile profile = bossEncounter != null ? bossEncounter.Profile : null;
+        return profile != null && profile.SkyPreset >= 0 ? profile.SkyPreset : bossPreset;
     }
 
     private void Update()

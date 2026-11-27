@@ -1,0 +1,6869 @@
+fileFormatVersion: 2
+guid: 91a496023c73379468059f62d2fd9598
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Currency_Icon_WorldRaidCommonTicket
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1099
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c594f652110cf429a22436a80f1b83
+      internalID: -1155513859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_BattlePopup_StageInfo
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1603
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9728bb241b10c84aa3c0f9e6267e12f
+      internalID: 1010127474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_BridgeMenu
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1357
+        width: 462
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 38, y: 0, z: 410, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690789809b2c5ba4383ed05d4b9c3e6d
+      internalID: -1347846100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_BridgeMenu_Color
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 272
+        width: 1067
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fa2d030c9857f438f1a42aa0d76eb6
+      internalID: -468123416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_BtnCollection
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 245
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 170, y: 0, z: 50, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f6a515e77b2ea4c89d124cb50f7ace
+      internalID: -530341830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_Cost
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1639
+        width: 112
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 68, z: 76, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4af35c1b69147429c8358895c99772
+      internalID: -1881138383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_GetTicket
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1371
+        width: 510
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0263724f8bdef40b4a362f019fa732
+      internalID: 443775659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_HpGlow
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1371
+        width: 16
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 46, z: 2, w: 46}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd7193862ac70b45a158dff30a0bfe7
+      internalID: -1982697242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_LightGlow
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 574
+        width: 80
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 124, z: 36, w: 124}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9717ffa95db35147b0c3fd42f0a1ed5
+      internalID: -1440322089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_LobbyToast
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 894
+        width: 130
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 96, y: 20, z: 26, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fac59f0f5232e242bcddf5660f0e4b5
+      internalID: -1700464235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_MultiFloorSkill
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 1503
+        width: 142
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7520fa0cd0f744094c3b6afbe4c9c4
+      internalID: -2123805398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_NodeHp_IDC
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 510
+        width: 14
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 20, z: 0, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83eac35843a3a0e428e883d8c1a40451
+      internalID: -2020094342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_NodeHp_Small
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 583
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 0, z: 12, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f4020026b3b914e8cfe01336698a8d
+      internalID: 1204519935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_NodeNameGlow
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 319
+        width: 22
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 0, z: 10, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e495aceb97d31e45a2779e404f17c74
+      internalID: -1915648786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_NodeShape_00
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1988
+        width: 478
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 236, y: 20, z: 236, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d916c7484cf5cde45a33414b8522a473
+      internalID: 1437642964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_NodeShape_01
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 473
+        width: 70
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 22, z: 30, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d460c261dc67c2498beeee23e830036
+      internalID: -1217232223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_NodeShape_02
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 527
+        width: 70
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 22, z: 30, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddce391e73f840c42aad53e0247c22b4
+      internalID: 867020742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_NodeStatus
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1503
+        width: 97
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 8, z: 40, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a602d858ec20cf43890f2a58e07c8b0
+      internalID: 1573099207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_PopupBanner
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 625
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 18, z: 10, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df46705fbcba90140814bb3d4bcecd5a
+      internalID: -346092970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_PopupBtn
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 577
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 0, z: 106, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bea724fc91ae9d498d241c2add1b7a0
+      internalID: -1587397938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_PopupBtnIcon
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 831
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274be4f390f0b1a4085fa92881d7e410
+      internalID: 359547683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_PopupResource
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 716
+        width: 113
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f52906b69f9fca409419c545911b6a3
+      internalID: 887442555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_ReplayBtn
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1976
+        width: 86
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 60, y: 30, z: 22, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4672175e7d4c24c95c8021d8f46449
+      internalID: 1011942660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_ReplayImg
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1567
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 16, z: 16, w: 16}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606339a3f33b8a44dad8e16316951cc7
+      internalID: -1050788815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_ReplayTag
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1134
+        width: 83
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 62, y: 0, z: 14, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59dcb735d450e84e969b2f712a76127
+      internalID: 1797615409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_ReplayTag_Scroll
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 831
+        width: 113
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 0, z: 96, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff52f56634e82940b128677d3a35c98
+      internalID: -587979281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_SubBtn
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 425
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 16, z: 12, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508e8027c0a99ff4b941e1f54edb3a94
+      internalID: 247578414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_TabWhite
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 249
+        width: 436
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 142, y: 6, z: 260, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc7058fce335e7499ba988d8a10adad
+      internalID: 690492921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_TabWhite_Long
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1247
+        width: 252
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 220, y: 6, z: 20, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117dba5fef6e1a3469b47b27b7403e59
+      internalID: -1909874202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_TabWhite_Side
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 2025
+        width: 531
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 230, y: 8, z: 230, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8dfd15f9135dd43ac3b0411c1707b9
+      internalID: 1913872750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_UpgradeSkill_Deco
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589d94820f22c414984f5a6952140118
+      internalID: 1595816001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_UpgradeSkill_Glow
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 322
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607cec795bf08544c927bca75892d2f0
+      internalID: 736764738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_UpgradeSkill_Off
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1622
+        width: 544
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 448, y: 0, z: 90, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2abe0c6fdb6d414b9cd97befd4ea429
+      internalID: 50596464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Bg_UpgradeSkill_On
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1622
+        width: 511
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 381, y: 0, z: 118, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf59b272990c3894998243bd06c2a8cd
+      internalID: 954869355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Box_8px
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1401
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8160c65987de44418c8a3716112c430
+      internalID: 1701224864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Box_Blur3px
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 722
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d16f5a70eb36a4e952a1f387e5ef58
+      internalID: -787187257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Box_Round2px
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1349
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78d6390fbe613d4e831a56117858189
+      internalID: 2066813521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Box_Round4px
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 920
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56a332ae8120234eaff8ab4b5901935
+      internalID: 700170773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Box_Shadow_8px
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1011
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a26fb1317643c47981269a5f4e097e
+      internalID: 1457688920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Camera_View00
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 585
+        width: 70
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb42a5541f4b354bb1709b0ddbb6394
+      internalID: 1372907447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Camera_View01
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1356
+        width: 117
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29705226291c252479c691fa4aadc1d3
+      internalID: 700640743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Camera_View02
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1391
+        width: 117
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef52a84acdaab3244af0ae77f63bc686
+      internalID: 1975619633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Camera_View03
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1290
+        width: 117
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59cf2cd0c6d3ab4fa034630bd58036c
+      internalID: -1562998621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Circle_Reserch
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 0
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f50cb247d692e46a73645d028b70cc
+      internalID: -537312517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Deco_00
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1214
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb06ab6a1250e94f9dc930332f702fe
+      internalID: 615172599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Deco_01
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1429
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318694024cf084a4594ed2e0e10602b1
+      internalID: 965843460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_00
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 892
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c30d148b3f6eeb40808f2c19958cbf6
+      internalID: 275775378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_01
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 728
+        width: 32
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 14, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e11aeb606f01548b7415aae9fda2fa
+      internalID: 1681641517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_02
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 583
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0175811605a9c244db0100fbc81bf5f3
+      internalID: 51678229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_Replay_Select_Off
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 259
+        width: 52
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 0, z: 24, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318d5a5ad7070424680ae939bbf839c9
+      internalID: -497985137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_Replay_Select_On
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 787
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 0, z: 30, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c759db6f8b8c4f4449624ec46209266d
+      internalID: -384653034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_Round4px
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 920
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 8, z: 8, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68786edd8f6a0d498d4838f6b6a0e77
+      internalID: 1901193441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_SkillCondition_0
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1856
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3666fc8917ca74fa2e78ce6bee596e
+      internalID: -2001869583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_SkillCondition_1
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1426
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffb1857201fe9c48922423ab01adfa5
+      internalID: 938846075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_USB
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 651
+        width: 181
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849e2be21a522cc418388d3ebe987957
+      internalID: 2128531727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_USB_On_00
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 674
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 22, z: 22, w: 22}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c1478c35dea3540b67a94888a147bd
+      internalID: 53257994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Frame_USB_On_01
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1844
+        width: 167
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8d223fbc3979145a4dbb6f78a7b6b3
+      internalID: 161942099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Glow_CameraView
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1852
+        width: 521
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeebdb95e8145034a96c00dcb07995be
+      internalID: 793602469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Gradient_00
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1431
+        width: 278
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 8, z: 226, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5539ec26ffd3e479097c03739d78e5
+      internalID: 384764911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Gradient_BridgeMenu
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1454
+        width: 752
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f8cf4609d0bc940a322a866e5dd7b9
+      internalID: 1831623711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Gradient_Outglow
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1011
+        width: 312
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 10, z: 226, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0117b9ac4a23c6d479a58eb2b0fb25e1
+      internalID: 474605916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Gradient_Scene
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1125
+        width: 24
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 8, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67b02dbaa7ad6d4d81f801565c642fb
+      internalID: -694677833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Arrow
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1386
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3281d3f78111c594a81be5db2775d5e9
+      internalID: 647941367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Attack
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1214
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc6c3bf052269d4e8cd15d7eecfadc2
+      internalID: 277629436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Back_00
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 831
+        width: 99
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07541324ec2050468c35b25008a0b79
+      internalID: 1144750421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Back_01
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 839
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b9327347cf53e43ba7d2557931f9df
+      internalID: -46553143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Back_02
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1092
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23510b4f477fdb242a1367370331c2cb
+      internalID: -415670460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_BattleClear
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 473
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ae3eb5afbb14e49afcd71064b00339
+      internalID: -1989701913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Check
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1092
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630653e21d0da3c4185231a88f25d8eb
+      internalID: -1106129982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Core_00
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 182
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632bf0aecd691ce41a866ea3157819d2
+      internalID: -2124889010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Core_01
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 722
+        width: 104
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456fd06ddd313704db6c87f91b2e3c8c
+      internalID: -418555863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Defense
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1269
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28452f5a889882d4aa46a3a12287cf23
+      internalID: 1451813474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Diamond
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1335
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba6ade5ec0b55c4f87a0838d96c3e8c
+      internalID: 857157824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_DotRed
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 693
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b8385f5875feb4697f126f6be96c27
+      internalID: -743766192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_DotYellow
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 831
+        width: 72
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39de0bc52bf53cc419ff356edf90c201
+      internalID: 149926317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_DotYellow_Add
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 701
+        width: 60
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f75b0617fca00e47b9efad310e9a4ab
+      internalID: 195698749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Enemy
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1026
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b860ea5a5b76054dabd2ecdd141bac8
+      internalID: -106755592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Fierce
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 529
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1f750f1ab15c841b66eb769634a67d
+      internalID: 326227186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_GetTicket
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 582
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ec664d4a9246e4ca2f9304e5d5fd32
+      internalID: -1319905627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_HideUI
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 831
+        width: 93
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1030dcef92ce3014eb3f96c4de590713
+      internalID: -730930673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Home_00
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 913
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3f3186ab05cca40bd3cc705dc780da
+      internalID: -1307656700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Home_01
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1490
+        width: 54
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea6ae4a3e5642a4288ad25735151cd1
+      internalID: -62512799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Indoor
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 1224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfdaa1207533cb499cb0045bc6c1a75
+      internalID: 1245145887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Info
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 1057
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f7d3fc24790fb4db056e371b28581f
+      internalID: 701092314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worldraid854_Icon_Info_Small
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1436
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db021b13ea0f7ae418f4bf5cc1f91748
+      internalID: 1261733598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Max
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1290
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40691a0677cffba43be72fafedbfdc22
+      internalID: 1522521242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Minus
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1be1f25d09e60a459627e054b46225c
+      internalID: -351640902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Mission
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1639
+        width: 81
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594bda1cb5684b640b5c9e77efdf92ef
+      internalID: 217058100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_MockBattle
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1026
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea9fb54e4215574a86cb61aa6527081
+      internalID: -350241093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Notice
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 659
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574b61d9f89507e498a3d63c56e1087d
+      internalID: 186899782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Outdoor
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1026
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10ff001118533a4eb88e94c0c213c89
+      internalID: -1950597314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Party
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1280
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0493f8bb3dd8241885af17a81666bd
+      internalID: -412160139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Plus
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 473
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b4a588b15509246b7788a3af91ab3e
+      internalID: -1762615889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Plus2
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1346
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ace8f59fbc944459c0178138db6f21
+      internalID: 1087160177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_PopupExit
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 804
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88538b73cbc25f94797527b40e09ca90
+      internalID: 797655511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Rage
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 554
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80743505ade79a24c9ee3fdd27fdc87c
+      internalID: -1420874516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_RaidInfo
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1158
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90c77c86e1114248b9fc0ecb91513e0
+      internalID: -882022807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Setting_00
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 839
+        width: 78
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f70751e95bd1404a859eeac3aeb4942
+      internalID: 541385784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Setting_01
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1011
+        width: 75
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c0850504dd8cd45a8401a983a9b04d
+      internalID: 1246652364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Shop
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1751
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a58c98c32beb0b4ca2dcc565eea33ed
+      internalID: -74286577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_ShowUI
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 722
+        width: 102
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3167304b6480c1c40ba62caad14d8396
+      internalID: 193801076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Skip
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1158
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06412f4cfaf7b8542bb1fe2f0c4380f9
+      internalID: -1403448003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Story
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 647
+        width: 108
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370063ddcf611a646921e698ba093122
+      internalID: -791400114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Street
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 1158
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e458675a787d18246ae435a5102e2558
+      internalID: 2071862622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Ticket
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1173
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61c631526dc8e646a1c6a4553235b93
+      internalID: 380622939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Time
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 651
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f91785b483ab049a8e0b60198da1cd
+      internalID: -438695933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Upgrade_Active
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 1189
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49916ef576a86da4192587d75bd212a6
+      internalID: -241483989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Icon_Upgrade_Passive
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 496
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfec575e3861614eb7771772431adaf
+      internalID: -1321090111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_AlertDeco_0
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1325
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3197dbe530535a84bbd8f2c6d4dfaaa6
+      internalID: -1444128994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_AlertDeco_1
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1919
+        width: 218
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a31575d3c825b642a63127935a99688
+      internalID: 709956668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_AlertDeco_2
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 577
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4480bca3b99a542418e27a8e1d5a4c17
+      internalID: 1474833771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Deco_00
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1269
+        width: 86
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 80, y: 2, z: 2, w: 39}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ab76e4a2571914e89f7d864cacb9e5
+      internalID: -1810784577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Deco_01
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1362
+        width: 42
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 20, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82f5b28f51f330448a14aa55ffc1d9a
+      internalID: 1877818813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Deco_02
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1429
+        width: 109
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e9fb68892c78b458e978984837c752
+      internalID: -1595870881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Deco_03
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 564
+        width: 133
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4869ccf8805d8e148963f3866a4f24d0
+      internalID: -1933636702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Diff_A
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1119
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ca21b83294eaa4382072854164887f
+      internalID: 619687518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Diff_B
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 499
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a55e4d63b128146b07a05bed66f98b
+      internalID: -1618963700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Diff_C
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 698
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8e47f02716c244094783a0bf243181
+      internalID: 623899987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Diff_D
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1057
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0413205c486486547b15c7cf2b91c3a1
+      internalID: -124757419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Frame_GlobalSkill
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 0
+        width: 266
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 96, z: 0, w: 96}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92c811672e1c944792a9a70b1568372
+      internalID: -1927497675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Frame_Skill
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1125
+        width: 242
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68b09d35e37e4c42b409a0b174e15cd
+      internalID: 1095382608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Frame_SkillList
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1431
+        width: 92
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 44, y: 8, z: 44, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881e99a107d75c04fa133d3e9a21c594
+      internalID: 178623746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_HpBar
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1982
+        width: 397
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 152, y: 0, z: 242, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42298011cf7882a4cbffcafd153ccfc8
+      internalID: -1519284875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_IDC
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 372
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 31, y: 24, z: 31, w: 24}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94363668a4c14d3458960cd9d3726afc
+      internalID: 456955075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Select_00
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 100
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 42, y: 0, z: 52, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80bb90403652b742ac09949e2418c21
+      internalID: -1428905195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BattlePopup_Select_01
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 319
+        width: 71
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219f2035874da4143bb092e54529bcb7
+      internalID: -336016431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 454
+        height: 454
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7979d6a91ef1684987f9a2ebfc6f39b
+      internalID: -1318194412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_01
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1224
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b7eec324b13a84c95c33584a9bacee
+      internalID: 1122732425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_02
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1412
+        width: 117
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8e4dbb648044d4085dacdced4a7a26
+      internalID: -2143797195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_03
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 809
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8cb06beb0474e4c91c13011f762c1d
+      internalID: -1005377856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_04
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 657
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac442b8c1e39b94f89918c35519f51c
+      internalID: -288454054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_05
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1011
+        width: 27
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3e9ad2c5116264983151f1abb9d908
+      internalID: -565129448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_06
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 1468
+        width: 5
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a1c70a779d7dd429796b8f658cbfd0
+      internalID: 1923911828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_07
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 686
+        width: 24
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 4, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0095035d0652acf49bf4331362b02165
+      internalID: -1030864349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_08
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 1290
+        width: 20
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6401d290718c09b4a95311c982188ea5
+      internalID: -2096567045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_09
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 740
+        width: 6
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 12, z: 0, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414251c6c7abf9948bc230dcc26b1154
+      internalID: 1620306188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_10
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 2023
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 18, z: 14, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e613763adb81f4684e3a26677c4f8b
+      internalID: 1737560519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 182
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554ed6a5882af394b99ff2fe9495fd57
+      internalID: -450324913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_12
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 913
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0d96c2c83426043ad215e75b080868
+      internalID: 1083518085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_13
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1196
+        width: 133
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bb27176893ea3408ce07491e3e4a90
+      internalID: 1726378077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_14
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 156
+        width: 177
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11faf1d90f140b6419deae48e553883f
+      internalID: 1002375846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_15
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 936
+        width: 268
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546363725168a334fa9ce786c55f280c
+      internalID: 2059971955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_16
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 418
+        width: 28
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2989cd816463354488de12ffe8c9708
+      internalID: -635796059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_17
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 503
+        width: 89
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1b0855e22c72840a7019fea2c4132c
+      internalID: 734139622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_18
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1061
+        width: 1029
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4236c2f87ef54d4fa4454b890d2f277
+      internalID: -1492867786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_19
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1159
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 13, z: 13, w: 13}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39c452157ab8634a87c5846e89ded67
+      internalID: -1542919401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_20
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 940
+        width: 30
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 0, z: 2, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac91bcf9451296245a1bac2e4a4c0938
+      internalID: 818434395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_21
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1494
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32888136b0f5b0f40b38a06425cc8b82
+      internalID: -1846134738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_22
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 0
+        width: 189
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21efb13808ee174eadb9733bfb05b74
+      internalID: 1990286457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_23
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 802
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b528d8e84b7c2047aabf0eabf1c9199
+      internalID: 6649441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_24
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 770
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0783f0a4f26c9948ba04736cfab521b
+      internalID: -665833268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_25
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 695
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b468a28852850194b93a4c714afbf752
+      internalID: 382528641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_26
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 473
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ab31e8e58dc0b41a2f6d5b22c1752b
+      internalID: 114495971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_27
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1125
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39186df3d5747b4aa8a8883f43807f7
+      internalID: -1534437552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_28
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 840
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e7afe8d70d2e5418283a0a8cf8aa42
+      internalID: -487059383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_29
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 574
+        width: 61
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6dd10b4d440764c84660706c86378d
+      internalID: 456219722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_30
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 988
+        width: 334
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3723355cf1483bf4c90e93d2e24df4d3
+      internalID: -1871110262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_BridgeDeco_31
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1762
+        width: 215
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81768e342e8211a48b0c15916373de98
+      internalID: -170373484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Deco_USB
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 201
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 70, y: 36, z: 50, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b770c2cd64ec8304eb3812b06c2eabdd
+      internalID: 1858004121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_DotRed
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 799
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9134a8a06a5ef41999f073a9c6c012
+      internalID: -1127434265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_FinalClear
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 201
+        width: 341
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ced616a3d6fdc4e88170e2ddc4c59d
+      internalID: 1942488814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_HpBar_Line
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 944
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a622c0d0366f84ab1a727b2c9f7657
+      internalID: -338235480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_IntroDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 156
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2257fbdb1c26e2a4e9bc83f1485c31b4
+      internalID: 548559017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_IntroDeco_01
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 626
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a2dc9aee28af34380bcbf1fef41325
+      internalID: -463788018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_IntroDeco_02
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 740
+        width: 100
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c13f3a1f9e7ba343a9d38d1c40cae6e
+      internalID: -797689241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_LabelShadow
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1269
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d6c112213f0de4da6d8917634b897f
+      internalID: -258095462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_MapViewArrow
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 496
+        width: 142
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1cf9f2e861df849abab33f537e296e
+      internalID: 762279665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_MapViewDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 788
+        width: 136
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 0, z: 106, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbb573d5047ca1488b813ca6a8449ad
+      internalID: 664752007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Menu
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1778
+        width: 475
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dc5ebc8e9ed384bbd82a618fe7ae04
+      internalID: -1224547978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_MenuHighlight
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1887
+        width: 415
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1925f1cc34c2b48adc4667ec2944a2
+      internalID: 1133004984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeClear
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 442
+        width: 126
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48594294e6c1fd945a3093337108b91b
+      internalID: 302221276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 1856
+        width: 54
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9461b30c7cc0834eab57a3da12fac42
+      internalID: 723101497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_01
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 623
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 8, z: 8, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906f9839304bd104988968ac3359aba1
+      internalID: -767782344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_02
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 885
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 0, z: 22, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c42618622730046a8b758c4d1e7640
+      internalID: -1063506919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_03
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 700
+        width: 116
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8803b1fe8dcef6849aab06d4ae98e6a5
+      internalID: 1467853679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_04
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1503
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2fd1c0c5b9706438fecf5ba2227253
+      internalID: 1812851482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_05
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 425
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9f689b0194c4544b16d243582e1f7f
+      internalID: -1376018302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_06
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 750
+        width: 52
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 8, z: 26, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e863ea2f4eb7f6d48ae92a5b042fa284
+      internalID: 2034847066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_07
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1130
+        width: 73
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bc6ddd8c9725d45b9969ac3b8b79d7
+      internalID: -2062417356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_08
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 973
+        width: 515
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03295cbb3d793fa45889c26161598785
+      internalID: -1426354100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_09
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 915
+        width: 395
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6931a6b5dfbba40852f581b8554333
+      internalID: 907678097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_10
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1319
+        width: 86
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b265005ef48f648a08901db949d5e7
+      internalID: -883799045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_11
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1099
+        width: 95
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7605fe1554f161d409151b6b4e6fe4b7
+      internalID: 2066892826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_12
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 872
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6706f75065bbf46950409cc24facf1
+      internalID: 279326227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_13
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 822
+        width: 95
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0653fddcc6730a4cbccb3f32be6bca0
+      internalID: -470063059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_14
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1092
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 31, y: 31, z: 31, w: 31}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9aa79b19fcd57346a845cc5a7c17680
+      internalID: -315434959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_15
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 732
+        width: 100
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ed3ec4cf7e4834882d17c2be81d23f
+      internalID: 1247477772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_16
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 794
+        width: 113
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06d163fc0d31ba499878c6e87d2b693
+      internalID: 456267562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_17
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 602
+        width: 104
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f610679e4075dde4fafa2870db708ae7
+      internalID: -451402119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_18
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 770
+        width: 103
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f8fb319ff70d44fa5bf30d034d44c2
+      internalID: -1178730809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_19
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 770
+        width: 141
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb21762525086744ab1edd0ab76f79f2
+      internalID: 2011697335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_20
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 716
+        width: 145
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38faa78f6aac3b9499d0fec72f7773f1
+      internalID: -308677258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_21
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1431
+        width: 271
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59496ca32a9d34e4f9008055f32d8654
+      internalID: 1754320215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_22
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 319
+        width: 161
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5126d03e406ae4a9506b596c0ebf1a
+      internalID: 1901155366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeDeco_23
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 657
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22adc0c28e0c544686469262758c098
+      internalID: -948284131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeFinal
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 991
+        width: 165
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b3cf617e7410f45a257f216333a9ae
+      internalID: -1091315798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeHp
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 430
+        width: 68
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1139a47dbdf689748a91a0386920361f
+      internalID: -1194862408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeHpPercent
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 611
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be3170c936ea304ea5f0d2656d79efa
+      internalID: -1821693568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeIDC
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1536
+        width: 225
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf39d525092885428fde2873fe7ed34
+      internalID: 703201093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeViewArrow
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1536
+        width: 213
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecd9cf437bdc03468773d639cae6463
+      internalID: -1918892493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_NodeViewArrow_01
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 1887
+        width: 49
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b056418fb0e6a47b53cf24dacb19a0
+      internalID: -1680208666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 527
+        width: 131
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1754d1e1e72d64295215b36ea846b3
+      internalID: -881702779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_01
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 944
+        width: 126
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c3f30e7682d2248a7cb3db9f867175
+      internalID: -1009646552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_02
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2013
+        width: 384
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 374, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366d32a94d08cc246ba78e3514cecfca
+      internalID: -409251124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_03
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 831
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a00a6219333d3429310c9dc5e004d6
+      internalID: -1380217505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_04
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 621
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727e3d341320c6f459e13f35d0f7db67
+      internalID: -64446234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_05
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1856
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c388c0cc0eac9478e3e0a6cad8ebc5
+      internalID: 1070078855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_06
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 425
+        width: 181
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5765dfca5b1e6b48a2904b356f88a7b
+      internalID: 1467369606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupDeco_07
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 839
+        width: 85
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6f5c95336b5e74c98517e18df3a932
+      internalID: 2146233596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_PopupText
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1026
+        width: 336
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cee9f3ee87615469c9f7cb66fbc94c
+      internalID: 1952575896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Replay_NodeLine
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1125
+        width: 191
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 186, y: 0, z: 2, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d6582da9f1bfe4a9f2771b58d2fbcc
+      internalID: -1615443734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Replay_NodeLine_Add
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1125
+        width: 181
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 176, y: 168, z: 2, w: 146}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef95dc30273b9f4ea2f17f53b79e01a
+      internalID: 1351898612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Replay_NodeLine_Deco
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1269
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9954812c253425c459c5527f27b6f651
+      internalID: 891927380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Replay_NodeLine_Slide
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 425
+        width: 203
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 200, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bff7ac7f0167d043b2c3cc34e308cf8
+      internalID: -699647954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Replay_SliderForeground
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1531
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 14, z: 14, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee44aeb245ec16740996b0acb16a11c6
+      internalID: -796056743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Replay_SliderFrame
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 539
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 18, z: 16, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9256e0e566072124583d1be9c8762ad9
+      internalID: -660260442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_Replay_SliderLine
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 1468
+        width: 2
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933ebc7d82851c04eb52476dbd39b426
+      internalID: -725529680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1158
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690ddedda6080d74a86d7101bddb3810
+      internalID: 752212173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_01
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 1503
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 20, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a13198ab53e0342b00868cd6a5a32f
+      internalID: 1554371215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_02
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 840
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e08ae44dbbfe84f875cfe3da89f32d
+      internalID: -1014092429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_03
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1325
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af046c0b39eba034ea6fc40bc2affeea
+      internalID: -1563588853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_04
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 610
+        width: 61
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf70f56cb503a34eb10074b5bd7e53b
+      internalID: 1259788787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_05
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 787
+        width: 161
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 132, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a40c34ddf5dfe46a494fa57c078eee
+      internalID: 504245124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_06
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 249
+        width: 168
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bbcfacdf510614dbf55926f97c0110
+      internalID: -719554474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_07
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 740
+        width: 219
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7baf7c706ea094ab7f4fe42af1eede
+      internalID: -2068431928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_08
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1037
+        width: 405
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a479e60dbea3a6f41b89111927eb23b5
+      internalID: -1704079450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_09
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 811
+        width: 470
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c042940a7e808d148940243a4be0b310
+      internalID: 1553384143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_10
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 991
+        width: 446
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542953b97e5d1d24095951f3d281d498
+      internalID: 1319175435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_11
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1349
+        width: 206
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4b280f870affa4586d2f2d9458c1c9
+      internalID: 128814299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_12
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1412
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 6, z: 0, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79227537fca53ee419ae5b0e37581ddb
+      internalID: -1074342478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_13
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1018
+        width: 328
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c73425507d0ea3448f1521aba9d9fc4
+      internalID: -148866866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_14
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 991
+        width: 329
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde6666de3355c6429c6bced25a520f6
+      internalID: 1030366695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_15
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1045
+        width: 245
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306c206c422cc914ea53a44cf110dd15
+      internalID: 1209035626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_16
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 1634
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c4227d28f3a9644925e06b6cbe9bf5
+      internalID: 506517142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_17
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 319
+        width: 254
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7809e33d1226184fba5d5c70170bc0e
+      internalID: -180406191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_18
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1349
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 14, z: 16, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20061890047c4d445bf6d7a82e95db3a
+      internalID: -88869479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayDeco_19
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1045
+        width: 80
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385a3f3ae3e1aae4b88317c2be9d88ed
+      internalID: -344966883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayNum
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 442
+        width: 124
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06490b60361dc15419adcc6b4a834f2c
+      internalID: -834759526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayNum_01
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 602
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ecefb765ccf064d937c6aaff519ead
+      internalID: 1645981617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayNum_02
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 630
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d392cc41044c0d24e8eaef6c34eb5bce
+      internalID: -641401780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayNum_03
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 583
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081ea21b315e4a2489c9b11c16f5bb42
+      internalID: -104449470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayNum_04
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 611
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5bda8a06963bc409ce45257c71afc8
+      internalID: -1767049967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayNum_05
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 583
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fbdd512209f8947b947959362fb794
+      internalID: -1280795018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ReplayNum_06
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 658
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70fbacd521e6ba49a23e8e15f6614c7
+      internalID: 2143147604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_SkillDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 564
+        width: 132
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046373d8dc4df2241861560149f5a60a
+      internalID: -450778980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_SkillDeco_01
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1125
+        width: 244
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41288da9de2a64645af9c15499e063cc
+      internalID: 1763103145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_StartDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 319
+        width: 175
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5111b532784584f468bcaad18a14232f
+      internalID: 833451536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_StartDeco_01
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1057
+        width: 138
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 68, y: 18, z: 68, w: 18}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c235eb755ca821d4d96258227ccd8fd1
+      internalID: 250855071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_StartDeco_02
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 621
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 22, z: 24, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0041c8f2ec571643b1ea9fbe2b71d71
+      internalID: 11368831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ToolTip_00
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1057
+        width: 68
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c300cc619eedc4a96486fe12cfcfdf
+      internalID: 350188299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ToolTip_01
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 933
+        width: 149
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 138, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec79ada6b44ae548865e324336de122
+      internalID: -1976702476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ToolTip_02
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1401
+        width: 54
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca9c92c6067df5469ca6d428ad74181
+      internalID: -1141800742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ToolTip_03
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 510
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 30, z: 18, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416fc426205b7b34897eb4600dfae801
+      internalID: -1709218290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ToolTip_04
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 499
+        width: 136
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fba6d81466046c4a951b855bc6c7248
+      internalID: 1928385348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_00
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1057
+        width: 65
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 4, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb350f12423ebd044a326182f102302c
+      internalID: 690262876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_01
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2001
+        width: 71
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cb6aa5f49ab854fa96cfa12e3cda77
+      internalID: 1526530224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_02
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 182
+        width: 71
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f33e6ab27fd7c47ba1a96d985aed34
+      internalID: 1026861281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_03
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 2001
+        width: 592
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 580, y: 0, z: 4, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a922ee1a491441c4c94cf01246b65aec
+      internalID: 1715189646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_04
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 182
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 24, y: 0, z: 3, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693814ea2ed79184fa0f4beb47ce9a9f
+      internalID: 391544435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_05
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 319
+        width: 53
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62b54188cd96fe4994fb83af9095e83
+      internalID: -1656246836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_06
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 456
+        width: 128
+        height: 971
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd11f91bb06bd44396db5541127fc17
+      internalID: -1079140788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_07
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 456
+        width: 205
+        height: 986
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1464f89583bc742b8dd0051b33f65e
+      internalID: -1901291707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_09
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 892
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0053428ca582094cb45820cb9c5ed5b
+      internalID: -492523996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_10
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 693
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 20, z: 0, w: 14}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea68a79b6c768a41b3054ff5d0f7f69
+      internalID: -247629817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_11
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 324
+        width: 823
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879b0ff8ddad21e46b305215f6ab1d79
+      internalID: 236840996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeDeco_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1444
+        width: 864
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c9b2a584b88db4caf7b77fe12dc157
+      internalID: -2015043760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeInsert_00
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 920
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c9de24cc802645a84087dcc7bad39
+      internalID: -39807330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeInsert_01
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 933
+        width: 157
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343cdaf58172fe74288fc19e89220db3
+      internalID: 1453100837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeInsert_02
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1856
+        width: 388
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001a9df84af501343966e812c464cef0
+      internalID: 186961111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeName_Binah
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 750
+        width: 78
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b26ce65098e68043b6ed1dca9552d5a
+      internalID: -826598853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeName_Chesed
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 582
+        width: 104
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92170c3258a00d4c9b53c9f0ef739a1
+      internalID: 1869882961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeName_Hod
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 734
+        width: 54
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077787acf68df6c41a583995f6d144c0
+      internalID: -1568759387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradeName_Kether
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 802
+        width: 106
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce68d2bcf049140418e9e1566c49c9ef
+      internalID: -1401679208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradePortrait_Ex01
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 1536
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3eb84c8dc818e4ebf7e912d6a985ad
+      internalID: 648971996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradePortrait_Ex02
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 1762
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e16ff68890bca4a93a546b8358e592
+      internalID: -857530048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradePortrait_Ex03
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 762
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baf69bafe382d0458897b9f65d15a6d
+      internalID: 311678722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_UpgradePortrait_Ps01
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 425
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590facf0dca457a469dad93e2dcfc9fd
+      internalID: 53058464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_USB
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 469
+        width: 94
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0fc7aa4d83399408f705369ffaece9
+      internalID: 1914687520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_USB_Default
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 647
+        width: 167
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbeda55fa9cbe5e47bf61ab69bea6857
+      internalID: -549921620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_USB_Default_Glow
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 214
+        width: 197
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b24884511b6c7f4a937d2befc594d4a
+      internalID: 684729806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_00
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1335
+        width: 161
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d1cc7c34252704cb68dbd6c1ec7be7
+      internalID: 1338094035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_01
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 822
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 6, z: 0, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86519b067842ad34e9495d8724a5c826
+      internalID: 1468110907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_02
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 965
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f8d5df7855dd740a34a3c47be897aa
+      internalID: 1722324024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_03
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 1468
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5cd682d7b1c214c935216a8c023133
+      internalID: -1177859301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_04
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 623
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d24a39d09928c4280254dbc853547a
+      internalID: 1381942608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_05
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 647
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bf67673cb42c14d91e6446047e1b79
+      internalID: 1081191167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_06
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 456
+        width: 344
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d04642df8b3be94e9b232dd4a7a722e
+      internalID: -933653466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_ViewMode_07
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 762
+        width: 334
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c660e5d5ee6e54e9bf6f1db5d0fc40
+      internalID: -399938288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_WorldMap_Deco_L
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1758
+        width: 167
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865757e3107d6374dbf6951e1d1be615
+      internalID: -63833543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Img_WorldMap_Deco_R
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1536
+        width: 175
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ce5f2d629549e4e9c4a8a21578a164
+      internalID: 1502005927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Line_2px
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1130
+        width: 8
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6464994fe11b86408a4c855867957c8
+      internalID: 1650802238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Line_4px
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 802
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0fe8e6b518eb44ea5b7535b52a519c
+      internalID: 66633643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldRaid854_Tag_New
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 647
+        width: 117
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e33958b5bd90843bc1eebe9c56cd13
+      internalID: -1207041446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0207c3935d4c9e24d80fe901c3afd8f6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Currency_Icon_WorldRaidCommonTicket: -1155513859
+      WorldRaid854_Bg_BattlePopup_StageInfo: 1010127474
+      WorldRaid854_Bg_BridgeMenu: -1347846100
+      WorldRaid854_Bg_BridgeMenu_Color: -468123416
+      WorldRaid854_Bg_BtnCollection: -530341830
+      WorldRaid854_Bg_Cost: -1881138383
+      WorldRaid854_Bg_GetTicket: 443775659
+      WorldRaid854_Bg_HpGlow: -1982697242
+      WorldRaid854_Bg_LightGlow: -1440322089
+      WorldRaid854_Bg_LobbyToast: -1700464235
+      WorldRaid854_Bg_MultiFloorSkill: -2123805398
+      WorldRaid854_Bg_NodeHp_IDC: -2020094342
+      WorldRaid854_Bg_NodeHp_Small: 1204519935
+      WorldRaid854_Bg_NodeNameGlow: -1915648786
+      WorldRaid854_Bg_NodeShape_00: 1437642964
+      WorldRaid854_Bg_NodeShape_01: -1217232223
+      WorldRaid854_Bg_NodeShape_02: 867020742
+      WorldRaid854_Bg_NodeStatus: 1573099207
+      WorldRaid854_Bg_PopupBanner: -346092970
+      WorldRaid854_Bg_PopupBtn: -1587397938
+      WorldRaid854_Bg_PopupBtnIcon: 359547683
+      WorldRaid854_Bg_PopupResource: 887442555
+      WorldRaid854_Bg_ReplayBtn: 1011942660
+      WorldRaid854_Bg_ReplayImg: -1050788815
+      WorldRaid854_Bg_ReplayTag: 1797615409
+      WorldRaid854_Bg_ReplayTag_Scroll: -587979281
+      WorldRaid854_Bg_SubBtn: 247578414
+      WorldRaid854_Bg_TabWhite: 690492921
+      WorldRaid854_Bg_TabWhite_Long: -1909874202
+      WorldRaid854_Bg_TabWhite_Side: 1913872750
+      WorldRaid854_Bg_UpgradeSkill_Deco: 1595816001
+      WorldRaid854_Bg_UpgradeSkill_Glow: 736764738
+      WorldRaid854_Bg_UpgradeSkill_Off: 50596464
+      WorldRaid854_Bg_UpgradeSkill_On: 954869355
+      WorldRaid854_Box_8px: 1701224864
+      WorldRaid854_Box_Blur3px: -787187257
+      WorldRaid854_Box_Round2px: 2066813521
+      WorldRaid854_Box_Round4px: 700170773
+      WorldRaid854_Box_Shadow_8px: 1457688920
+      WorldRaid854_Camera_View00: 1372907447
+      WorldRaid854_Camera_View01: 700640743
+      WorldRaid854_Camera_View02: 1975619633
+      WorldRaid854_Camera_View03: -1562998621
+      WorldRaid854_Circle_Reserch: -537312517
+      WorldRaid854_Deco_00: 615172599
+      WorldRaid854_Deco_01: 965843460
+      WorldRaid854_Frame_00: 275775378
+      WorldRaid854_Frame_01: 1681641517
+      WorldRaid854_Frame_02: 51678229
+      WorldRaid854_Frame_Replay_Select_Off: -497985137
+      WorldRaid854_Frame_Replay_Select_On: -384653034
+      WorldRaid854_Frame_Round4px: 1901193441
+      WorldRaid854_Frame_SkillCondition_0: -2001869583
+      WorldRaid854_Frame_SkillCondition_1: 938846075
+      WorldRaid854_Frame_USB: 2128531727
+      WorldRaid854_Frame_USB_On_00: 53257994
+      WorldRaid854_Frame_USB_On_01: 161942099
+      WorldRaid854_Glow_CameraView: 793602469
+      WorldRaid854_Gradient_00: 384764911
+      WorldRaid854_Gradient_BridgeMenu: 1831623711
+      WorldRaid854_Gradient_Outglow: 474605916
+      WorldRaid854_Gradient_Scene: -694677833
+      WorldRaid854_Icon_Arrow: 647941367
+      WorldRaid854_Icon_Attack: 277629436
+      WorldRaid854_Icon_Back_00: 1144750421
+      WorldRaid854_Icon_Back_01: -46553143
+      WorldRaid854_Icon_Back_02: -415670460
+      WorldRaid854_Icon_BattleClear: -1989701913
+      WorldRaid854_Icon_Check: -1106129982
+      WorldRaid854_Icon_Core_00: -2124889010
+      WorldRaid854_Icon_Core_01: -418555863
+      WorldRaid854_Icon_Defense: 1451813474
+      WorldRaid854_Icon_Diamond: 857157824
+      WorldRaid854_Icon_DotRed: -743766192
+      WorldRaid854_Icon_DotYellow: 149926317
+      WorldRaid854_Icon_DotYellow_Add: 195698749
+      WorldRaid854_Icon_Enemy: -106755592
+      WorldRaid854_Icon_Fierce: 326227186
+      WorldRaid854_Icon_GetTicket: -1319905627
+      WorldRaid854_Icon_HideUI: -730930673
+      WorldRaid854_Icon_Home_00: -1307656700
+      WorldRaid854_Icon_Home_01: -62512799
+      WorldRaid854_Icon_Indoor: 1245145887
+      WorldRaid854_Icon_Info: 701092314
+      WorldRaid854_Icon_Max: 1522521242
+      WorldRaid854_Icon_Minus: -351640902
+      WorldRaid854_Icon_Mission: 217058100
+      WorldRaid854_Icon_MockBattle: -350241093
+      WorldRaid854_Icon_Notice: 186899782
+      WorldRaid854_Icon_Outdoor: -1950597314
+      WorldRaid854_Icon_Party: -412160139
+      WorldRaid854_Icon_Plus: -1762615889
+      WorldRaid854_Icon_Plus2: 1087160177
+      WorldRaid854_Icon_PopupExit: 797655511
+      WorldRaid854_Icon_Rage: -1420874516
+      WorldRaid854_Icon_RaidInfo: -882022807
+      WorldRaid854_Icon_Setting_00: 541385784
+      WorldRaid854_Icon_Setting_01: 1246652364
+      WorldRaid854_Icon_Shop: -74286577
+      WorldRaid854_Icon_ShowUI: 193801076
+      WorldRaid854_Icon_Skip: -1403448003
+      WorldRaid854_Icon_Story: -791400114
+      WorldRaid854_Icon_Street: 2071862622
+      WorldRaid854_Icon_Ticket: 380622939
+      WorldRaid854_Icon_Time: -438695933
+      WorldRaid854_Icon_Upgrade_Active: -241483989
+      WorldRaid854_Icon_Upgrade_Passive: -1321090111
+      WorldRaid854_Img_AlertDeco_0: -1444128994
+      WorldRaid854_Img_AlertDeco_1: 709956668
+      WorldRaid854_Img_AlertDeco_2: 1474833771
+      WorldRaid854_Img_BattlePopup_Deco_00: -1810784577
+      WorldRaid854_Img_BattlePopup_Deco_01: 1877818813
+      WorldRaid854_Img_BattlePopup_Deco_02: -1595870881
+      WorldRaid854_Img_BattlePopup_Deco_03: -1933636702
+      WorldRaid854_Img_BattlePopup_Diff_A: 619687518
+      WorldRaid854_Img_BattlePopup_Diff_B: -1618963700
+      WorldRaid854_Img_BattlePopup_Diff_C: 623899987
+      WorldRaid854_Img_BattlePopup_Diff_D: -124757419
+      WorldRaid854_Img_BattlePopup_Frame_GlobalSkill: -1927497675
+      WorldRaid854_Img_BattlePopup_Frame_Skill: 1095382608
+      WorldRaid854_Img_BattlePopup_Frame_SkillList: 178623746
+      WorldRaid854_Img_BattlePopup_HpBar: -1519284875
+      WorldRaid854_Img_BattlePopup_IDC: 456955075
+      WorldRaid854_Img_BattlePopup_Select_00: -1428905195
+      WorldRaid854_Img_BattlePopup_Select_01: -336016431
+      WorldRaid854_Img_BridgeDeco_00: -1318194412
+      WorldRaid854_Img_BridgeDeco_01: 1122732425
+      WorldRaid854_Img_BridgeDeco_02: -2143797195
+      WorldRaid854_Img_BridgeDeco_03: -1005377856
+      WorldRaid854_Img_BridgeDeco_04: -288454054
+      WorldRaid854_Img_BridgeDeco_05: -565129448
+      WorldRaid854_Img_BridgeDeco_06: 1923911828
+      WorldRaid854_Img_BridgeDeco_07: -1030864349
+      WorldRaid854_Img_BridgeDeco_08: -2096567045
+      WorldRaid854_Img_BridgeDeco_09: 1620306188
+      WorldRaid854_Img_BridgeDeco_10: 1737560519
+      WorldRaid854_Img_BridgeDeco_11: -450324913
+      WorldRaid854_Img_BridgeDeco_12: 1083518085
+      WorldRaid854_Img_BridgeDeco_13: 1726378077
+      WorldRaid854_Img_BridgeDeco_14: 1002375846
+      WorldRaid854_Img_BridgeDeco_15: 2059971955
+      WorldRaid854_Img_BridgeDeco_16: -635796059
+      WorldRaid854_Img_BridgeDeco_17: 734139622
+      WorldRaid854_Img_BridgeDeco_18: -1492867786
+      WorldRaid854_Img_BridgeDeco_19: -1542919401
+      WorldRaid854_Img_BridgeDeco_20: 818434395
+      WorldRaid854_Img_BridgeDeco_21: -1846134738
+      WorldRaid854_Img_BridgeDeco_22: 1990286457
+      WorldRaid854_Img_BridgeDeco_23: 6649441
+      WorldRaid854_Img_BridgeDeco_24: -665833268
+      WorldRaid854_Img_BridgeDeco_25: 382528641
+      WorldRaid854_Img_BridgeDeco_26: 114495971
+      WorldRaid854_Img_BridgeDeco_27: -1534437552
+      WorldRaid854_Img_BridgeDeco_28: -487059383
+      WorldRaid854_Img_BridgeDeco_29: 456219722
+      WorldRaid854_Img_BridgeDeco_30: -1871110262
+      WorldRaid854_Img_BridgeDeco_31: -170373484
+      WorldRaid854_Img_Deco_USB: 1858004121
+      WorldRaid854_Img_DotRed: -1127434265
+      WorldRaid854_Img_FinalClear: 1942488814
+      WorldRaid854_Img_HpBar_Line: -338235480
+      WorldRaid854_Img_IntroDeco_00: 548559017
+      WorldRaid854_Img_IntroDeco_01: -463788018
+      WorldRaid854_Img_IntroDeco_02: -797689241
+      WorldRaid854_Img_LabelShadow: -258095462
+      WorldRaid854_Img_MapViewArrow: 762279665
+      WorldRaid854_Img_MapViewDeco_00: 664752007
+      WorldRaid854_Img_Menu: -1224547978
+      WorldRaid854_Img_MenuHighlight: 1133004984
+      WorldRaid854_Img_NodeClear: 302221276
+      WorldRaid854_Img_NodeDeco_00: 723101497
+      WorldRaid854_Img_NodeDeco_01: -767782344
+      WorldRaid854_Img_NodeDeco_02: -1063506919
+      WorldRaid854_Img_NodeDeco_03: 1467853679
+      WorldRaid854_Img_NodeDeco_04: 1812851482
+      WorldRaid854_Img_NodeDeco_05: -1376018302
+      WorldRaid854_Img_NodeDeco_06: 2034847066
+      WorldRaid854_Img_NodeDeco_07: -2062417356
+      WorldRaid854_Img_NodeDeco_08: -1426354100
+      WorldRaid854_Img_NodeDeco_09: 907678097
+      WorldRaid854_Img_NodeDeco_10: -883799045
+      WorldRaid854_Img_NodeDeco_11: 2066892826
+      WorldRaid854_Img_NodeDeco_12: 279326227
+      WorldRaid854_Img_NodeDeco_13: -470063059
+      WorldRaid854_Img_NodeDeco_14: -315434959
+      WorldRaid854_Img_NodeDeco_15: 1247477772
+      WorldRaid854_Img_NodeDeco_16: 456267562
+      WorldRaid854_Img_NodeDeco_17: -451402119
+      WorldRaid854_Img_NodeDeco_18: -1178730809
+      WorldRaid854_Img_NodeDeco_19: 2011697335
+      WorldRaid854_Img_NodeDeco_20: -308677258
+      WorldRaid854_Img_NodeDeco_21: 1754320215
+      WorldRaid854_Img_NodeDeco_22: 1901155366
+      WorldRaid854_Img_NodeDeco_23: -948284131
+      WorldRaid854_Img_NodeFinal: -1091315798
+      WorldRaid854_Img_NodeHp: -1194862408
+      WorldRaid854_Img_NodeHpPercent: -1821693568
+      WorldRaid854_Img_NodeIDC: 703201093
+      WorldRaid854_Img_NodeViewArrow: -1918892493
+      WorldRaid854_Img_NodeViewArrow_01: -1680208666
+      WorldRaid854_Img_PopupDeco_00: -881702779
+      WorldRaid854_Img_PopupDeco_01: -1009646552
+      WorldRaid854_Img_PopupDeco_02: -409251124
+      WorldRaid854_Img_PopupDeco_03: -1380217505
+      WorldRaid854_Img_PopupDeco_04: -64446234
+      WorldRaid854_Img_PopupDeco_05: 1070078855
+      WorldRaid854_Img_PopupDeco_06: 1467369606
+      WorldRaid854_Img_PopupDeco_07: 2146233596
+      WorldRaid854_Img_PopupText: 1952575896
+      WorldRaid854_Img_ReplayDeco_00: 752212173
+      WorldRaid854_Img_ReplayDeco_01: 1554371215
+      WorldRaid854_Img_ReplayDeco_02: -1014092429
+      WorldRaid854_Img_ReplayDeco_03: -1563588853
+      WorldRaid854_Img_ReplayDeco_04: 1259788787
+      WorldRaid854_Img_ReplayDeco_05: 504245124
+      WorldRaid854_Img_ReplayDeco_06: -719554474
+      WorldRaid854_Img_ReplayDeco_07: -2068431928
+      WorldRaid854_Img_ReplayDeco_08: -1704079450
+      WorldRaid854_Img_ReplayDeco_09: 1553384143
+      WorldRaid854_Img_ReplayDeco_10: 1319175435
+      WorldRaid854_Img_ReplayDeco_11: 128814299
+      WorldRaid854_Img_ReplayDeco_12: -1074342478
+      WorldRaid854_Img_ReplayDeco_13: -148866866
+      WorldRaid854_Img_ReplayDeco_14: 1030366695
+      WorldRaid854_Img_ReplayDeco_15: 1209035626
+      WorldRaid854_Img_ReplayDeco_16: 506517142
+      WorldRaid854_Img_ReplayDeco_17: -180406191
+      WorldRaid854_Img_ReplayDeco_18: -88869479
+      WorldRaid854_Img_ReplayDeco_19: -344966883
+      WorldRaid854_Img_ReplayNum: -834759526
+      WorldRaid854_Img_ReplayNum_01: 1645981617
+      WorldRaid854_Img_ReplayNum_02: -641401780
+      WorldRaid854_Img_ReplayNum_03: -104449470
+      WorldRaid854_Img_ReplayNum_04: -1767049967
+      WorldRaid854_Img_ReplayNum_05: -1280795018
+      WorldRaid854_Img_ReplayNum_06: 2143147604
+      WorldRaid854_Img_Replay_NodeLine: -1615443734
+      WorldRaid854_Img_Replay_NodeLine_Add: 1351898612
+      WorldRaid854_Img_Replay_NodeLine_Deco: 891927380
+      WorldRaid854_Img_Replay_NodeLine_Slide: -699647954
+      WorldRaid854_Img_Replay_SliderForeground: -796056743
+      WorldRaid854_Img_Replay_SliderFrame: -660260442
+      WorldRaid854_Img_Replay_SliderLine: -725529680
+      WorldRaid854_Img_SkillDeco_00: -450778980
+      WorldRaid854_Img_SkillDeco_01: 1763103145
+      WorldRaid854_Img_StartDeco_00: 833451536
+      WorldRaid854_Img_StartDeco_01: 250855071
+      WorldRaid854_Img_StartDeco_02: 11368831
+      WorldRaid854_Img_ToolTip_00: 350188299
+      WorldRaid854_Img_ToolTip_01: -1976702476
+      WorldRaid854_Img_ToolTip_02: -1141800742
+      WorldRaid854_Img_ToolTip_03: -1709218290
+      WorldRaid854_Img_ToolTip_04: 1928385348
+      WorldRaid854_Img_USB: 1914687520
+      WorldRaid854_Img_USB_Default: -549921620
+      WorldRaid854_Img_USB_Default_Glow: 684729806
+      WorldRaid854_Img_UpgradeDeco_00: 690262876
+      WorldRaid854_Img_UpgradeDeco_01: 1526530224
+      WorldRaid854_Img_UpgradeDeco_02: 1026861281
+      WorldRaid854_Img_UpgradeDeco_03: 1715189646
+      WorldRaid854_Img_UpgradeDeco_04: 391544435
+      WorldRaid854_Img_UpgradeDeco_05: -1656246836
+      WorldRaid854_Img_UpgradeDeco_06: -1079140788
+      WorldRaid854_Img_UpgradeDeco_07: -1901291707
+      WorldRaid854_Img_UpgradeDeco_09: -492523996
+      WorldRaid854_Img_UpgradeDeco_10: -247629817
+      WorldRaid854_Img_UpgradeDeco_11: 236840996
+      WorldRaid854_Img_UpgradeDeco_12: -2015043760
+      WorldRaid854_Img_UpgradeInsert_00: -39807330
+      WorldRaid854_Img_UpgradeInsert_01: 1453100837
+      WorldRaid854_Img_UpgradeInsert_02: 186961111
+      WorldRaid854_Img_UpgradeName_Binah: -826598853
+      WorldRaid854_Img_UpgradeName_Chesed: 1869882961
+      WorldRaid854_Img_UpgradeName_Hod: -1568759387
+      WorldRaid854_Img_UpgradeName_Kether: -1401679208
+      WorldRaid854_Img_UpgradePortrait_Ex01: 648971996
+      WorldRaid854_Img_UpgradePortrait_Ex02: -857530048
+      WorldRaid854_Img_UpgradePortrait_Ex03: 311678722
+      WorldRaid854_Img_UpgradePortrait_Ps01: 53058464
+      WorldRaid854_Img_ViewMode_00: 1338094035
+      WorldRaid854_Img_ViewMode_01: 1468110907
+      WorldRaid854_Img_ViewMode_02: 1722324024
+      WorldRaid854_Img_ViewMode_03: -1177859301
+      WorldRaid854_Img_ViewMode_04: 1381942608
+      WorldRaid854_Img_ViewMode_05: 1081191167
+      WorldRaid854_Img_ViewMode_06: -933653466
+      WorldRaid854_Img_ViewMode_07: -399938288
+      WorldRaid854_Img_WorldMap_Deco_L: -63833543
+      WorldRaid854_Img_WorldMap_Deco_R: 1502005927
+      WorldRaid854_Line_2px: 1650802238
+      WorldRaid854_Line_4px: 66633643
+      WorldRaid854_Tag_New: -1207041446
+      Worldraid854_Icon_Info_Small: 1261733598
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

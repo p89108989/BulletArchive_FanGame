@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Title_CannonDarkLightning
+  m_Shader: {fileID: 4800000, guid: 84555155077f36246ad40b8cb377b67b, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _BoltCount: 6
+    - _CustomTime: 0
+    - _FlickerRate: 14
+    - _Jitter: 0.1
+    - _RimWidth: 2.2
+    - _SegmentLength: 1.875
+    - _Speed: 9.375
+    - _Thickness: 0.045
+    - _Twist: 0.002
+    - _UseCustomTime: 1
+    - _Visible: 0.85
+    m_Colors:
+    - _BoltColor: {r: 0.04, g: 0.01, b: 0.02, a: 0.95}
+    - _RimColor: {r: 0.54999995, g: 0.079999976, b: 0.04, a: 0.6}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

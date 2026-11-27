@@ -14,6 +14,7 @@ public class BossDefeatTests
     private BossEncounter encounter;
     private GameObject resultObject;
     private GameObject player;
+    private BossProfile profile;
 
     [SetUp]
     public void SetUp()
@@ -30,7 +31,9 @@ public class BossDefeatTests
         encounterObject = new GameObject("Encounter");
         encounterObject.SetActive(false);
         encounter = encounterObject.AddComponent<BossEncounter>();
-        TestUtil.SetField(encounter, "bossPrefab", bossTemplate);
+        profile = ScriptableObject.CreateInstance<BossProfile>();
+        TestUtil.SetField(profile, "bossPrefab", bossTemplate);
+        TestUtil.SetField(encounter, "bossProfile", profile);
         TestUtil.SetField(encounter, "phaseController", phaseController);
     }
 
@@ -40,6 +43,7 @@ public class BossDefeatTests
         Time.timeScale = 1f;
         if (encounter != null && encounter.Boss != null) Object.Destroy(encounter.Boss);
         Object.Destroy(bossTemplate);
+        Object.Destroy(profile);
         Object.Destroy(controllerObject);
         Object.Destroy(encounterObject);
         if (resultObject != null) Object.Destroy(resultObject);
@@ -73,11 +77,11 @@ public class BossDefeatTests
         boss.GetComponent<EnemyHealth>().TakeDamage(9999);
         Assert.IsFalse(body.enabled, "the dying boss can no longer be hit");
 
-        yield return new WaitForSeconds(0.3f);
+        yield return WaitUntil(() => boss == null || boss.transform.position.y < -0.5f);
         Assert.IsTrue(boss != null, "still on screen while sinking");
         Assert.Less(boss.transform.position.y, -0.5f, "sinks after the death animation");
 
-        yield return new WaitForSeconds(0.3f);
+        yield return WaitUntil(() => boss == null);
         Assert.AreEqual(1, finishedCount);
         Assert.IsTrue(boss == null, "the boss disappears");
     }
@@ -98,12 +102,21 @@ public class BossDefeatTests
         yield return new WaitForSeconds(0.1f);
         Assert.AreEqual(0, CountSmoke(), "no smoke during the death animation");
 
-        // 演出共 0.4 秒；多留一些餘裕，編輯器失焦降幀時也不會誤判
-        yield return new WaitForSeconds(0.8f);
+        yield return WaitUntil(() => boss == null);
         Assert.IsTrue(boss == null, "the boss is gone after sinking");
         Assert.AreEqual(3, CountSmoke(), "all smoke clouds were spawned and outlive the boss");
 
         foreach (ParticleSystem smoke in Object.FindObjectsByType<ParticleSystem>(FindObjectsSortMode.None)) Object.Destroy(smoke.gameObject);
+    }
+
+    // 等到條件成立 (最多等 RealtimeTimeout 秒的真實時間)。編輯器失焦時 Unity 會降低幀率、遊戲時間走得比真實時間慢，
+    // 固定等幾秒會誤判；結算面板出現後遊戲時間也會暫停，所以用真實時間計算逾時
+    private const float RealtimeTimeout = 5f;
+
+    private static IEnumerator WaitUntil(System.Func<bool> condition)
+    {
+        float deadline = Time.realtimeSinceStartup + RealtimeTimeout;
+        while (!condition() && Time.realtimeSinceStartup < deadline) yield return null;
     }
 
     private static int CountSmoke()
@@ -130,7 +143,7 @@ public class BossDefeatTests
         yield return new WaitForSeconds(0.1f);
         Assert.AreEqual(CombatPhase.Boss, phaseController.CurrentPhase, "waits for the death performance");
 
-        yield return new WaitForSeconds(0.5f);
+        yield return WaitUntil(() => phaseController.CurrentPhase == CombatPhase.Normal);
         Assert.AreEqual(CombatPhase.Normal, phaseController.CurrentPhase);
     }
 
@@ -141,20 +154,11 @@ public class BossDefeatTests
         PlayerHealth playerHealth = player.AddComponent<PlayerHealth>();
 
         resultObject = new GameObject("Results");
-        resultObject.SetActive(false);
-        GameObject panel = new GameObject("Panel");
-        panel.transform.SetParent(resultObject.transform);
-        Text detail = new GameObject("Detail").AddComponent<Text>();
-        detail.transform.SetParent(panel.transform);
-        BossResultScreen results = resultObject.AddComponent<BossResultScreen>();
-        TestUtil.SetField(results, "panel", panel);
-        TestUtil.SetField(results, "detailText", detail);
-        TestUtil.SetField(results, "playerHealth", playerHealth);
-        TestUtil.SetField(results, "reloadSceneOnRestart", false);
-        resultObject.SetActive(true);
+        BattleFlow flow = TestUtil.CreateBattleFlowWithResults(resultObject, playerHealth, out GameObject panel, out Text timeText);
+        yield return null;
 
         TestUtil.SetField(encounter, "defeatOutcome", BossEncounter.DefeatOutcome.ShowResults);
-        TestUtil.SetField(encounter, "resultScreen", results);
+        TestUtil.SetField(encounter, "battleFlow", flow);
         encounterObject.SetActive(true);
         phaseController.EnterPhase(CombatPhase.Boss);
         encounter.OnCombatPhaseChanged(CombatPhase.Boss);
@@ -162,12 +166,10 @@ public class BossDefeatTests
         Assert.IsFalse(panel.activeSelf, "hidden during the fight");
 
         encounter.Boss.GetComponent<EnemyHealth>().TakeDamage(9999);
-        // 面板出現後遊戲時間會暫停，要用真實時間等
-        yield return new WaitForSecondsRealtime(0.6f);
+        yield return WaitUntil(() => panel.activeSelf);
 
         Assert.IsTrue(panel.activeSelf);
-        StringAssert.Contains("剩餘血量  " + playerHealth.MaxHealth + " / " + playerHealth.MaxHealth, detail.text);
-        StringAssert.Contains("00:00", detail.text, "clear time since the boss appeared");
+        Assert.AreEqual("00:00", timeText.text, "battle time on the results");
         Assert.AreEqual(0f, Time.timeScale, "the game pauses on the result panel");
         Assert.AreEqual(CombatPhase.Boss, phaseController.CurrentPhase);
     }

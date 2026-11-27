@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 0994ba90f52b78145bded0e89de29f99
+timeCreated: 1795493713
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  externalObjects: {}
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - LINE Seed Sans KR
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData:
+  assetBundleName: 7a81d65eb341d56a5e9da17c62bf084c_assets_all
+  assetBundleVariant:

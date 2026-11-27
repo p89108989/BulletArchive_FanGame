@@ -1,0 +1,1326 @@
+fileFormatVersion: 2
+guid: 38cab3d9532b07b469fc2bfa42418e9a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Engrave_Btn_ConsciousnessInfo
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 292
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c9a7af1d482c14ba9285362a858502
+      internalID: 217438730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Btn_ConsciousnessNodeInfo
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 414
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b34bc23d590ee4f9a5687beb5298e9
+      internalID: 1691134142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Btn_EgoInfo
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 464
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a457d63eb96c5bb43ab2f5ce70b414a2
+      internalID: -1701541271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Btn_EgoNodeInfo
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 462
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdfd40acbde60e4f94c6e36e664c4f2
+      internalID: 494937158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Btn_UnconsciousInfo
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 344
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d147e13108039949a53636413a00154
+      internalID: 636301210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Btn_UnconsciousNodeInfo
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 412
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b7c1a2a3cf6a0469174297ddfe5305
+      internalID: 1555824264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 332
+        width: 66
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 31, y: 252, z: 31, w: 58}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcb873171560024d9a4a46e15072940
+      internalID: 2013151810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 588
+        width: 24
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 228, z: 11, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4c03e278999e14686852e615ccc622
+      internalID: -485273386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_3
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 646
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 38, y: 38, z: 38, w: 38}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a176451049a60d439e4d5a48cd8cae1
+      internalID: 1506732468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1010
+        width: 358
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 178, y: 3, z: 178, w: 3}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30e4990ff2639348953d6788aa89372
+      internalID: 862743083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_5
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 0
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 0, z: 30, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bac8c386b622544893a4ef5fcf8f5c
+      internalID: 868290317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_InfoBtn
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 170
+        width: 98
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 79, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9d086280340354d9692d8416b3c744
+      internalID: 26601162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_Round
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 0
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b9a54e5c73be849aac0b6a3974351e
+      internalID: 1266386738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_Select_0
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 454
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53db937ff7911804caadced4896e83df
+      internalID: 806397194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_Select_1
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 260
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc4a1d2ee06184682c76c19c2d6190
+      internalID: 1722101920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_Select_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 592
+        width: 244
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fdfe83ae61ab64b95c161cc8dbe21d
+      internalID: -1405430298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_Select_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 330
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e190fcd816c1f046bc741709d01024e
+      internalID: -142739446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Bx_Select_Deco
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 802
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac93fd535a324c04b9820c3162312c6b
+      internalID: -1390415866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_CompleteBg
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 796
+        width: 118
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 45, y: 2, z: 45, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f432fad209f31247bfe309ab49f3cc5
+      internalID: 1314019026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_0_Off
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 534
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f74cbf095853e4291fe1eb355712a7
+      internalID: 1729799193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_0_On
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 584
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b37623373a1665449c420367ca65a4a
+      internalID: 769149119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_1_Off
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 292
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20786a3b82db2794f8d996704f6ab5fe
+      internalID: -754181579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_1_On
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 170
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a704273003a3d7b409069267520cbd23
+      internalID: 1984461863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_2_Off
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 0
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f66e3857dff454fb4d0bf10c9a3158
+      internalID: 532766268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_2_On
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 170
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debbd78482e84db438fc688bbabbc24f
+      internalID: -682729731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_3_Off
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4871b69e028c6cf429ceb54e4021643f
+      internalID: 820089882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Consciousness_Node_3_On
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 328
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c07977e190a8a042917dbe4105244c0
+      internalID: -1376758646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_0_Off
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 628
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4abd657aeb1b84eb27088fad5b6296
+      internalID: 311387289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_0_On
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 678
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7033269dfaad1f47bbc0783e97fd8fa
+      internalID: -1305969897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_1_Off
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 340
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb548aa76cc94f34781e4442288b9c87
+      internalID: -2078879431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_1_On
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 340
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98e08ea9c747e74e98f9de0b88d7658
+      internalID: 2059166231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_2_Off
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 626
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0246c2493688d64408600a10caa6e0f2
+      internalID: 158771607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_2_On
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 170
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d71f1c0391e148a91fa333911b203
+      internalID: 496672279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_3_Off
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 588
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beda859535c2ffe429a2ccd459c28eee
+      internalID: -1310527085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Ego_Node_3_On
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 328
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086a3cfde04036a46a0ed862b32abe55
+      internalID: 346044779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_InfoBx
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 0
+        width: 56
+        height: 844
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 420, z: 26, w: 420}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e78c455a4203245a5848646a967dcd
+      internalID: -904945704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_InfoBx_Line
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 106
+        height: 844
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 48, y: 407, z: 48, w: 434}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2038b7f9cefb4444a70f59befb095de
+      internalID: 2132780284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_ListBx_Consciousness_1
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 930
+        width: 500
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 482, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba521256dd801e468706168c6776515
+      internalID: 1728354972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_ListBx_Consciousness_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 164
+        width: 500
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 21, y: 0, z: 480, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdce88edfaf68b41b8dc92020fda965
+      internalID: -490222784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_ListBx_Ego_1
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 848
+        width: 500
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 480, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3917d61d5b92dd647a3a1080d34028f7
+      internalID: -783604636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_ListBx_Ego_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 500
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 480, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db534ea727f9c743b3f18f0dd6305be
+      internalID: 2096675389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_ListBx_Unconscious_1
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 846
+        width: 500
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 480, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e025c80903d6e41aeec5ef22525aeb
+      internalID: -1746267134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_ListBx_Unconscious_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 846
+        width: 500
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 480, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4daa50a46a659ac4fab2dbf71f593ff8
+      internalID: 1912765984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_TitleDeco
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 728
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1712d7d92ca92642a53f86160ccdcfc
+      internalID: 1650873622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_0_Off
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 532
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eed7487edd67404a84124013067ed6a
+      internalID: -992439233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_0_On
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 582
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a90c2994fb3d714687fc9bc144e26fd
+      internalID: 1068927023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_1_Off
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 170
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549803bd9eb5d434487c6190444b617d
+      internalID: 145135256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_1_On
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 340
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4c44b130db5f940a04906a13c5237e
+      internalID: -1116058892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_2_Off
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 0
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5ef7af869a5384e819beef01a4eca3
+      internalID: -1620442807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_2_On
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 168
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03147e83219e7b45a4783a630086236
+      internalID: 240797254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_3_Off
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 0
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848d77a4c43f4e647b4b799ce0bc50e3
+      internalID: 970528841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Engrave_Unconscious_Node_3_On
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 588
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f628133a7cf0a0408ba3fa3213521b9
+      internalID: -1769002971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 41d69dfc18ada8143861bfbdcb11b319
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Engrave_Btn_ConsciousnessInfo: 217438730
+      Engrave_Btn_ConsciousnessNodeInfo: 1691134142
+      Engrave_Btn_EgoInfo: -1701541271
+      Engrave_Btn_EgoNodeInfo: 494937158
+      Engrave_Btn_UnconsciousInfo: 636301210
+      Engrave_Btn_UnconsciousNodeInfo: 1555824264
+      Engrave_Bx_1: 2013151810
+      Engrave_Bx_2: -485273386
+      Engrave_Bx_3: 1506732468
+      Engrave_Bx_4: 862743083
+      Engrave_Bx_5: 868290317
+      Engrave_Bx_InfoBtn: 26601162
+      Engrave_Bx_Round: 1266386738
+      Engrave_Bx_Select_0: 806397194
+      Engrave_Bx_Select_1: 1722101920
+      Engrave_Bx_Select_2: -1405430298
+      Engrave_Bx_Select_3: -142739446
+      Engrave_Bx_Select_Deco: -1390415866
+      Engrave_CompleteBg: 1314019026
+      Engrave_Consciousness_Node_0_Off: 1729799193
+      Engrave_Consciousness_Node_0_On: 769149119
+      Engrave_Consciousness_Node_1_Off: -754181579
+      Engrave_Consciousness_Node_1_On: 1984461863
+      Engrave_Consciousness_Node_2_Off: 532766268
+      Engrave_Consciousness_Node_2_On: -682729731
+      Engrave_Consciousness_Node_3_Off: 820089882
+      Engrave_Consciousness_Node_3_On: -1376758646
+      Engrave_Ego_Node_0_Off: 311387289
+      Engrave_Ego_Node_0_On: -1305969897
+      Engrave_Ego_Node_1_Off: -2078879431
+      Engrave_Ego_Node_1_On: 2059166231
+      Engrave_Ego_Node_2_Off: 158771607
+      Engrave_Ego_Node_2_On: 496672279
+      Engrave_Ego_Node_3_Off: -1310527085
+      Engrave_Ego_Node_3_On: 346044779
+      Engrave_InfoBx: -904945704
+      Engrave_InfoBx_Line: 2132780284
+      Engrave_ListBx_Consciousness_1: 1728354972
+      Engrave_ListBx_Consciousness_2: -490222784
+      Engrave_ListBx_Ego_1: -783604636
+      Engrave_ListBx_Ego_2: 2096675389
+      Engrave_ListBx_Unconscious_1: -1746267134
+      Engrave_ListBx_Unconscious_2: 1912765984
+      Engrave_TitleDeco: 1650873622
+      Engrave_Unconscious_Node_0_Off: -992439233
+      Engrave_Unconscious_Node_0_On: 1068927023
+      Engrave_Unconscious_Node_1_Off: 145135256
+      Engrave_Unconscious_Node_1_On: -1116058892
+      Engrave_Unconscious_Node_2_Off: -1620442807
+      Engrave_Unconscious_Node_2_On: 240797254
+      Engrave_Unconscious_Node_3_Off: 970528841
+      Engrave_Unconscious_Node_3_On: -1769002971
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

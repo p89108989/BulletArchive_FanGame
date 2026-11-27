@@ -1,0 +1,1924 @@
+fileFormatVersion: 2
+guid: 86d4a1ca90dcf034691351c1b086f4b5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Common_Line_Dot
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 800
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bffe9d0f95d8074ebd439465cab8e7d
+      internalID: 1676405668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event_Treasure_842Deco_1
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 0
+        width: 412
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb1f0c005febdd4da02c472c7de6fde
+      internalID: 626192252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event_Treasure_842Deco_2
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 0
+        width: 405
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1352de0e7917c7b40bedddb8f6702907
+      internalID: 855534533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event_Treasure_842Deco_3
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 0
+        width: 44
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b43face7b2a1945bffaf7c2281ebab
+      internalID: 1704412208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event_Treasure_842Deco_4
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 0
+        width: 170
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1330e7f680dee5048a1d47ff66f9c3be
+      internalID: 746340963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event_Treasure_842Deco_4_Shadow
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1309
+        width: 96
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54302758ae4d70489a2c3e7e371e1c8
+      internalID: 775689669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event_Treasure_842Deco_R
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 1309
+        width: 126
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cdcdaa649cf4c4ab2fdb5773126a06
+      internalID: -826258312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Event_Treasure_842Deco_Y
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 727
+        width: 123
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459cdf4ced0f28b49bd3e56157bc10f4
+      internalID: -178257254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_Deco_1
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 998
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b78e625eaf79c64bb6230590f862efd
+      internalID: 1023094825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_Deco_2
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 946
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628b13e9abd481e4ca8a394cc713258a
+      internalID: 1687613876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_Deco_847_1
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 263
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3279cf5776fc11f4eae0225a0ed0d2e0
+      internalID: -1433401514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_Deco_847_2
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 325
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdaa7f5879b752479ea141a5875cb9e
+      internalID: 426162053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_IconDeco_842_1
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 800
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7b8325ffad0b24394783b1d821b7e5
+      internalID: 1678158120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_IconDeco_842_2
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 726
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539dd85f0eea7e4478aaff520c4a46d1
+      internalID: -1293586158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_IconDeco_842_3
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 652
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2174e42be51156e4c92e762b3dcf476e
+      internalID: 1652765067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_842_1
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1200
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b97f97888f20b14fb8b35ff4bb65f67
+      internalID: -1825506868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_842_2
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1219
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415f00811a82d744095b66d5be5fb1f6
+      internalID: 1244224726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_842_3
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1219
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e0ed71c001a614da9195b4030d71c4
+      internalID: -126119675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_842_4
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1200
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dafdb7dc2c9d644daf36bf1ee811729
+      internalID: 1463656714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_847_1
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1062
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a225fd7820c9cf949b4ada63264bea2a
+      internalID: -1473418585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_847_2
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1062
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c6a83a78c26024f90c052b4e9324a4
+      internalID: 1083772121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_847_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1062
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d9f41bd31995a4f92b67aa611e3f99
+      internalID: 35283363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_847_4
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1062
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9247bfb3be54629449450dc6dafa4a80
+      internalID: 1024522215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_847_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1062
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd766f38869063b4b8654734d4a00eed
+      internalID: -1232836403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 570
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050ffc2e95d4920458ffdb636272ba26
+      internalID: -1448371498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 406
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0afc65eea40c2e4b8a3d3fdad056aee
+      internalID: 775990720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_11
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 406
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7358b1b563f9144aa0761151da6d691
+      internalID: 319716927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_12
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 544
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b48352b7639d4c49b28fed05f1561cb
+      internalID: 808229683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_13
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 570
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1538878cafe66242a05ad166a236e40
+      internalID: -1930308260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_14
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 570
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996bc99530c1f0c41ae69016c2317051
+      internalID: -1603019057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d81a1ed45d76e4587c2247abeaa199
+      internalID: -2027764744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_16
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 570
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a969a14371c19e84eaa1716026b414ce
+      internalID: -316085119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_17
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 817
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd3c3a8607fc494e9c83967fe5b382a
+      internalID: 281184520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 734
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc308ca14a75357418ee88fa260b9a36
+      internalID: 931589200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_19
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1145
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e8a68f18e3cf145a724f6d7cb6c4f3
+      internalID: 1499945689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_2
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 734
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c288133c15cb5714ab1c3aff1d8f7e56
+      internalID: 792270150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_20
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 727
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e32d409ac5c324eba1fb839f6c4da8
+      internalID: -1764531952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_21
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 872
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f11272225717640a6f5cf9b09156c6
+      internalID: -224081821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_22
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1055
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b88d4290e989f47b68b74d881cad86
+      internalID: -792241295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_23
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 891
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72a9dd40b8f62c4d9d2d8b4770b7aa2
+      internalID: 222438544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_24
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 891
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe4caf4144bf1a48929ecabe39882c1
+      internalID: -606587395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 406
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f03f161161401042af4d30151f2418e
+      internalID: 100503974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_26
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 544
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebda49d833439864c92b0cea8cb1e629
+      internalID: 2081154401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 898
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946982803b60a4249a0372c8593e096d
+      internalID: -502407122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 406
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949d2025828c5b84f95862190b3496a9
+      internalID: 2092321438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_29
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1055
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1045e6a03c25ecb4290005a25ad92440
+      internalID: -1960673359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_3
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 708
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0801afe498ad3b24099393c21e605216
+      internalID: -935187904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_30
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 898
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debf864052743554097029fd975a58d6
+      internalID: 1044388165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_31
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 981
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382ed792e6cc3844592c2e75c979a1bb
+      internalID: 1781488572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185b2fe5bc7325346becf4e54364ef3d
+      internalID: -993976724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_33
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 817
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f791e33cdcc8245aaf6f57d754989c
+      internalID: 1543362334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_34
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 898
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd1fb8927fb1c847ad7431dd8913fff
+      internalID: 117525623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1062
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1bc34d4c3246249b426aa97c3a71d7
+      internalID: 26766870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_36
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1036
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b58f9577914e56479a29e3edb36ebc9
+      internalID: -1506117428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_37
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 898
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bbc829c8acf624abf62e0691be6324
+      internalID: -1321690298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_38
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 981
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf02de610cecf94f8fd4439d6948c55
+      internalID: -1582517455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_39
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 898
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe1e2acda5e87b44a8b9652b9711221
+      internalID: 1846536994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 734
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39038f0cfd26ac4db261c0c8a7f029f
+      internalID: 1631879371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_40
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 734
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2d272f938a78a4093cf355c494faeb
+      internalID: -161793021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_41
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 872
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf4b867f8bf39b479e0601d237098a0
+      internalID: -997158185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_42
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 734
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233a1ca571a7e2243a29c87c0eafdb21
+      internalID: 2113915890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_43
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 734
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190a9a3ffba85af4aaeab0f9ca57ab09
+      internalID: -1095650628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_44
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 708
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6005a90626b2f49b270f0dfaf5519d
+      internalID: 1859414090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_45
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 727
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1842c22092e72fb47a66b492547b23b8
+      internalID: 2067507730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_5
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 1036
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cda5fc1cff8a7a46a7c7df19990015a
+      internalID: -1123070661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_6
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1145
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655f97f9014f2b24db63a0cc86ca0cbb
+      internalID: -288889817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_7
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 898
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fd26fb6216c234da069df8688746e0
+      internalID: -112368146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_8
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 570
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61eabe6e529ed3b44a11a56f92d4d33d
+      internalID: 320677302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_861_9
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 406
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fc80fec7a5de049a237fae3d79d655
+      internalID: -1813876492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_B
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 420
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79012f748c491645b177ad0eac1ad9c
+      internalID: 150357128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_Back
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 263
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb99003ba608fe42b171955f1c0ac5b
+      internalID: 435610485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_P
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 263
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecc130fc62b87e47bc3f138b22c7402
+      internalID: 1073763855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_Select
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 652
+        width: 164
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8649ce70a0314c446bb7ee3359a0ce1b
+      internalID: 1203554921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_W
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 495
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bac0cba2380a504f95735b6cb875916
+      internalID: 947667685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_MemoCover_Y
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 495
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3a6e02bd911054d804e11dfd6cd9d4
+      internalID: 1196481917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_Numbg
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 874
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 0, z: 15, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6aabd6d6945cb046b6d07d57b90b8a5
+      internalID: -1968136340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_TreasureBoard
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 261
+        width: 313
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c47a7ba48aec6459fc5a531faf48d8
+      internalID: 1771899348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Treasure_Event_TreasureBoardBg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1004
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67780d5041e79a4492c29f37dd4cf63
+      internalID: 986514543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0a457a1331e9e1349a98117d8c57f20b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Common_Line_Dot: 1676405668
+      Event_Treasure_842Deco_1: 626192252
+      Event_Treasure_842Deco_2: 855534533
+      Event_Treasure_842Deco_3: 1704412208
+      Event_Treasure_842Deco_4: 746340963
+      Event_Treasure_842Deco_4_Shadow: 775689669
+      Event_Treasure_842Deco_R: -826258312
+      Event_Treasure_842Deco_Y: -178257254
+      Treasure_Event_Deco_1: 1023094825
+      Treasure_Event_Deco_2: 1687613876
+      Treasure_Event_Deco_847_1: -1433401514
+      Treasure_Event_Deco_847_2: 426162053
+      Treasure_Event_IconDeco_842_1: 1678158120
+      Treasure_Event_IconDeco_842_2: -1293586158
+      Treasure_Event_IconDeco_842_3: 1652765067
+      Treasure_Event_MemoCover_842_1: -1825506868
+      Treasure_Event_MemoCover_842_2: 1244224726
+      Treasure_Event_MemoCover_842_3: -126119675
+      Treasure_Event_MemoCover_842_4: 1463656714
+      Treasure_Event_MemoCover_847_1: -1473418585
+      Treasure_Event_MemoCover_847_2: 1083772121
+      Treasure_Event_MemoCover_847_3: 35283363
+      Treasure_Event_MemoCover_847_4: 1024522215
+      Treasure_Event_MemoCover_847_5: -1232836403
+      Treasure_Event_MemoCover_861_1: -1448371498
+      Treasure_Event_MemoCover_861_10: 775990720
+      Treasure_Event_MemoCover_861_11: 319716927
+      Treasure_Event_MemoCover_861_12: 808229683
+      Treasure_Event_MemoCover_861_13: -1930308260
+      Treasure_Event_MemoCover_861_14: -1603019057
+      Treasure_Event_MemoCover_861_15: -2027764744
+      Treasure_Event_MemoCover_861_16: -316085119
+      Treasure_Event_MemoCover_861_17: 281184520
+      Treasure_Event_MemoCover_861_18: 931589200
+      Treasure_Event_MemoCover_861_19: 1499945689
+      Treasure_Event_MemoCover_861_2: 792270150
+      Treasure_Event_MemoCover_861_20: -1764531952
+      Treasure_Event_MemoCover_861_21: -224081821
+      Treasure_Event_MemoCover_861_22: -792241295
+      Treasure_Event_MemoCover_861_23: 222438544
+      Treasure_Event_MemoCover_861_24: -606587395
+      Treasure_Event_MemoCover_861_25: 100503974
+      Treasure_Event_MemoCover_861_26: 2081154401
+      Treasure_Event_MemoCover_861_27: -502407122
+      Treasure_Event_MemoCover_861_28: 2092321438
+      Treasure_Event_MemoCover_861_29: -1960673359
+      Treasure_Event_MemoCover_861_3: -935187904
+      Treasure_Event_MemoCover_861_30: 1044388165
+      Treasure_Event_MemoCover_861_31: 1781488572
+      Treasure_Event_MemoCover_861_32: -993976724
+      Treasure_Event_MemoCover_861_33: 1543362334
+      Treasure_Event_MemoCover_861_34: 117525623
+      Treasure_Event_MemoCover_861_35: 26766870
+      Treasure_Event_MemoCover_861_36: -1506117428
+      Treasure_Event_MemoCover_861_37: -1321690298
+      Treasure_Event_MemoCover_861_38: -1582517455
+      Treasure_Event_MemoCover_861_39: 1846536994
+      Treasure_Event_MemoCover_861_4: 1631879371
+      Treasure_Event_MemoCover_861_40: -161793021
+      Treasure_Event_MemoCover_861_41: -997158185
+      Treasure_Event_MemoCover_861_42: 2113915890
+      Treasure_Event_MemoCover_861_43: -1095650628
+      Treasure_Event_MemoCover_861_44: 1859414090
+      Treasure_Event_MemoCover_861_45: 2067507730
+      Treasure_Event_MemoCover_861_5: -1123070661
+      Treasure_Event_MemoCover_861_6: -288889817
+      Treasure_Event_MemoCover_861_7: -112368146
+      Treasure_Event_MemoCover_861_8: 320677302
+      Treasure_Event_MemoCover_861_9: -1813876492
+      Treasure_Event_MemoCover_B: 150357128
+      Treasure_Event_MemoCover_Back: 435610485
+      Treasure_Event_MemoCover_P: 1073763855
+      Treasure_Event_MemoCover_Select: 1203554921
+      Treasure_Event_MemoCover_W: 947667685
+      Treasure_Event_MemoCover_Y: 1196481917
+      Treasure_Event_Numbg: -1968136340
+      Treasure_Event_TreasureBoard: 1771899348
+      Treasure_Event_TreasureBoardBg: 986514543
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

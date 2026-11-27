@@ -21,6 +21,7 @@ public static class PerorozillaPrefabBuilder
     private static readonly Color VanishSmokeFadeColor = new Color(0.9f, 0.92f, 0.95f);
 
     private const float ModelScale = 10f;
+    private const float NormalAttackSpeed = 1.35f;
     private const int BossMaxHealth = 1000;
     // 聚光燈：位於場地上空 (相對 Boss 根物件)，打向臉部
     private static readonly Vector3 SpotlightLocalPosition = new Vector3(0f, 170f, 105f);
@@ -164,6 +165,10 @@ public static class PerorozillaPrefabBuilder
         AnimatorState attackStart = AddState(machine, "AttackStart", "Perorozilla_Original_Normal_Attack_Start");
         AnimatorState attackIng = AddState(machine, "AttackIng", "Perorozilla_Original_Normal_Attack_Ing");
         AnimatorState attackEnd = AddState(machine, "AttackEnd", "Perorozilla_Original_Normal_Attack_End");
+        // 普通攻擊每 3 秒一次：原本整段約 4 秒，加快到約 3 秒 (BossDebrisAttack 的吐出時間與長度已依此設定)
+        attackStart.speed = NormalAttackSpeed;
+        attackIng.speed = NormalAttackSpeed;
+        attackEnd.speed = NormalAttackSpeed;
         AddTriggerTransition(idle, attackStart, "Attack");
         AddExitTransition(attackStart, attackIng, 0.1f);
         AddExitTransition(attackIng, attackEnd, 0.1f);

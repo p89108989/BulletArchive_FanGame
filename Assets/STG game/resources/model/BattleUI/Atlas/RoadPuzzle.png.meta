@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: 237bd6f27a1fab6488104d5f25fc29df
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cafe_Icon_Edit
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 680
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5d90854bee2c74f80b5e89ff1c51b0
+      internalID: 235178060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Bg_Text_1
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 657
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 0, z: 40, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72df1fdad3eb35848bcc239c9a8c3a6e
+      internalID: 262632983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Bg_Text_2
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 256
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 0, z: 10, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ad8f2eccc08654db4ca3cfb9c2e086
+      internalID: 278667109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Bg_Text_3
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 310
+        width: 58
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 38, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42aa97918eb7ac648bb3e66dfd77a93b
+      internalID: -658725637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Bg_Tile
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 355
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2aafbb1b28c39843862824436c3d22a
+      internalID: 292281164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Bg_TileLineDeco
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 464
+        width: 302
+        height: 558
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cf3ea62c24e7446bad233bafe0fb25
+      internalID: 1647506371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Bg_TileLineDeco2
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 196
+        width: 155
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 65, z: 0, w: 65}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf2c0704114a64458dcd3899590e677
+      internalID: -1377819531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_Big_Dark
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 0
+        width: 177
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e6816f74bd7434cb9ab4d1b5e44c14
+      internalID: 415581556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_Big_Start
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 0
+        width: 583
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 500, y: 0, z: 76, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2156162dfd6de4998e59243892b9b4
+      internalID: -1339641403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_Normal_Bright
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 528
+        width: 139
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7671ea186d21bc5459660237457db90e
+      internalID: 491183032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_Normal_Dark
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 184
+        width: 160
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444a4aadfa13c5343a524c9d88535f31
+      internalID: -733861244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_Skip
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 882
+        width: 98
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 0, z: 40, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519021a388193f14a85680cf07bfc49c
+      internalID: 1813206771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_SkipDeco
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 497
+        width: 227
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6251d2efb0c11d47974122ffa6df4c5
+      internalID: 421642228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_Text_Dark
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 572
+        width: 90
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 0, z: 30, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af93686cb02ded54fb46e42f06147b98
+      internalID: 1050488562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_Text_Dark_Worldraid
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 574
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 33, y: 0, z: 23, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f17ca1ecc02f64fa61b9ef398fd0ef
+      internalID: -1473485411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Btn_X
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 359
+        width: 149
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3374b8a02193a1d40bafc6b5337cd4ce
+      internalID: -1499929586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Char_Action_1
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 211
+        width: 226
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f8c2a0b9d2219418a97f9ce1604869
+      internalID: -2087111192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Char_Action_2
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 211
+        width: 208
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b21638277b4a549b4571b828ce95a1
+      internalID: -1208328117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_CoverLine_Current_Tile
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 762
+        width: 199
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e542209c16b802e43b1dd3b82f1d4fee
+      internalID: -281938598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Icon_Tile_CurveBig
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 180
+        width: 166
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473f6e6b60cc92249b6ac8b41de03e64
+      internalID: -1808400714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Icon_Tile_CurveSmall
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 0
+        width: 166
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f35077bd1956e498ffd6c7a363401e
+      internalID: -1933767345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Icon_Tile_Straight
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 0
+        width: 166
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befe006632eb6fe4ca53edfabe63dbb3
+      internalID: 1380089435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_LinkIcon_Green
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 410
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa3498ed9256f6459837d67ad6b42d7
+      internalID: 689235505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_LinkIcon_Red
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 492
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84c46e747e45004385fc0a732c9fb85
+      internalID: 1046237164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Pin
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 211
+        width: 67
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50e963f63c310044944c6c715cb05c5
+      internalID: 678896698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_BigDeco1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 344
+        height: 416
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f05a06309ee0d64aa39320b035a4285
+      internalID: -1956555583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_BigDeco2
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 464
+        width: 359
+        height: 469
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41601ed9ddee9904092ba4afc9f21207
+      internalID: 1815318029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_BigDeco3
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 360
+        width: 109
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796d252fb95646e4989b40aaf59b207f
+      internalID: 1529979642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_LogoDeco
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 389
+        height: 462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc376750deae9044b88cff746a75da5
+      internalID: 40627878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_TabNormal
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 360
+        width: 114
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 46, y: 0, z: 46, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980612a63271b8f488b61f572f11ca43
+      internalID: -553068756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_TabSelect
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 762
+        width: 104
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 46, y: 0, z: 46, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c4d930aec4a3e42bec2186e28f246f
+      internalID: -440567768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_TextBg
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 0
+        width: 125
+        height: 971
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 0, z: 55, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd131d14809a2249bcd58dba9a613c4
+      internalID: 1357380295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_Popup_TitleBg
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 490
+        width: 105
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 45, y: 0, z: 45, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a63b4141be78ed439a3177bedefb1fa
+      internalID: 1095066541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_StartBtn_Tag
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 554
+        width: 125
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 0, z: 94, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106b3ce31d3ba4e4582b836921848876
+      internalID: -1661124729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_TileReward_Bg
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 370
+        width: 136
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fca3057bd116a40bb3cf5c86a2de7e
+      internalID: 1600334081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roadpuzzle_TileReward_NumBg
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 211
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 0, z: 22, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bbf9da31279ad488f6fc07971237ac
+      internalID: -1485672456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1085833c9f8ef7647801efabfa46d5c5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cafe_Icon_Edit: 235178060
+      Roadpuzzle_Bg_Text_1: 262632983
+      Roadpuzzle_Bg_Text_2: 278667109
+      Roadpuzzle_Bg_Text_3: -658725637
+      Roadpuzzle_Bg_Tile: 292281164
+      Roadpuzzle_Bg_TileLineDeco: 1647506371
+      Roadpuzzle_Bg_TileLineDeco2: -1377819531
+      Roadpuzzle_Btn_Big_Dark: 415581556
+      Roadpuzzle_Btn_Big_Start: -1339641403
+      Roadpuzzle_Btn_Normal_Bright: 491183032
+      Roadpuzzle_Btn_Normal_Dark: -733861244
+      Roadpuzzle_Btn_Skip: 1813206771
+      Roadpuzzle_Btn_SkipDeco: 421642228
+      Roadpuzzle_Btn_Text_Dark: 1050488562
+      Roadpuzzle_Btn_Text_Dark_Worldraid: -1473485411
+      Roadpuzzle_Btn_X: -1499929586
+      Roadpuzzle_Char_Action_1: -2087111192
+      Roadpuzzle_Char_Action_2: -1208328117
+      Roadpuzzle_CoverLine_Current_Tile: -281938598
+      Roadpuzzle_Icon_Tile_CurveBig: -1808400714
+      Roadpuzzle_Icon_Tile_CurveSmall: -1933767345
+      Roadpuzzle_Icon_Tile_Straight: 1380089435
+      Roadpuzzle_LinkIcon_Green: 689235505
+      Roadpuzzle_LinkIcon_Red: 1046237164
+      Roadpuzzle_Pin: 678896698
+      Roadpuzzle_Popup_BigDeco1: -1956555583
+      Roadpuzzle_Popup_BigDeco2: 1815318029
+      Roadpuzzle_Popup_BigDeco3: 1529979642
+      Roadpuzzle_Popup_LogoDeco: 40627878
+      Roadpuzzle_Popup_TabNormal: -553068756
+      Roadpuzzle_Popup_TabSelect: -440567768
+      Roadpuzzle_Popup_TextBg: 1357380295
+      Roadpuzzle_Popup_TitleBg: 1095066541
+      Roadpuzzle_StartBtn_Tag: -1661124729
+      Roadpuzzle_TileReward_Bg: 1600334081
+      Roadpuzzle_TileReward_NumBg: -1485672456
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

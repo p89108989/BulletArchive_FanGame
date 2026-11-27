@@ -13,7 +13,8 @@ public class BossPhaseDemolisher : MonoBehaviour, ICombatPhaseListener
 
         for (int i = 0; i < targets.Length; i++)
         {
-            if (targets[i] != null && !targets[i].IsDead) targets[i].TakeDamage(targets[i].MaxHealth);
+            // Demolish：照樣爆炸，但不算進結算的擊殺數
+            if (targets[i] != null) targets[i].Demolish();
         }
     }
 }

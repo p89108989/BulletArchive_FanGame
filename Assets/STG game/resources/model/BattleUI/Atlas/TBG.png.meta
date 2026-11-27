@@ -1,0 +1,1579 @@
+fileFormatVersion: 2
+guid: c93a7d508afe7fc4eb3f55fd03880922
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Card_Ability_Select_Line_Icon 1
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 250
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c4e1ad61dda5d4798af9a60439f94f
+      internalID: -2130170408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Bg_Raius10px
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 142
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6246d73a9cdc4af4a8916ac20b8a1204
+      internalID: 573968141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Bg_Raius10px_Shadow
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 248
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 24, z: 16, w: 12}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62112cbaf57180a4f953d3a78d264e85
+      internalID: 1279146914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Bg_Raius5px
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 299
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4e25ad259d0e0428d2e4d4a55cc6a1
+      internalID: -1568583651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Bg_Raius5px_Shadow
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 713
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2e2b5872585f34289a714c7a56c7c1
+      internalID: 1208944553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_BGDeco
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 607
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d570ebe0ab0334e8b816cf08a17462
+      internalID: 774258429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Btn_BG
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 545
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 40, z: 32, w: 25}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be37925e4272c814da429c14ab15ae0c
+      internalID: -2043491392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Btn_Normal_B_C_Pt
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 0
+        width: 251
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b8d5d7ab00a3b4ca9e4bbc7a2b0533
+      internalID: -38293660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Btn_Normal_B_S_Pt
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 143
+        width: 251
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e386381c0ce59c4fac136062989e0dc
+      internalID: 1586893187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Btn_Normal_Y_S_Pt
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 0
+        width: 251
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f5e30d31961974882e7fe4ee8618b8
+      internalID: -305199947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Gradient
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 990
+        width: 300
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fc8fc59f3c2c64dbaf76ec87152102
+      internalID: -1682157620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Gradient_Vertical
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 461
+        width: 16
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d34f03a47f3384aafd627d269ebd62
+      internalID: -1302328132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Graph_Tail
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 286
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b43c9e4c842df4386c020c615f749d
+      internalID: -136217599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_Check_Y_On
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 657
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e55ec4e583d8974d9ddca9611f5afaf
+      internalID: -591434339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_Close
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 618
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdf77b2370149b40a49a05411fbe588
+      internalID: -336152368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_Leader
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 284
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6966b73236bb64d814685d590f53d6
+      internalID: 600136246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_line_10px
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6c0fbe26f6e7a4585dc8f292b77c23
+      internalID: 989298295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Line_Dot
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 314
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0720602fac6424f84c859e1311d110
+      internalID: 1634536498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Line_Raius10px
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 289
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf94ae1dea5e8c4297a819f696ee511
+      internalID: -1748708414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Line_Select_Y
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 169
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf680160e3415349bb3afea34b81e96
+      internalID: 519992075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Bg_Ingame_Select_1
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 56, z: 48, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5cb44637b8b934f9780ff18b541e92
+      internalID: 166170551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Bg_Ingame_Select_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 913
+        width: 274
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 54, z: 235, w: 15}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978816c42ce2c0b41adc8f728c5db775
+      internalID: 120241306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Btn_Back
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 143
+        width: 172
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d53c50a3c1a98f40843b80831aaf299
+      internalID: 186620551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Btn_Bg_B
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 353
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 38, z: 28, w: 22}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360b7ecf750a5014696169c6dad0317a
+      internalID: -350135325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Btn_Bg_Br
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 813
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 40, z: 30, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4465d4a182fb34ca6c3ab4082ec83e
+      internalID: -802605682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Btn_Bg_Y
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 317
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 40, z: 28, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3bc78788f6888488c6d711333c0eec
+      internalID: 826966498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Btn_Home
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 318
+        width: 166
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34ea0a83a7b4464eb25956a8925a35b
+      internalID: -242604046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Btn_Info
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 143
+        width: 166
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c286345b13a3f4995de07630543a1b
+      internalID: -13634850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Btn_Option
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 0
+        width: 166
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa43795348983b49a464904e704e508
+      internalID: -817942945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Btn_X
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 461
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6655bf1957fd748aa243ee8dad338f
+      internalID: -1144901371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Deco_Line
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 331
+        width: 424
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8571276dfcf572640b53bc7584b70c62
+      internalID: 307856375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ally_Heart_1
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 88
+        width: 82
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c8becb5f3039544add3ed85cfae3bf
+      internalID: -641549770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ally_Heart_1_Disable
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 272
+        width: 82
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8c93365b3f41149b5a3cf24acad9cb
+      internalID: -2097961966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ally_Heart_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 728
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e1ed35ed533be48a3d859f1a846a33
+      internalID: -1329892928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Icon_Bg_Dice
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 668
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814a4e10a3091cb4e8abe789c1e1dea5
+      internalID: -741850728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_CriDice
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 710
+        width: 91
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6433f6b9675247d41b54c347f670c524
+      internalID: -421959174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Dice10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 300
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3acf64e333dc4c47b36c7ef2f6e2baa
+      internalID: 629670073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Dice6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 582
+        width: 300
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaa7f804df575444963ada4654908cf
+      internalID: 1664157481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Dice8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 276
+        width: 300
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb81a80316e18542988d73162293a01
+      internalID: -1446846379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_DiceRandom
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 597
+        width: 56
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668db2e61b6c4f84cb56b9acc3282f87
+      internalID: -245412385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Enemy_Heart
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 284
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55f0973ae61bcd48947c6a377188e15
+      internalID: -1819153246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Heart_Disable
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 318
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91552555c37a5cc4eb109e2a54d034d9
+      internalID: 895740442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_DiceBg
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 331
+        width: 192
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bf849f58d52bb4e8cf67d1dd082c71
+      internalID: 1917311661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_DiceDot
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 286
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34476c060d167a24792b9b07d62c76f0
+      internalID: -868871103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_Enermy
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 545
+        width: 119
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997ca9df09916264f8ef57edebf6242e
+      internalID: 834777848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_EnermyBoss
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 142
+        width: 119
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3660296f076d264cb8979e6884d022c
+      internalID: -996088556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_Random
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 0
+        width: 119
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbe892645e9ad147b8852f6156bae60
+      internalID: -1941073994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_Recover
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 687
+        width: 119
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6aee2d719cace4e81b1d0c735078ad
+      internalID: -1044860163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_SelectCircle
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 317
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d1fefaa9c0739479b95bda3b716410
+      internalID: -386862298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Ingame_SelectCircleBg
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 248
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b0e316f98da1e4ea8c22ca4ae36374
+      internalID: -1973056337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_lobbyDeco_1
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 142
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad77960eaa334746a4b8cd8898c7113
+      internalID: 36316599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_Icon_Map
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 331
+        width: 149
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5c542c9f0a0dd4481a17fcb15500e5
+      internalID: -144755226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_MapLocation
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 276
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3209160ca4382554ea75f12090982d78
+      internalID: -1293491630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_MapLocationDeco
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 681
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15b71b810c88334eba1744957d8148d
+      internalID: 2003933339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Icon_Up
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 272
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35823ea31e90494438616adb1c441d51
+      internalID: 778325624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_ImgFont_Free
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 829
+        width: 94
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacfe6675f7983749b74c3850a230567
+      internalID: 653503114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tbg_ImgFont_Hidden
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 286
+        width: 192
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bb95bef174d284184a22ad38deddbd
+      internalID: -816851428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_Inbox
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 597
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 26, y: 26, z: 26, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d06bcc403417941857baedcb64a262
+      internalID: -427559147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_ItemBg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 399
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e070864ca628dc64ba2a718bd37e962b
+      internalID: -1406792346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_ItemBg_10
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 0
+        width: 399
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92346edf78cdfa94492dd0ac76dbdc77
+      internalID: -31692031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_ResultBg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 736
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 320, y: 180, z: 260, w: 80}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91178f181d550248b3dd61d578b81d1
+      internalID: -160350798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_SelectLineBg
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 169
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 46, z: 46, w: 26}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9737afa9846fa004ab767f174e86e6d3
+      internalID: 481692659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TBG_TitleBg
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 888
+        width: 751
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 200, y: 0, z: 120, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29837193d00dafd4aba8e4145c4bceb0
+      internalID: 1556227144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e8cc807712f49e34184c203b5784dd02
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Card_Ability_Select_Line_Icon 1: -2130170408
+      Common_BGDeco: 774258429
+      Common_Bg_Raius10px: 573968141
+      Common_Bg_Raius10px_Shadow: 1279146914
+      Common_Bg_Raius5px: -1568583651
+      Common_Bg_Raius5px_Shadow: 1208944553
+      Common_Btn_BG: -2043491392
+      Common_Btn_Normal_B_C_Pt: -38293660
+      Common_Btn_Normal_B_S_Pt: 1586893187
+      Common_Btn_Normal_Y_S_Pt: -305199947
+      Common_Gradient: -1682157620
+      Common_Gradient_Vertical: -1302328132
+      Common_Graph_Tail: -136217599
+      Common_Icon_Check_Y_On: -591434339
+      Common_Icon_Close: -336152368
+      Common_Icon_Leader: 600136246
+      Common_Line_Dot: 1634536498
+      Common_Line_Raius10px: -1748708414
+      Common_Line_Select_Y: 519992075
+      Common_line_10px: 989298295
+      TBG_Bg_Ingame_Select_1: 166170551
+      TBG_Bg_Ingame_Select_2: 120241306
+      TBG_Btn_X: -1144901371
+      TBG_Icon_Ally_Heart_1: -641549770
+      TBG_Icon_Ally_Heart_1_Disable: -2097961966
+      TBG_Icon_Ally_Heart_2: -1329892928
+      TBG_Icon_CriDice: -421959174
+      TBG_Icon_Dice10: 629670073
+      TBG_Icon_Dice6: 1664157481
+      TBG_Icon_Dice8: -1446846379
+      TBG_Icon_DiceRandom: -245412385
+      TBG_Icon_Enemy_Heart: -1819153246
+      TBG_Icon_Heart_Disable: 895740442
+      TBG_Icon_Ingame_DiceBg: 1917311661
+      TBG_Icon_Ingame_DiceDot: -868871103
+      TBG_Icon_Ingame_Enermy: 834777848
+      TBG_Icon_Ingame_EnermyBoss: -996088556
+      TBG_Icon_Ingame_Random: -1941073994
+      TBG_Icon_Ingame_Recover: -1044860163
+      TBG_Icon_Ingame_SelectCircle: -386862298
+      TBG_Icon_Ingame_SelectCircleBg: -1973056337
+      TBG_Icon_MapLocation: -1293491630
+      TBG_Icon_MapLocationDeco: 2003933339
+      TBG_Icon_Up: 778325624
+      TBG_Icon_lobbyDeco_1: 36316599
+      TBG_Inbox: -427559147
+      TBG_ItemBg: -1406792346
+      TBG_ItemBg_10: -31692031
+      TBG_ResultBg: -160350798
+      TBG_SelectLineBg: 481692659
+      TBG_TitleBg: 1556227144
+      Tbg_Btn_Back: 186620551
+      Tbg_Btn_Bg_B: -350135325
+      Tbg_Btn_Bg_Br: -802605682
+      Tbg_Btn_Bg_Y: 826966498
+      Tbg_Btn_Home: -242604046
+      Tbg_Btn_Info: -13634850
+      Tbg_Btn_Option: -817942945
+      Tbg_Deco_Line: 307856375
+      Tbg_Icon_Bg_Dice: -741850728
+      Tbg_Icon_Map: -144755226
+      Tbg_ImgFont_Free: 653503114
+      Tbg_ImgFont_Hidden: -816851428
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

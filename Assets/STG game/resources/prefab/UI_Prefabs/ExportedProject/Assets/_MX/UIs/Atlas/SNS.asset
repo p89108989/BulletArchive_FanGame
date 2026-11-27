@@ -1,0 +1,382 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0000000deadbeef15deadf00d0000000, type: 2}
+  m_Name: SNS
+  m_EditorClassIdentifier:
+  material: {fileID: 2100000, guid: 312c3e9f8cc2fba4bb4ad9a2bb077852, type: 2}
+  mSprites:
+  - name: SNS_Bg_PostInfo
+    x: 1393
+    y: 390
+    width: 546
+    height: 216
+    borderLeft: 486
+    borderRight: 56
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Box_Raius
+    x: 1893
+    y: 296
+    width: 92
+    height: 92
+    borderLeft: 44
+    borderRight: 44
+    borderTop: 44
+    borderBottom: 44
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Deco_Icon_1
+    x: 1936
+    y: 18
+    width: 77
+    height: 67
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Deco_Icon_2
+    x: 1852
+    y: 787
+    width: 136
+    height: 108
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Deco_Icon_3
+    x: 1852
+    y: 897
+    width: 157
+    height: 127
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Deco_Line
+    x: 1984
+    y: 396
+    width: 12
+    height: 4
+    borderLeft: 4
+    borderRight: 4
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_Admin
+    x: 1984
+    y: 402
+    width: 41
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_Arrow
+    x: 1990
+    y: 649
+    width: 52
+    height: 246
+    borderLeft: 45
+    borderRight: 5
+    borderTop: 37
+    borderBottom: 208
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_Bg
+    x: 926
+    y: 236
+    width: 465
+    height: 370
+    borderLeft: 2
+    borderRight: 446
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_Bookmark
+    x: 2011
+    y: 972
+    width: 35
+    height: 52
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_InfoStatus_False
+    x: 1817
+    y: 19
+    width: 117
+    height: 66
+    borderLeft: 64
+    borderRight: 46
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_InfoStatus_True
+    x: 110
+    y: 168
+    width: 117
+    height: 66
+    borderLeft: 72
+    borderRight: 41
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_None
+    x: 0
+    y: 31
+    width: 236
+    height: 36
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_PostInfo
+    x: 1941
+    y: 401
+    width: 41
+    height: 41
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_RoadBg_1
+    x: 1817
+    y: 87
+    width: 192
+    height: 192
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_RoadBG_2
+    x: 0
+    y: 126
+    width: 108
+    height: 108
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_Icon_Title
+    x: 1852
+    y: 658
+    width: 100
+    height: 127
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_ImgFont_Title
+    x: 1393
+    y: 281
+    width: 498
+    height: 107
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_MainStory_00
+    x: 1605
+    y: 69
+    width: 210
+    height: 210
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_MainStory_01
+    x: 1393
+    y: 69
+    width: 210
+    height: 210
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_PopupBG
+    x: 1941
+    y: 539
+    width: 102
+    height: 108
+    borderLeft: 48
+    borderRight: 48
+    borderTop: 52
+    borderBottom: 52
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_PopupDeco_1
+    x: 0
+    y: 598
+    width: 924
+    height: 426
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_PopupDeco_2
+    x: 926
+    y: 608
+    width: 924
+    height: 416
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_PostBg
+    x: 1987
+    y: 485
+    width: 52
+    height: 52
+    borderLeft: 25
+    borderRight: 25
+    borderTop: 25
+    borderBottom: 25
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNS_ScrollBarBg
+    x: 1941
+    y: 463
+    width: 36
+    height: 19
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 9
+    borderBottom: 9
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNSPost_Icon_Favor
+    x: 1983
+    y: 444
+    width: 45
+    height: 39
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNSPost_Icon_FavorFill
+    x: 1852
+    y: 617
+    width: 45
+    height: 39
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SNSPost_Icon_Repost
+    x: 1941
+    y: 484
+    width: 40
+    height: 53
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

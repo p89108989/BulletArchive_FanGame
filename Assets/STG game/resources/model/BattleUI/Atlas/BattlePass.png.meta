@@ -1,0 +1,1188 @@
+fileFormatVersion: 2
+guid: 61e02402ca60126479401af6525ac464
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BattlePass_Btn_B
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 482
+        width: 246
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 46, y: 42, z: 46, w: 35}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b1a09772d21b74da187e3027c1c092
+      internalID: -645157101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Btn_Buy
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 695
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 450, y: 0, z: 50, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4b71b8be0ae1748a1171d2db5291af
+      internalID: -325248446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Btn_Buy_S2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 695
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 600, y: 0, z: 50, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a10df761257ba4b9d7a95eb38d7620
+      internalID: 1683657402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Btn_Common
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 933
+        width: 96
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 0, z: 30, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665ece3000b0a454fbb9f8c5c7bbc8b8
+      internalID: 2054955561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Btn_Mission
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 350
+        width: 351
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 180, y: 0, z: 50, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3676476ee5a1574ab21dd94566e3e13
+      internalID: 946371343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Btn_Type1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 862
+        width: 69
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 25, z: 30, w: 15}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50900864172364f4fa3ba0523b219af0
+      internalID: 565892832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Btn_Type2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 704
+        width: 102
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 0, z: 24, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b451e795060031943b4c91dbdab59307
+      internalID: 460734141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Btn_Y
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 482
+        width: 246
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 35, y: 35, z: 35, w: 35}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4ef4a406b55c546ab51aac64365546
+      internalID: -711547920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Common_Bg_Raius10px
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 832
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce04cea16994ce4db72eda968f5fff3
+      internalID: 140205788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Common_Bg_Raius20px
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 155
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6838e4df12a62644abd4c8591dcf7cfb
+      internalID: -1239654124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Common_Gradient
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1005
+        width: 300
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 2, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a151ce016583684fae219d8ccb78c26
+      internalID: -1557067574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Common_Gradient_Both
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 695
+        width: 400
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 170, y: 1, z: 200, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce50ffefc1aeb624da3b0895fdbc2695
+      internalID: -749288906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Common_Gradient_Vertical
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 434
+        width: 16
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 1, z: 1, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bac9c318122961418b93f4c928e7d9c
+      internalID: 605887441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Common_Icon_Lock
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 704
+        width: 65
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dab70d8362ade49a02e9a11910d931
+      internalID: 475164799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Common_Line_Dot
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 211
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bb5cbb959b3a94c88563588a635acc
+      internalID: -1842582886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Deco_Live
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 372
+        width: 178
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114e5821f8bdca549a8031bf276bcf80
+      internalID: -2082136875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Deco_Wifi
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 0
+        width: 264
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7bd1f1281570d47b9cf6bd8a12e577
+      internalID: 723147754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Gauge
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 645
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 13, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8618bd44749fd41ac532020e2f9ab5
+      internalID: -2085615417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Gauge_ScrollBtn
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 55
+        width: 30
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c23aa473a1d324bb989a9995023374
+      internalID: -354951840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Icon_Arrow
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 434
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887abf1af4e25a84cb9795bf4093f8e7
+      internalID: -1784666337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Icon_Check
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 645
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e297229dfffad48b1f816045542f5b
+      internalID: -262174460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Icon_Info
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 789
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71af172c537f174fa081c4cb8790f6c
+      internalID: -118650958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Icon_Plus
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 434
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63af5ba3d81539645b8298dbac153811
+      internalID: 860138480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Icon_Warning
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 645
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc03fb5bf5608cf47b36fae80e5beb80
+      internalID: -805982657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Icon_Zoom
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 434
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e240fb17e074d4b9ba16dc973bfd6c
+      internalID: 260624740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_ListSlot_BgDeco
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 540
+        width: 118
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9335e68ccadd246b788c1dbc3b7fdb
+      internalID: -1542809159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_ListSlot_NormalBg
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 224
+        width: 125
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 55, y: 55, z: 55, w: 55}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c515dd648c0f3549a548991ba8d9fe0
+      internalID: 761649774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_ListSlot_Numtextbox
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 933
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 0, z: 40, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355113e6ebd300d459a7a579325318b9
+      internalID: -1239507261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_ListSlot_PremiumBg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 190
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 130, y: 43, z: 48, w: 100}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7004b1caef2ab49a3631fd86f9ff61
+      internalID: -497859191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_ListTab_Bg
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 0
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 25, y: 15, z: 25, w: 28}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b28aa0fd8fabc543bf781e19f11b813
+      internalID: -727675450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_MissionIcon_Achive
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 710
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be00e56e8295e4041af030fb53a0a3e3
+      internalID: 1995340359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_MissionIcon_All
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 856
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2388001a963a7b489b816f01fdff194
+      internalID: -1340968942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_MissionIcon_Daily
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 645
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4b222756160d445b13f88655c96034
+      internalID: 197696197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_MissionIcon_RewardBg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 858
+        width: 300
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 0, z: 50, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7a6e34e23a2c941ac1ee3ca9d56d88
+      internalID: 2065472435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_MissionIcon_Weekly
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 931
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b982d7579bc11754aa1037d4348416b5
+      internalID: -1427610761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Popup_ItemBg
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 224
+        width: 185
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 48, y: 0, z: 48, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea4480d0f5ac344daff2d1a7000879f
+      internalID: -332594179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_PopupBtn_Bg
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 645
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 15, z: 15, w: 15}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d2f1013d6bc6941b4695e26efd9647
+      internalID: 1193673460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_PopupDeco
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 481
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a177dd2be457147b02b81ce8580065
+      internalID: 1672389929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_PopupDeco_Tag_Jp
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 694
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e597275fad8046a4c8294ae0aaf8e083
+      internalID: -191148598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_PopupDeco_Tag_Kr
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 540
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3bb269080f4fc2439462bed1aee6d50
+      internalID: 1106313369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Tab_B
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 933
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 15, z: 15, w: 15}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7b4c2f3c84f7d408cb062f240644a8
+      internalID: -1931054357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Tab_Type1
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 856
+        width: 66
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 25, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca85f35ccbf0ea49a8b93ea87b0546e
+      internalID: 1845877282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattlePass_Tab_Y
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 933
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5728695829cd45049abeef176abe03eb
+      internalID: 811037296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_Diamond
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 783
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2001138e18682364aa62cf53e32d5925
+      internalID: -275028785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_Event_Item_1
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 710
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffae4d825d8c051458cc750f56206b70
+      internalID: -274350070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common_Icon_JPMoney
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 789
+        width: 69
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39add896c831ca640bb6383679d974bc
+      internalID: 587624404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2887d25fd0fbf2c43845591e43517159
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BattlePass_Btn_B: -645157101
+      BattlePass_Btn_Buy: -325248446
+      BattlePass_Btn_Buy_S2: 1683657402
+      BattlePass_Btn_Common: 2054955561
+      BattlePass_Btn_Mission: 946371343
+      BattlePass_Btn_Type1: 565892832
+      BattlePass_Btn_Type2: 460734141
+      BattlePass_Btn_Y: -711547920
+      BattlePass_Common_Bg_Raius10px: 140205788
+      BattlePass_Common_Bg_Raius20px: -1239654124
+      BattlePass_Common_Gradient: -1557067574
+      BattlePass_Common_Gradient_Both: -749288906
+      BattlePass_Common_Gradient_Vertical: 605887441
+      BattlePass_Common_Icon_Lock: 475164799
+      BattlePass_Common_Line_Dot: -1842582886
+      BattlePass_Deco_Live: -2082136875
+      BattlePass_Deco_Wifi: 723147754
+      BattlePass_Gauge: -2085615417
+      BattlePass_Gauge_ScrollBtn: -354951840
+      BattlePass_Icon_Arrow: -1784666337
+      BattlePass_Icon_Check: -262174460
+      BattlePass_Icon_Info: -118650958
+      BattlePass_Icon_Plus: 860138480
+      BattlePass_Icon_Warning: -805982657
+      BattlePass_Icon_Zoom: 260624740
+      BattlePass_ListSlot_BgDeco: -1542809159
+      BattlePass_ListSlot_NormalBg: 761649774
+      BattlePass_ListSlot_Numtextbox: -1239507261
+      BattlePass_ListSlot_PremiumBg: -497859191
+      BattlePass_ListTab_Bg: -727675450
+      BattlePass_MissionIcon_Achive: 1995340359
+      BattlePass_MissionIcon_All: -1340968942
+      BattlePass_MissionIcon_Daily: 197696197
+      BattlePass_MissionIcon_RewardBg: 2065472435
+      BattlePass_MissionIcon_Weekly: -1427610761
+      BattlePass_PopupBtn_Bg: 1193673460
+      BattlePass_PopupDeco: 1672389929
+      BattlePass_PopupDeco_Tag_Jp: -191148598
+      BattlePass_PopupDeco_Tag_Kr: 1106313369
+      BattlePass_Popup_ItemBg: -332594179
+      BattlePass_Tab_B: -1931054357
+      BattlePass_Tab_Type1: 1845877282
+      BattlePass_Tab_Y: 811037296
+      Common_Icon_Diamond: -275028785
+      Common_Icon_Event_Item_1: -274350070
+      Common_Icon_JPMoney: 587624404
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

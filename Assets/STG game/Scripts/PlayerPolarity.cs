@@ -41,16 +41,32 @@ public class PlayerPolarity : MonoBehaviour, IPolarityAbsorber
     public void SetPolarity(BulletPolarity polarity)
     {
         CurrentPolarity = polarity;
-
-        if (blueShield != null) blueShield.SetActive(polarity == BulletPolarity.Blue);
-        if (yellowShield != null) yellowShield.SetActive(polarity == BulletPolarity.Yellow);
-
+        RefreshShields();
         OnPolarityChanged?.Invoke(polarity);
+    }
+
+    // 護盾暫時失效 (例如 Binah 光炮機制期間)：兩色護盾都不顯示、也不吸收任何攻擊；極性本身保留，恢復時回到原本的顏色
+    public void SetShieldSuppressed(bool suppressed)
+    {
+        IsShieldSuppressed = suppressed;
+        RefreshShields();
+        OnShieldSuppressionChanged?.Invoke(suppressed);
+    }
+
+    // 護盾暫時失效 / 恢復時觸發 (true = 失效)，供護盾卡等 UI 訂閱
+    public event Action<bool> OnShieldSuppressionChanged;
+
+    public bool IsShieldSuppressed { get; private set; }
+
+    private void RefreshShields()
+    {
+        if (blueShield != null) blueShield.SetActive(!IsShieldSuppressed && CurrentPolarity == BulletPolarity.Blue);
+        if (yellowShield != null) yellowShield.SetActive(!IsShieldSuppressed && CurrentPolarity == BulletPolarity.Yellow);
     }
 
     public bool TryAbsorb(BulletPolarity bulletPolarity)
     {
-        bool absorbed = absorbSamePolarity && bulletPolarity == CurrentPolarity;
+        bool absorbed = absorbSamePolarity && !IsShieldSuppressed && bulletPolarity == CurrentPolarity;
         if (absorbed) OnAttackAbsorbed?.Invoke(bulletPolarity);
         return absorbed;
     }

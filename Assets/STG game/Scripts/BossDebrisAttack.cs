@@ -16,11 +16,11 @@ public class BossDebrisAttack : MonoBehaviour
 
     [Header("Schedule")]
     [SerializeField, Min(0f), Tooltip("Boss 出場後第一次普通攻擊的延遲 (秒)")] private float firstAttackDelay = 8f;
-    [SerializeField, Min(0.5f), Tooltip("普通攻擊的間隔 (秒)；Boss 正在進行其他攻擊時這次跳過")] private float attackInterval = 5f;
+    [SerializeField, Min(0.5f), Tooltip("普通攻擊的間隔 (秒)；Boss 正在進行其他攻擊時這次跳過")] private float attackInterval = 3f;
 
     [Header("Timing")]
-    [SerializeField, Tooltip("觸發攻擊後第幾秒吐出碎塊 (起手 1.1 秒 + Ing 張嘴約 0.45 秒)")] private float spitDelay = 1.55f;
-    [SerializeField, Tooltip("整段攻擊動畫的長度 (秒)，結束後才讓出攻擊權")] private float attackDuration = 4f;
+    [SerializeField, Tooltip("觸發攻擊後第幾秒吐出碎塊 (Perorozilla：起手 1.1 秒 + Ing 張嘴約 0.45 秒，動畫 1.35 倍速)")] private float spitDelay = 1.15f;
+    [SerializeField, Tooltip("整段攻擊動畫的長度 (秒)，結束後才讓出攻擊權；要比攻擊間隔短，才能每次都攻擊")] private float attackDuration = 2.95f;
     [SerializeField, Min(0.1f), Tooltip("碎塊飛行時間 (秒)，也是警示圈的倒數時間")] private float flightTime = 1.3f;
     [SerializeField, Tooltip("碎塊拋物線最高點比直線高多少 (m)")] private float arcHeight = 20f;
 
