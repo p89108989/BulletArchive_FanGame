@@ -22,10 +22,25 @@ public class BattleFlow : MonoBehaviour, ICombatPhaseListener
     [SerializeField, Tooltip("DEFEAT 字圖")] private Sprite defeatWord;
     [SerializeField, Tooltip("無盡模式的關卡名稱")] private string endlessStageName = "無盡模式";
 
+    [Header("Audio")]
+    [SerializeField, Tooltip("沒有經過選角 (直接開戰鬥場景) 時的戰鬥 BGM；有選關時用選角寫入的 BGM")] private AudioClip defaultBattleMusic;
+    [SerializeField, Tooltip("勝利 BGM (VICTORY 字卡開始，一直播到結算畫面)")] private AudioClip victoryMusic;
+    [SerializeField, Tooltip("START 字卡的音效")] private AudioClip startSound;
+    [SerializeField, Tooltip("WARNING 字卡的警報音效")] private AudioClip warningSound;
+
     private bool pausedByIntro;
     private bool ended;
 
     public bool IsBattleRunning { get; private set; }
+
+    // START 字卡出現時 (戰鬥開始語音)
+    public event System.Action OnBattleStarted;
+    // 玩家倒下、DEFEAT 字卡出現時
+    public event System.Action OnDefeated;
+    // 勝利後結算面板出現時
+    public event System.Action OnVictoryResultsShown;
+
+    private bool victory;
 
     private void Awake()
     {
@@ -49,6 +64,9 @@ public class BattleFlow : MonoBehaviour, ICombatPhaseListener
     private void Start()
     {
         if (stageLabel != null) stageLabel.text = StageName();
+        // 從選角進來時這首已經在轉場開始時播了，這裡會接著播不重來
+        AudioClip selected = gameSelection != null && gameSelection.HasSelection ? gameSelection.BattleMusic : null;
+        GameAudio.PlayMusic(selected != null ? selected : defaultBattleMusic);
         Time.timeScale = 0f;
         pausedByIntro = true;
         StartCoroutine(Intro());
@@ -59,6 +77,8 @@ public class BattleFlow : MonoBehaviour, ICombatPhaseListener
         // 進場轉場 (稜鏡散開) 還在播就先等
         while (SceneTransition.IsBusy) yield return null;
 
+        GameAudio.PlaySfx(startSound);
+        OnBattleStarted?.Invoke();
         if (banner != null) banner.PlayStart(BeginBattle);
         else BeginBattle();
     }
@@ -75,20 +95,30 @@ public class BattleFlow : MonoBehaviour, ICombatPhaseListener
 
     public void OnCombatPhaseChanged(CombatPhase phase)
     {
-        if (phase != CombatPhase.Boss || ended || banner == null) return;
+        if (phase != CombatPhase.Boss || ended) return;
 
-        banner.PlayStamp(warningWord, true, null);
+        GameAudio.PlaySfx(warningSound);
+        if (banner != null) banner.PlayStamp(warningWord, true, null);
     }
 
     // 打完最後一隻 Boss
     public void ShowVictory()
     {
+        if (ended) return;
+
+        victory = true;
+        GameAudio.PlayMusic(victoryMusic);
         End(victoryWord);
     }
 
+    // 落敗沒有專屬 BGM：戰鬥 BGM 淡出
     private void HandlePlayerDied()
     {
+        if (ended) return;
+
+        GameAudio.StopMusic();
         End(defeatWord);
+        OnDefeated?.Invoke();
     }
 
     private void End(Sprite word)
@@ -105,6 +135,7 @@ public class BattleFlow : MonoBehaviour, ICombatPhaseListener
 
     private void ShowResults()
     {
+        if (victory) OnVictoryResultsShown?.Invoke();
         if (resultPanel == null) return;
 
         int kills = stats != null ? stats.Kills : 0;

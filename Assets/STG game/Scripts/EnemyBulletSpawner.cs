@@ -14,6 +14,7 @@ public class EnemyBulletSpawner : MonoBehaviour, ICombatPhaseListener
 
     [Header("Fire Timing")]
     [SerializeField, Tooltip("每次發射的間隔時間 (秒)")] private float fireInterval = 1.2f;
+    [SerializeField, Tooltip("砲台發射的聲音")] private SoundEffect fireSound = new SoundEffect();
 
     [Header("Targeting")]
     [SerializeField, Tooltip("瞄準目標，留空時會自動抓場景中 Tag 為 Player 的角色")] private Transform target;
@@ -75,6 +76,7 @@ public class EnemyBulletSpawner : MonoBehaviour, ICombatPhaseListener
         GameObject bulletObject = bulletPool.Get(spawnPoint.position, Quaternion.identity);
         EnemyBullet bullet = bulletObject.GetComponent<EnemyBullet>();
         bullet.Launch(direction, bulletSpeed, PickRandomPolarity(), ReturnBulletToPool);
+        fireSound.Play();
     }
 
     // Boss 戰期間砲台暫停發射 (計時照跑，回到一般戰鬥時直接接續)

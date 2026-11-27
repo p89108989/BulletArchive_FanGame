@@ -7,6 +7,10 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [Header("Health")]
     [SerializeField, Min(1), Tooltip("最大血量")] private int maxHealth = 100;
 
+    [Header("Sound")]
+    [SerializeField, Tooltip("受到傷害的聲音 (連射時用最短間隔避免太吵)")] private SoundEffect hurtSound = new SoundEffect();
+    [SerializeField, Tooltip("被擊毀的聲音")] private SoundEffect deathSound = new SoundEffect();
+
     public int CurrentHealth { get; private set; }
     public int MaxHealth => maxHealth;
     public bool IsDead { get; private set; }
@@ -58,7 +62,11 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         OnHealthChanged?.Invoke(CurrentHealth, maxHealth);
         OnDamaged?.Invoke();
 
-        if (CurrentHealth > 0) return;
+        if (CurrentHealth > 0)
+        {
+            hurtSound.Play();
+            return;
+        }
 
         Die();
         OnAnyKilled?.Invoke(this);
@@ -77,6 +85,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     private void Die()
     {
         IsDead = true;
+        deathSound.Play();
         OnDied?.Invoke();
     }
 }

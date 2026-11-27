@@ -49,6 +49,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  hurtSound:
+    clip: {fileID: 8300000, guid: 0a7a3d8b6477d51478e8830b8dba8696, type: 3}
+    volume: 0.35
+    minInterval: 0.08
+  deathSound:
+    clip: {fileID: 8300000, guid: 2cf8306756500c54cb328e1a35a646ca, type: 3}
+    volume: 0.8
+    minInterval: 0
 --- !u!114 &1650136622286481238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +102,10 @@ MonoBehaviour:
   boltSpeed: 30
   aimHeight: 5.8
   fallbackMuzzleHeight: 8
+  boltSound:
+    clip: {fileID: 8300000, guid: 534246b49665fae4fafd2b6e70c2f703, type: 3}
+    volume: 0.5
+    minInterval: 0.05
   corpseDuration: 3
 --- !u!1 &5792792922370462625
 GameObject:

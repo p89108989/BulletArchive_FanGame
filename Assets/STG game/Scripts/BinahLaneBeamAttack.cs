@@ -37,6 +37,10 @@ public class BinahLaneBeamAttack : MonoBehaviour
     [SerializeField, Min(0), Tooltip("被光炮打中扣的血")] private int damage = 2;
     [SerializeField, Min(0.1f), Tooltip("光炮外觀的粗細 (m)")] private float beamWidth = 12f;
 
+    [Header("Sound")]
+    [SerializeField, Tooltip("警示 (蓄力) 開始的聲音")] private SoundEffect chargeSound = new SoundEffect();
+    [SerializeField, Tooltip("光炮發射的聲音")] private SoundEffect fireSound = new SoundEffect();
+
     public bool IsWarning { get; private set; }
     public bool IsAttacking { get; private set; }
     // 光炮正在掃射中
@@ -102,6 +106,7 @@ public class BinahLaneBeamAttack : MonoBehaviour
 
         // 警示：從 Binah 這端漸漸塗滿到另一端
         IsWarning = true;
+        chargeSound.Play();
         ShowWarning(start, direction);
         for (float elapsed = 0f; elapsed < warningDuration; elapsed += Time.deltaTime)
         {
@@ -115,6 +120,7 @@ public class BinahLaneBeamAttack : MonoBehaviour
         // 光炮：落點從 Binah 腳下附近沿長條掃到另一端 (頭跟著落點轉，由低頭慢慢抬起)；
         // 掃過的部分內有玩家就扣一次血 (衝刺無敵、受傷無敵照常生效)
         if (beamEffect != null) beamEffect.SetActive(true);
+        fireSound.Play();
         IsFiring = true;
         bool hit = false;
         for (float elapsed = 0f; elapsed < fireDuration; elapsed += Time.deltaTime)

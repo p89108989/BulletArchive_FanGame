@@ -18,6 +18,10 @@ public class BinahReposition : MonoBehaviour
     [SerializeField, Tooltip("潑沙特效相對 Binah 的位置 (本地座標：往前 = 往場地)")] private Vector3 splashOffset = new Vector3(0f, 5f, 25f);
     [SerializeField, Min(0.1f), Tooltip("潑沙特效的放大倍數")] private float splashScale = 2f;
 
+    [Header("Sound")]
+    [SerializeField, Tooltip("開始潛入移動的聲音")] private SoundEffect moveSound = new SoundEffect();
+    [SerializeField, Tooltip("竄出潑沙的聲音")] private SoundEffect splashSound = new SoundEffect();
+
     private static readonly int MoveStartHash = Animator.StringToHash("MoveStart");
     private static readonly int MoveEndHash = Animator.StringToHash("MoveEnd");
 
@@ -43,6 +47,7 @@ public class BinahReposition : MonoBehaviour
     {
         IsMoving = true;
         if (animator != null) animator.SetTrigger(MoveStartHash);
+        moveSound.Play();
         yield return new WaitForSeconds(diveDuration);
 
         SetHittable(false);
@@ -51,6 +56,7 @@ public class BinahReposition : MonoBehaviour
         yield return new WaitForSeconds(emergeDelay);
 
         SetHittable(true);
+        splashSound.Play();
         if (splashPrefab != null)
         {
             GameObject splash = Instantiate(splashPrefab, transform.TransformPoint(splashOffset), Quaternion.identity);

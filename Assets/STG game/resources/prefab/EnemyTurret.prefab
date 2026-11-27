@@ -150,6 +150,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  hurtSound:
+    clip: {fileID: 8300000, guid: 0a7a3d8b6477d51478e8830b8dba8696, type: 3}
+    volume: 0.35
+    minInterval: 0.08
+  deathSound:
+    clip: {fileID: 8300000, guid: af94226983fc6c24aa0ce79e91bdc8e3, type: 3}
+    volume: 0.8
+    minInterval: 0.1
 --- !u!114 &3239012670936818038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc52b1a9f40a1c349a648ab7918fe12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+  flashBrightness: 1.8
   holdDuration: 0.06
   fadeDuration: 0.08
   pulseInterval: 0.25

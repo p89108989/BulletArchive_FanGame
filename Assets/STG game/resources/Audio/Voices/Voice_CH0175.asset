@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8462f2ecc396f414bb3f4722a90a0db7, type: 3}
+  m_Name: Voice_CH0175
+  m_EditorClassIdentifier: 
+  characterId: CH0175
+  battleStart:
+    clip: {fileID: 8300000, guid: 4864c99af49bb3246935376836755007, type: 3}
+    volume: 1
+    minInterval: 0
+  dash:
+    clip: {fileID: 8300000, guid: e6d5297cf03f99a43a427bf5b0e54760, type: 3}
+    volume: 1
+    minInterval: 0
+  move:
+    clip: {fileID: 8300000, guid: dc17ac013d835bf4ba9e032d39572733, type: 3}
+    volume: 1
+    minInterval: 0
+  victory:
+    clip: {fileID: 8300000, guid: d503117412722564e80febf3df46aae7, type: 3}
+    volume: 1
+    minInterval: 0
+  select:
+    clip: {fileID: 8300000, guid: 71843c8fe5f80104d94e548e039ebd4d, type: 3}
+    volume: 1
+    minInterval: 0
+  defeat:
+    clip: {fileID: 8300000, guid: 2ca44759acb5e4342b26cde8c599ebd7, type: 3}
+    volume: 1
+    minInterval: 0
+  damage:
+    clip: {fileID: 8300000, guid: ba874cdad78cf3a45977a5de0136e70b, type: 3}
+    volume: 1
+    minInterval: 0
+  basicAttack:
+    clip: {fileID: 8300000, guid: e10aae11ca0fa844ea4c5b77d9b0ff66, type: 3}
+    volume: 0.25
+    minInterval: 0

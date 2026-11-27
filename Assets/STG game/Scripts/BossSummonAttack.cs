@@ -28,6 +28,7 @@ public class BossSummonAttack : MonoBehaviour
     [SerializeField, Tooltip("膠囊拋物線最高點比直線高多少 (m)")] private float capsuleArcHeight = 25f;
     [SerializeField, Tooltip("每隻小怪子彈的顏色，依召喚順序套用 (None = 紅色，護盾無法吸收)")]
     private BulletPolarity[] minionPolarities = { BulletPolarity.None, BulletPolarity.Yellow, BulletPolarity.Blue };
+    [SerializeField, Tooltip("開始召喚的聲音")] private SoundEffect summonSound = new SoundEffect();
 
     [Header("Landing Impact")]
     [SerializeField, Tooltip("落點警示與落地傷害 (AreaStrike Prefab)，倒數時間 = 膠囊飛行時間；留空時不警示也不傷害")]
@@ -108,6 +109,7 @@ public class BossSummonAttack : MonoBehaviour
         int count = SummonPlacement.PickPoints(landingAreaMin, landingAreaMax, minLandingSeparation, avoid, avoidTargetRadius, groundHeight, landingPoints);
 
         animator.SetTrigger(SummonHash);
+        summonSound.Play();
         float startTime = Time.time;
         for (int i = 0; i < count; i++)
         {

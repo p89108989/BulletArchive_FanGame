@@ -34,6 +34,10 @@ public class BossLaserAttack : MonoBehaviour
     [SerializeField, Tooltip("整段動畫長度 (秒)，結束後才讓出攻擊權")] private float animationDuration = 16.5f;
     [SerializeField, Tooltip("地板表面高度")] private float groundHeight = 0.31f;
 
+    [Header("Sound")]
+    [SerializeField, Tooltip("開始蓄力的聲音")] private SoundEffect chargeSound = new SoundEffect();
+    [SerializeField, Tooltip("光束發射的聲音")] private SoundEffect fireSound = new SoundEffect();
+
     [Header("Damage")]
     [SerializeField, Min(0.1f), Tooltip("光束落點的傷害半徑 (m)，警示圈也用這個大小")] private float hitRadius = 5f;
     [SerializeField, Min(1), Tooltip("每次命中的傷害；玩家受傷後的無敵時間決定多久會再被打一次")] private int damage = 2;
@@ -137,6 +141,7 @@ public class BossLaserAttack : MonoBehaviour
         targetHistory.Clear();
         RecordTarget();
         animator.SetTrigger(LaserHash);
+        chargeSound.Play();
 
         // 蓄力：顯示警示 (追蹤緊貼玩家目前的位置；掃射固定在起點)
         if (warning != null) warning.Show(WarningPoint(trajectory, reverseSweep), hitRadius);
@@ -153,6 +158,7 @@ public class BossLaserAttack : MonoBehaviour
         }
 
         if (warning != null) warning.Hide();
+        if (!health.IsDead) fireSound.Play();
 
         float beamDuration = expandDuration + holdDuration + fadeDuration;
         for (float elapsed = 0f; elapsed < beamDuration && !health.IsDead; elapsed += Time.deltaTime)

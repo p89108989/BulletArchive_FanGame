@@ -40,6 +40,7 @@ public class PlayerLaser : MonoBehaviour, ICombatPhaseListener
     [SerializeField, Tooltip("光束判定半徑 (m)，越大越容易掃到子彈")] private float hitRadius = 3f;
     [SerializeField, Tooltip("光束每次判定造成的傷害")] private int damagePerTick = 1;
     [SerializeField, Tooltip("光束傷害判定間隔 (秒)")] private float tickInterval = 0.1f;
+    [SerializeField, Tooltip("按 F 開啟大招時的音效")] private SoundEffect burstSound = new SoundEffect();
 
     [Header("Layers")]
     [SerializeField, Tooltip("會被打中的敵人 Layer")] private LayerMask enemyLayers;
@@ -73,6 +74,8 @@ public class PlayerLaser : MonoBehaviour, ICombatPhaseListener
     public float BurstDuration => burstDuration;
     // 大招開啟時觸發一次 (對話框等外部系統訂閱)
     public event System.Action OnBurstStarted;
+    // 一般射擊每射出一發觸發一次 (槍聲由角色語音組決定)
+    public event System.Action OnShotFired;
     // 現在按 F 能不能開大招：藍、黃能量都夠，而且不在發動中 (技能卡用來顯示可用 / 能量不足)
     public bool CanStartBurst => !IsBurstActive && playerEnergy != null
         && playerEnergy.GetEnergy(BulletPolarity.Blue) >= burstEnergyCost
@@ -156,6 +159,7 @@ public class PlayerLaser : MonoBehaviour, ICombatPhaseListener
         playerEnergy.TrySpend(BulletPolarity.Yellow, burstEnergyCost);
         burstUntil = Time.time + burstDuration;
         tickTimer = 0f;
+        burstSound.Play();
         OnBurstStarted?.Invoke();
     }
 
@@ -181,6 +185,7 @@ public class PlayerLaser : MonoBehaviour, ICombatPhaseListener
 
         volley.Fire(start, direction, shotSpeed, maxRange, shotLength, shotDamage, ShotColor());
         nextShotTime = Time.time + 1f / shotsPerSecond;
+        OnShotFired?.Invoke();
     }
 
     private bool IsFirePressed()

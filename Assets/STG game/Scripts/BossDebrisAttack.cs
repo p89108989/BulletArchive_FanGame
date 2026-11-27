@@ -28,6 +28,10 @@ public class BossDebrisAttack : MonoBehaviour
     [SerializeField, Tooltip("落地傷害範圍半徑 (m)")] private float strikeRadius = 8f;
     [SerializeField, Tooltip("地板表面高度")] private float groundHeight = 0.31f;
 
+    [Header("Sound")]
+    [SerializeField, Tooltip("吐出碎塊 (普通攻擊) 的聲音")] private SoundEffect attackSound = new SoundEffect();
+    [SerializeField, Tooltip("碎塊落地的聲音")] private SoundEffect landSound = new SoundEffect();
+
     private static readonly int AttackHash = Animator.StringToHash("Attack");
 
     private EnemyHealth health;
@@ -84,11 +88,17 @@ public class BossDebrisAttack : MonoBehaviour
     private IEnumerator AttackRoutine()
     {
         animator.SetTrigger(AttackHash);
+        attackSound.Play();
         yield return new WaitForSeconds(spitDelay);
 
         if (!health.IsDead) SpitDebris();
 
-        yield return new WaitForSeconds(Mathf.Max(0f, attackDuration - spitDelay));
+        // 飛行時間比攻擊動畫剩下的時間短：在這段等待中途播落地聲
+        float remaining = Mathf.Max(0f, attackDuration - spitDelay);
+        float landAt = Mathf.Min(flightTime, remaining);
+        yield return new WaitForSeconds(landAt);
+        if (!health.IsDead) landSound.Play();
+        yield return new WaitForSeconds(remaining - landAt);
         gate.Release(this);
     }
 

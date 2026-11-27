@@ -28,6 +28,7 @@ public class PeroroMinion : MonoBehaviour
     [SerializeField, Tooltip("子彈速度 (m/s)")] private float boltSpeed = 30f;
     [SerializeField, Tooltip("瞄準點在玩家身上往上偏移的高度")] private float aimHeight = 5.8f;
     [SerializeField, Tooltip("沒有指定發射點時，子彈離地的高度")] private float fallbackMuzzleHeight = 8f;
+    [SerializeField, Tooltip("每發雷射的聲音")] private SoundEffect boltSound = new SoundEffect();
 
     [Header("Death")]
     [SerializeField, Min(0f), Tooltip("倒下後在原地停留幾秒才消失")] private float corpseDuration = 3f;
@@ -167,6 +168,7 @@ public class PeroroMinion : MonoBehaviour
         GameObject boltObject = boltPool.Get(origin, Quaternion.LookRotation(direction, Vector3.up));
         if (!bolts.Contains(boltObject)) bolts.Add(boltObject);
         boltObject.GetComponent<EnemyBullet>().Launch(direction, boltSpeed, polarity, ReturnBolt);
+        boltSound.Play();
     }
 
     private Vector3 NextMuzzlePosition()

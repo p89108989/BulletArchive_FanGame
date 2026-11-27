@@ -12,8 +12,11 @@ public class GameSelection : ScriptableObject
     [NonSerialized] private bool loop;
     [NonSerialized] private bool hasSelection;
     [NonSerialized] private readonly List<BossProfile> bosses = new List<BossProfile>();
+    [NonSerialized] private AudioClip battleMusic;
 
     public bool HasSelection => hasSelection;
+    // 選到的關卡的戰鬥 BGM (出擊時就開始播，戰鬥場景接著播)；沒有指定為 null
+    public AudioClip BattleMusic => battleMusic;
     // 選到的角色 (CH0331 等)；角色還沒實裝，目前只記錄
     public string CharacterId => characterId;
     // 打完最後一隻是否從頭再來 (無盡模式)
@@ -26,8 +29,9 @@ public class GameSelection : ScriptableObject
     }
 
     // 記下這次的選擇；沒有 Profile 的 Boss (還沒做完) 直接略過
-    public void Select(string selectedCharacterId, BossProfile[] bossList, bool loopBosses)
+    public void Select(string selectedCharacterId, BossProfile[] bossList, bool loopBosses, AudioClip music = null)
     {
+        battleMusic = music;
         bosses.Clear();
         if (bossList != null)
         {
@@ -54,6 +58,7 @@ public class GameSelection : ScriptableObject
     {
         bosses.Clear();
         characterId = null;
+        battleMusic = null;
         loop = false;
         hasSelection = false;
     }

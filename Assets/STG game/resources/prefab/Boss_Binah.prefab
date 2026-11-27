@@ -5376,6 +5376,7 @@ GameObject:
   - component: {fileID: 5716490095747963047}
   - component: {fileID: 3537926646324659715}
   - component: {fileID: 2651386152929322038}
+  - component: {fileID: 5310368769987876562}
   m_Layer: 0
   m_Name: Boss_Binah
   m_TagString: Untagged
@@ -5418,6 +5419,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1000
+  hurtSound:
+    clip: {fileID: 0}
+    volume: 1
+    minInterval: 0
+  deathSound:
+    clip: {fileID: 8300000, guid: 43118fbafcfa93946a426c2615ea5a22, type: 3}
+    volume: 1
+    minInterval: 0
 --- !u!114 &4269611519067347812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5498,6 +5507,14 @@ MonoBehaviour:
   splashPrefab: {fileID: 6937791890296120511, guid: eaaabff480c854841b60b0028c6e2994, type: 3}
   splashOffset: {x: 0, y: 5, z: 25}
   splashScale: 2
+  moveSound:
+    clip: {fileID: 8300000, guid: 69cf5d2af3d890e4e918049f51dd25de, type: 3}
+    volume: 0.8
+    minInterval: 0
+  splashSound:
+    clip: {fileID: 8300000, guid: 75872e9e10ef6ce4fbfb2f030888e77c, type: 3}
+    volume: 0.8
+    minInterval: 0
 --- !u!114 &8914705279197307237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5568,6 +5585,14 @@ MonoBehaviour:
   fieldMin: {x: -109, y: -9}
   fieldMax: {x: 7.3, y: 88.5}
   floorHeight: 0.35
+  chargeSound:
+    clip: {fileID: 8300000, guid: 8ae14fc6c2da4b144b27587ce43378e9, type: 3}
+    volume: 1
+    minInterval: 0
+  fireSound:
+    clip: {fileID: 8300000, guid: 5b30a055e4e40304592800bacbe96e7e, type: 3}
+    volume: 1
+    minInterval: 0
   groggyDuration: 10
   groggyDamageMultiplier: 1.5
 --- !u!114 &50857476524596483
@@ -5634,6 +5659,14 @@ MonoBehaviour:
   arcHeight: 20
   strikeRadius: 8
   groundHeight: 0.31
+  attackSound:
+    clip: {fileID: 8300000, guid: 3508aece807f03e4093484cf067db2aa, type: 3}
+    volume: 0.8
+    minInterval: 0
+  landSound:
+    clip: {fileID: 8300000, guid: 54cca92a77a78514b8f06c8506fed774, type: 3}
+    volume: 0.4
+    minInterval: 0
 --- !u!114 &2651386152929322038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5664,6 +5697,30 @@ MonoBehaviour:
   sweepStart: 0.05
   damage: 2
   beamWidth: 12
+  chargeSound:
+    clip: {fileID: 8300000, guid: 8ae14fc6c2da4b144b27587ce43378e9, type: 3}
+    volume: 1
+    minInterval: 0
+  fireSound:
+    clip: {fileID: 8300000, guid: 5b30a055e4e40304592800bacbe96e7e, type: 3}
+    volume: 1
+    minInterval: 0
+--- !u!114 &5310368769987876562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432200295113435783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089469c0436b224498441919f668438b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+    clip: {fileID: 8300000, guid: ebf675006b9cee74eaaf66f07d271ec8, type: 3}
+    volume: 1
+    minInterval: 0
 --- !u!1 &4603678952503122504
 GameObject:
   m_ObjectHideFlags: 0

@@ -2414,6 +2414,7 @@ GameObject:
   - component: {fileID: 1128460174}
   - component: {fileID: 1128460172}
   - component: {fileID: 1128460173}
+  - component: {fileID: 1128460175}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2503,6 +2504,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1128460175
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128460171}
+  m_Enabled: 1
 --- !u!1 &1182730743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,6 +2977,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1287220370}
   m_CullTransparentMesh: 1
+--- !u!1 &1302928189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302928192}
+  - component: {fileID: 1302928191}
+  - component: {fileID: 1302928190}
+  m_Layer: 0
+  m_Name: SceneAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1302928190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302928189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1ae8e6b3df8f546af6b7d1660dcc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: c0e50eee069083b49a39056570770233, type: 3}
+--- !u!114 &1302928191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302928189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691d8eb5efb2cfd4d878d5f13f9149d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 72e7ff156aa74f045b950ad1d2c8960a, type: 3}
+--- !u!4 &1302928192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302928189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1398993397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4758,16 +4826,19 @@ MonoBehaviour:
     bosses:
     - {fileID: 11400000, guid: 72ed6508048c28f42b1552d73433d508, type: 2}
     loop: 0
+    battleMusic: {fileID: 8300000, guid: 5ab3a619e277ddb4ea69697be0138f32, type: 3}
   - label: Binah
     icon: {fileID: 21300000, guid: cd037aad4d014794f8346b44a1ffc715, type: 3}
     bosses:
     - {fileID: 11400000, guid: ed8ff6f72ba8ca34a96d88682737c1e3, type: 2}
     loop: 0
+    battleMusic: {fileID: 8300000, guid: 802fa9da6bff29645b232dcdb47c98f2, type: 3}
   - label: HoverCraft
     icon: {fileID: 21300000, guid: cb82f1cc042c86948a332e347f1fc887, type: 3}
     bosses:
     - {fileID: 0}
     loop: 0
+    battleMusic: {fileID: 8300000, guid: 32cf5a83404e6124394783aa90c473f5, type: 3}
   - label: "\u7121\u76E1\u6A21\u5F0F"
     icon: {fileID: 21300000, guid: 7d0fd860170d538428f751714c610816, type: 3}
     bosses:
@@ -4775,6 +4846,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: ed8ff6f72ba8ca34a96d88682737c1e3, type: 2}
     - {fileID: 0}
     loop: 1
+    battleMusic: {fileID: 8300000, guid: c4c008f3cc19d2749808b2406ca82dad, type: 3}
   bossTabs:
   - {fileID: 1499318368}
   - {fileID: 289967238}
@@ -4788,6 +4860,11 @@ MonoBehaviour:
   gameSelection: {fileID: 11400000, guid: 7dc3f1013ffc4a94dbb6bd2b34f07813, type: 2}
   gameSceneName: mian game
   sceneTransition: {fileID: 1713559388}
+  voiceSets:
+  - {fileID: 11400000, guid: b983bba13ac96d84198360ef88464448, type: 2}
+  - {fileID: 11400000, guid: 92a9fa66d8bcbdb48ad8d73e6d35522b, type: 2}
+  - {fileID: 11400000, guid: d386d3a4d6b18fc46992ffd27a412159, type: 2}
+  - {fileID: 11400000, guid: 13bb1b65eab905642821683e7283ead4, type: 2}
 --- !u!4 &1992333812
 Transform:
   m_ObjectHideFlags: 0
@@ -4967,3 +5044,4 @@ SceneRoots:
   - {fileID: 1748071080}
   - {fileID: 1992333812}
   - {fileID: 1713559392}
+  - {fileID: 1302928192}

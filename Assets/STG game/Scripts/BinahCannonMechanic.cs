@@ -49,7 +49,7 @@ public class BinahCannonMechanic : MonoBehaviour
     [SerializeField, Tooltip("流沙停下後堆出的沙丘數量 (最少, 最多)；場上最多 3 座，滿了就不再堆")] private Vector2Int duneCount = new Vector2Int(2, 3);
 
     [Header("Charge")]
-    [SerializeField, Min(1), Tooltip("蓄力期間累積多少傷害就能打斷 (5 秒內一般射擊最多約 20、F 大招約 50：要開大招才打得斷)")] private int interruptDamage = 40;
+    [SerializeField, Min(1), Tooltip("蓄力期間累積多少傷害就能打斷 (5 秒內一般射擊最多約 40、F 大招約 100：要開大招才打得斷)")] private int interruptDamage = 80;
     [SerializeField, Tooltip("蓄力期間顯示的整個場地紅色警示 (有 PulseAlpha 時越閃越快)，可留空")] private GameObject chargeWarning;
     [SerializeField, Tooltip("地板紅色警示從 Binah 那側漸漸塗滿 (塗滿 = 發射)，可留空")] private WarningFill chargeFill;
     [SerializeField, Tooltip("蓄力時嘴裡的光 (越聚越大)，可留空")] private GameObject chargeEffect;
@@ -68,6 +68,10 @@ public class BinahCannonMechanic : MonoBehaviour
     [SerializeField, Tooltip("整個場地 (地板) 的最小 X / Z，光炮要涵蓋的範圍")] private Vector2 fieldMin = new Vector2(-109f, -9f);
     [SerializeField, Tooltip("整個場地 (地板) 的最大 X / Z")] private Vector2 fieldMax = new Vector2(7.3f, 88.5f);
     [SerializeField, Tooltip("地板高度")] private float floorHeight = 0.35f;
+
+    [Header("Sound")]
+    [SerializeField, Tooltip("開始蓄力的聲音")] private SoundEffect chargeSound = new SoundEffect();
+    [SerializeField, Tooltip("光炮發射的聲音")] private SoundEffect fireSound = new SoundEffect();
 
     [Header("Groggy")]
     [SerializeField, Min(0f), Tooltip("被打斷後暈眩多久 (秒)")] private float groggyDuration = 10f;
@@ -221,6 +225,7 @@ public class BinahCannonMechanic : MonoBehaviour
         // 蓄力：期間受到的傷害由 HandleHealthChanged 累計，達門檻時直接切到暈眩
         CurrentPhase = Phase.Charging;
         chargeDamage = 0;
+        chargeSound.Play();
         SetActive(chargeWarning, true);
         SetActive(chargeEffect, true);
         if (chargeFill != null)
@@ -252,6 +257,7 @@ public class BinahCannonMechanic : MonoBehaviour
         SetActive(chargeEffect, false);
         if (chargeFill != null) SetActive(chargeFill.gameObject, false);
         SetActive(beamEffect, true);
+        fireSound.Play();
         if (cameraShake != null) cameraShake.Shake(shakeAmplitude, fireDuration);
         bool hit = false;
         float fireStart = Time.time;

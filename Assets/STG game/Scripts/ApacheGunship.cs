@@ -41,6 +41,11 @@ public class ApacheGunship : MonoBehaviour, ICombatPhaseListener
     [SerializeField, Tooltip("飛彈長度佔直升機全長的比例 (模型上掛載的 Hellfire 約 0.14)")] private float missileLengthRatio = 0.14f;
     [SerializeField, Tooltip("飛彈物件池預先建立的數量")] private int missilePoolPrewarmCount = 6;
 
+    [Header("Sound")]
+    [SerializeField, Tooltip("在場上時的旋翼聲 (循環)，可留空")] private LoopingSound rotorSound;
+    [SerializeField, Tooltip("發射飛彈的聲音")] private SoundEffect missileLaunchSound = new SoundEffect();
+    [SerializeField, Tooltip("飛彈爆炸的聲音 (一波依序三顆，用最短間隔讓一波只響一次)")] private SoundEffect missileExplosionSound = new SoundEffect();
+
     private EnemyHealth health;
     private GameObjectPool missilePool;
     private Vector3 homePosition;
@@ -86,7 +91,13 @@ public class ApacheGunship : MonoBehaviour, ICombatPhaseListener
         if (strikeSpawner != null) strikeSpawner.OnStrikeSpawned -= HandleStrikeSpawned;
         StopAllCoroutines();
         isAttacking = false;
+        SetRotor(false);
         if (modelRoot != null) modelRoot.SetActive(false);
+    }
+
+    private void SetRotor(bool playing)
+    {
+        if (rotorSound != null) rotorSound.SetPlaying(playing);
     }
 
     // Boss 戰：停止出場排程與攻擊，在場上的話立刻飛離；回到一般戰鬥後隔一個出場間隔再出場
@@ -109,6 +120,7 @@ public class ApacheGunship : MonoBehaviour, ICombatPhaseListener
     private IEnumerator LeaveArena()
     {
         yield return Exit();
+        SetRotor(false);
         modelRoot.SetActive(false);
     }
 
@@ -128,11 +140,13 @@ public class ApacheGunship : MonoBehaviour, ICombatPhaseListener
     {
         health.ResetHealth();
         modelRoot.SetActive(true);
+        SetRotor(true);
 
         yield return Entry();
         yield return Orbit();
         yield return Exit();
 
+        SetRotor(false);
         modelRoot.SetActive(false);
     }
 
@@ -214,6 +228,7 @@ public class ApacheGunship : MonoBehaviour, ICombatPhaseListener
         GameObject missileObject = missilePool.Get(launchPosition, transform.rotation);
         StrikeMissile missile = missileObject.GetComponent<StrikeMissile>();
         missile.Launch(launchPosition, strike.transform.position, strike.TimeUntilDetonation, strike.Polarity, missileLength, ReturnMissileToPool);
+        missileLaunchSound.Play();
     }
 
     private Vector3 NextLaunchPosition()
@@ -225,8 +240,10 @@ public class ApacheGunship : MonoBehaviour, ICombatPhaseListener
         return point.position;
     }
 
+    // 飛彈抵達 = 圈爆炸的瞬間
     private void ReturnMissileToPool(StrikeMissile missile)
     {
+        missileExplosionSound.Play();
         missilePool.Release(missile.gameObject);
     }
 

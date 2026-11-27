@@ -14,6 +14,7 @@ public class CharacterSelectScreen : MonoBehaviour
         [Tooltip("分頁上的圖示 (BattleUI/02_Tactics/06_Raid/Boss_Portrait_*_Lobby)")] public Sprite icon;
         [Tooltip("要打的 Boss 依序排列；還沒做完的 Boss 留空 (會略過)")] public BossProfile[] bosses;
         [Tooltip("打完最後一隻從頭再來 (無盡模式)")] public bool loop;
+        [Tooltip("這個關卡的戰鬥 BGM (按出擊、轉場開始時就播)，可留空")] public AudioClip battleMusic;
     }
 
     [Header("Characters")]
@@ -32,6 +33,9 @@ public class CharacterSelectScreen : MonoBehaviour
     [SerializeField, Tooltip("寫入選擇的資產 (戰鬥場景的 BossEncounter 也要指定同一個)")] private GameSelection gameSelection;
     [SerializeField, Tooltip("出擊後載入的場景名稱 (要在 Build Settings 裡)；留空則只寫入選擇")] private string gameSceneName = "mian game";
     [SerializeField, Tooltip("進入戰鬥的轉場 (先壓黑再稜鏡)，可留空 (留空直接換場景)")] private SceneTransition sceneTransition;
+
+    [Header("Voice")]
+    [SerializeField, Tooltip("各角色的語音 (點到角色時講選角語音)")] private CharacterVoiceSet[] voiceSets = Array.Empty<CharacterVoiceSet>();
 
     public SelectableCharacter SelectedCharacter { get; private set; }
     public int SelectedBossOption { get; private set; }
@@ -78,6 +82,9 @@ public class CharacterSelectScreen : MonoBehaviour
             if (characters[i] != null) characters[i].SetPicked(characters[i] == character);
         }
 
+        // 只講點到的那個角色自己的語音 (找不到就不講，不用預設那組)
+        CharacterVoiceSet voices = character != null ? CharacterVoiceSet.Find(voiceSets, character.CharacterId) : null;
+        if (voices != null && voices.CharacterId == character.CharacterId) voices.Select.PlayAsVoice();
         Refresh();
     }
 
@@ -95,7 +102,8 @@ public class CharacterSelectScreen : MonoBehaviour
         if (!CanMobilize) return;
 
         BossOption option = bossOptions[SelectedBossOption];
-        if (gameSelection != null) gameSelection.Select(SelectedCharacter.CharacterId, option.bosses, option.loop);
+        if (gameSelection != null) gameSelection.Select(SelectedCharacter.CharacterId, option.bosses, option.loop, option.battleMusic);
+        GameAudio.PlayMusic(option.battleMusic);
         if (string.IsNullOrEmpty(gameSceneName)) return;
 
         if (sceneTransition != null) sceneTransition.LoadScene(gameSceneName, true);

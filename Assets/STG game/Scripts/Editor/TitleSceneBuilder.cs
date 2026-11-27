@@ -200,6 +200,7 @@ public static class TitleSceneBuilder
 
         Font font = AssetDatabase.LoadAssetAtPath<Font>(CharacterSelectBuilder.FontPath);
         CreateMenu(font);
+        AudioSetupBuilder.ApplyTitle();
 
         EditorSceneManager.SaveScene(scene, CharacterSelectBuilder.TitleScenePath);
         CharacterSelectBuilder.UpdateBuildSettings();

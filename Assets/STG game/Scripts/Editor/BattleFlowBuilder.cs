@@ -100,6 +100,7 @@ public static class BattleFlowBuilder
         }
 
         AddPhaseListener(flow);
+        AudioSetupBuilder.ApplyBattle();
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
         Debug.Log("[BattleFlowBuilder] 已在戰鬥場景建立轉場、字卡、結算面板");

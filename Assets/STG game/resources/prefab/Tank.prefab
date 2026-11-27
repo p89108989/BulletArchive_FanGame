@@ -4914,6 +4914,7 @@ GameObject:
   - component: {fileID: 5391810037901043711}
   - component: {fileID: 8676746094494868447}
   - component: {fileID: 5673034903451434105}
+  - component: {fileID: 2680112835190979784}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -4951,6 +4952,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  hurtSound:
+    clip: {fileID: 8300000, guid: 0a7a3d8b6477d51478e8830b8dba8696, type: 3}
+    volume: 0.35
+    minInterval: 0.08
+  deathSound:
+    clip: {fileID: 0}
+    volume: 1
+    minInterval: 0
 --- !u!114 &8676746094494868447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5016,11 +5025,26 @@ MonoBehaviour:
   fallTumbleSpeed: 60
   fallGravityScale: 4
   fallHorizontalDrag: 40
+  moveSound: {fileID: 2680112835190979784}
   damage: 1
   hitTag: Player
   hitLayers:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &2680112835190979784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187269893676340810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e3ece7f1184ed4a9c0f27ce2c80e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 35949e1a645049a46b7ffbc5b9e50730, type: 3}
+  volume: 0.5
 --- !u!1 &6660011606550547688
 GameObject:
   m_ObjectHideFlags: 0

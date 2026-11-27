@@ -128,6 +128,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    // 衝刺開始時觸發一次 (角色語音等)
+    public event System.Action OnDashStarted;
+
     public float DashCooldown => dashCooldown;
     // 衝刺還要等幾秒才能再用 (技能卡顯示冷卻用)
     public float DashCooldownRemaining => Mathf.Max(0f, nextDashTime - Time.time);
@@ -149,6 +152,7 @@ public class PlayerMovement : MonoBehaviour
         if (dashDirection.sqrMagnitude > 0f) rb.rotation = Quaternion.LookRotation(dashDirection, Vector3.up);
         animator.SetBool(IsDashingHash, true);
         playerHealth.GrantInvincibility(dashInvincibilityDuration);
+        OnDashStarted?.Invoke();
         return true;
     }
 

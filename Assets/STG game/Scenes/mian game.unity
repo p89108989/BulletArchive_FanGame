@@ -3771,6 +3771,10 @@ MonoBehaviour:
   - {fileID: 1856829988}
   - {fileID: 652347676}
   fireInterval: 1.2
+  fireSound:
+    clip: {fileID: 8300000, guid: 7c7748dd8537bc54798f4113b3a6f4e5, type: 3}
+    volume: 0.35
+    minInterval: 0.05
   target: {fileID: 0}
   aimHeightOffset: 5.8
 --- !u!1 &453709110
@@ -5809,6 +5813,10 @@ MonoBehaviour:
   victoryWord: {fileID: 21300000, guid: 21c8541d260682f41a67ba951a8eaba4, type: 3}
   defeatWord: {fileID: 21300000, guid: 593e86a168c62f24b944e9df2520c4b0, type: 3}
   endlessStageName: "\u7121\u76E1\u6A21\u5F0F"
+  defaultBattleMusic: {fileID: 8300000, guid: 802fa9da6bff29645b232dcdb47c98f2, type: 3}
+  victoryMusic: {fileID: 8300000, guid: 6eb73f4a286bcb8469121fddb67e8367, type: 3}
+  startSound: {fileID: 8300000, guid: e1de20b05bcf5cc4e92746303bd29a32, type: 3}
+  warningSound: {fileID: 8300000, guid: 5e20622782eb4834ea453675b0a2871c, type: 3}
 --- !u!114 &678947331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15711,6 +15719,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1926979758055031853, guid: 5e564e48945c3994294a1a1fdaee835d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1524889592}
+    - targetCorrespondingSourceObject: {fileID: 1926979758055031853, guid: 5e564e48945c3994294a1a1fdaee835d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1524889594}
   m_SourcePrefab: {fileID: 100100000, guid: 5e564e48945c3994294a1a1fdaee835d, type: 3}
 --- !u!1 &1524889586 stripped
 GameObject:
@@ -15767,6 +15778,15 @@ MonoBehaviour:
   missileFlightTime: 0.8
   missileLengthRatio: 0.14
   missilePoolPrewarmCount: 6
+  rotorSound: {fileID: 1524889594}
+  missileLaunchSound:
+    clip: {fileID: 8300000, guid: 9e8457b8a8af7e04aabc4e81fc8bafa1, type: 3}
+    volume: 0.4
+    minInterval: 0
+  missileExplosionSound:
+    clip: {fileID: 8300000, guid: 040b874a73a4bec47824a134bf5d032a, type: 3}
+    volume: 0.8
+    minInterval: 2
 --- !u!114 &1524889591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15780,6 +15800,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  hurtSound:
+    clip: {fileID: 8300000, guid: 0a7a3d8b6477d51478e8830b8dba8696, type: 3}
+    volume: 0.35
+    minInterval: 0.08
+  deathSound:
+    clip: {fileID: 0}
+    volume: 1
+    minInterval: 0
 --- !u!114 &1524889592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15801,6 +15829,20 @@ SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4091368255862871587, guid: 5e564e48945c3994294a1a1fdaee835d, type: 3}
   m_PrefabInstance: {fileID: 1524889585}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1524889594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524889586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e3ece7f1184ed4a9c0f27ce2c80e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: a80197c6197708a418f1312f2990babb, type: 3}
+  volume: 0.3
 --- !u!64 &1531395649
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15886,7 +15928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1537547564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20440,6 +20482,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa16bfd189642d14883396264353bdc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2070157438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2070157440}
+  - component: {fileID: 2070157439}
+  m_Layer: 0
+  m_Name: SceneAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2070157439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070157438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691d8eb5efb2cfd4d878d5f13f9149d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 72e7ff156aa74f045b950ad1d2c8960a, type: 3}
+--- !u!4 &2070157440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070157438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070901967
 GameObject:
   m_ObjectHideFlags: 0
@@ -21439,6 +21526,7 @@ GameObject:
   - component: {fileID: 5866666020161329613}
   - component: {fileID: 5866666020161329614}
   - component: {fileID: 5866666020161329615}
+  - component: {fileID: 5866666020161329616}
   m_Layer: 8
   m_Name: Rio_Mesh
   m_TagString: Player
@@ -23751,7 +23839,7 @@ MonoBehaviour:
   shotSpeed: 150
   shotLength: 7
   shotHitRadius: 0.8
-  shotDamage: 1
+  shotDamage: 2
   blueColor: {r: 0.2, g: 0.5, b: 1, a: 1}
   yellowColor: {r: 1, g: 0.75, b: 0.1, a: 1}
   beamPrefab: {fileID: 4252000012957271582, guid: 5abeb807f7f30f84daebb2bb296637f8, type: 3}
@@ -23760,8 +23848,12 @@ MonoBehaviour:
   burstColor: {r: 0.3, g: 1, b: 0.35, a: 1}
   beamWidth: 10
   hitRadius: 3
-  damagePerTick: 1
+  damagePerTick: 2
   tickInterval: 0.1
+  burstSound:
+    clip: {fileID: 8300000, guid: f51de8738eb6e0a45b274759c46ceaa7, type: 3}
+    volume: 1
+    minInterval: 0
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
@@ -23814,6 +23906,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   returnSpeed: 30
+--- !u!114 &5866666020161329616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147684448515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fba68ee0fa11894c8bb6721baf53c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceSets:
+  - {fileID: 11400000, guid: b983bba13ac96d84198360ef88464448, type: 2}
+  - {fileID: 11400000, guid: 92a9fa66d8bcbdb48ad8d73e6d35522b, type: 2}
+  - {fileID: 11400000, guid: d386d3a4d6b18fc46992ffd27a412159, type: 2}
+  - {fileID: 11400000, guid: 13bb1b65eab905642821683e7283ead4, type: 2}
+  gameSelection: {fileID: 11400000, guid: 7dc3f1013ffc4a94dbb6bd2b34f07813, type: 2}
+  battleFlow: {fileID: 678947330}
+  moveCheckInterval: 15
+  minMoveDistance: 1
 --- !u!4 &5931715554719008684
 Transform:
   m_ObjectHideFlags: 0
@@ -25337,3 +25450,4 @@ SceneRoots:
   - {fileID: 1657955133}
   - {fileID: 678947332}
   - {fileID: 1537547568}
+  - {fileID: 2070157440}

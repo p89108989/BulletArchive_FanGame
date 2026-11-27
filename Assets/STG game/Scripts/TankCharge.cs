@@ -57,6 +57,9 @@ public class TankCharge : MonoBehaviour, ICombatPhaseListener
     [SerializeField, Tooltip("墜落時的重力倍數 (遊戲尺度較大，正常重力看起來太飄)")] private float fallGravityScale = 4f;
     [SerializeField, Tooltip("墜落時水平速度每秒減少多少 (m/s²)，避免衝太遠才掉下去")] private float fallHorizontalDrag = 40f;
 
+    [Header("Sound")]
+    [SerializeField, Tooltip("衝刺移動時的履帶聲 (循環)，可留空")] private LoopingSound moveSound;
+
     [Header("Damage")]
     [SerializeField, Tooltip("落地或撞到玩家造成的傷害值")] private int damage = 1;
     [SerializeField, Tooltip("判定命中的目標 Tag")] private string hitTag = "Player";
@@ -135,6 +138,7 @@ public class TankCharge : MonoBehaviour, ICombatPhaseListener
         yield return LockOn();
         yield return Charge();
 
+        if (moveSound != null) moveSound.SetPlaying(false);
         modelRoot.SetActive(false);
         warning.Hide();
     }
@@ -178,6 +182,7 @@ public class TankCharge : MonoBehaviour, ICombatPhaseListener
     private void SetMoving(bool moving)
     {
         if (animator != null && animator.isActiveAndEnabled) animator.SetBool(IsMovingHash, moving);
+        if (moveSound != null) moveSound.SetPlaying(moving);
     }
 
     // 車身持續轉向玩家，前方的衝撞警示區跟著轉並隨倒數填滿；倒數結束後方向定住再停頓一下
@@ -308,6 +313,7 @@ public class TankCharge : MonoBehaviour, ICombatPhaseListener
         if (modelRoot.activeSelf) SpawnExplosion();
 
         StopAllCoroutines();
+        SetMoving(false);
         modelRoot.SetActive(false);
         warning.Hide();
         if (!isBossPhase) StartCoroutine(AppearLoop(appearInterval));
@@ -320,6 +326,7 @@ public class TankCharge : MonoBehaviour, ICombatPhaseListener
         if (!isActiveAndEnabled) return;
 
         StopAllCoroutines();
+        if (moveSound != null) moveSound.SetPlaying(false);
         if (isBossPhase)
         {
             if (modelRoot.activeSelf && landingDust != null) landingDust.Play(true);

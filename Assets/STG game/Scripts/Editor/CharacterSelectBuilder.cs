@@ -123,6 +123,7 @@ public static class CharacterSelectBuilder
         serialized.FindProperty("gameSceneName").stringValue = System.IO.Path.GetFileNameWithoutExtension(GameScenePath);
         serialized.FindProperty("sceneTransition").objectReferenceValue = SceneTransitionBuilder.Create();
         serialized.ApplyModifiedPropertiesWithoutUndo();
+        AudioSetupBuilder.ApplyCharacterSelect();
 
         EditorSceneManager.SaveScene(scene, ScenePath);
         UpdateBuildSettings();
