@@ -7,6 +7,12 @@
 ![Superpowers](https://img.shields.io/badge/Workflow-Superpowers-purple)
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 
+## 開發狀態｜Development Status
+
+**Work in Progress — Active Development**
+
+本專案目前仍處於開發階段，遊戲玩法、系統架構、美術呈現及功能內容皆可能隨開發進度持續調整。
+
 ## 專案簡介｜Overview
 
 Bullet Archive 是一款使用 Unity 開發的 3D 彈幕射擊遊戲，以《蔚藍檔案》（Blue Archive）為靈感所製作的非官方同人遊戲，目前仍處於開發階段。
@@ -149,33 +155,6 @@ Unity MCP 的應用方向包含：
 - Unity MCP 環境設定與應用。
 - LLM 開發規範及限制條件制定。
 - AI 生成程式碼的檢查、測試與功能驗證。
-
-## 專案目標｜Project Objectives
-
-除了完成一款具有特色戰鬥機制的彈幕射擊遊戲，本專案亦旨在探索：
-
-- Vibe Coding 於較複雜遊戲專案中的應用。
-- Agent Skills 與傳統軟體工程流程的結合。
-- Model Context Protocol 在遊戲開發環境中的應用。
-- 如何降低 LLM 在持續開發過程中的架構偏移與技術債務。
-- 如何透過人機協作提高遊戲開發效率。
-- 如何平衡 AI 自動化開發與人工技術決策。
-
-## 開發狀態｜Development Status
-
-**Work in Progress — Active Development**
-
-本專案目前仍處於開發階段，遊戲玩法、系統架構、美術呈現及功能內容皆可能隨開發進度持續調整。
-
-後續開發方向：
-
-- 完善核心彈幕戰鬥系統。
-- 完善子彈屬性與吸收機制。
-- 擴充角色及敵人行為。
-- 建立關卡及 Boss 戰鬥流程。
-- 改善遊戲介面與使用者體驗。
-- 優化遊戲效能及程式碼架構。
-- 持續改善 AI 輔助開發流程。
 
 ## 相關工具｜References
 
